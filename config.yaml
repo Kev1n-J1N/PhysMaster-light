@@ -1,0 +1,40 @@
+# Physics Master Configuration
+
+# Clarifier settings
+clarifier:
+  query_file: "instructions/test.txt"
+  schema_file_path: "agent/pre/schema"
+  output_path: "outputs"
+  max_key_concpets: 5
+
+# Librarian settings
+librarian:
+  enabled: false
+  papers_per_concept: 5
+  section_char_limit: 400
+
+# Knowledge Base settings
+knowledge_base:
+  enabled: false
+  local_kb_path: "knowledge_base/local_knowledge.json"
+  global_kb_path: "knowledge_base/global_knowledge.json"
+  add_local_to_global: false
+
+# Pipeline parameters
+pipeline:
+  parallel_processes: 2
+  max_nodes: 4 # Maximum nodes to explore in MCTS
+  # Threshold for supervisor to consider a subtask completed (0.0 - 1.0)
+  complete_score_threshold: 0.7
+
+# MCTS parameters
+mcts:
+  draft_expansion: 2
+  revise_expansion: 2
+  # number of parallel children to generate for an "improve" decision
+  improve_expansion: 2
+  exploration_constant: 1.414
+
+# Writer settings
+writer:
+  enabled: true

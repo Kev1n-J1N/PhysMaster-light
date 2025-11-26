@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.org/schema/template.json",
+  "title": "Structured Research Task Template",
+  "description": "A JSON schema for structured research tasks in physics.",
+  "type": "object",
+  "properties": {
+    "topic": { "type": "string" },
+    "domain": { "type": "string" },
+    "subdomain": { "type": "string" },
+    "related_knowledge": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "task_type": { "type": "string" },
+    "task_background": { "type": "string" },
+    "task_description": { "type": "string" },
+    "expected_output": { "$ref": "#/definitions/output_spec" },
+    "constraints": { "$ref": "#/definitions/constraints" },
+    "input_data": {
+      "type": "object",
+      "properties": {
+        "format": { "type": "string" },
+        "path": { "type": "string", "default": "none" },
+        "description": { "type": "string" }
+      },
+      "required": ["format", "path"]
+    },
+    "sub_tasks": { "$ref": "#/definitions/sub_tasks" }
+  },
+  "required": [
+    "topic",
+    "domain",
+    "task_description",
+    "expected_output",
+    "constraints",
+    "sub_tasks"
+  ],
+
+  "definitions": {
+    "expected_output": {
+      "title": "Output Specification Schema",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "format": { "type": "string", "enum": ["PDF", "Code", "CSV", "Image", "Text"] },
+          "path": { "type": "string" },
+          "description": { "type": "string" }
+        },
+        "required": ["format", "path"]
+      }
+    },
+
+    "constraints": {
+      "title": "Physics Constraints Schema",
+      "type": "object",
+      "properties": {
+        "symmetry": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Symmetries of the physical system, e.g.: time reversal symmetry, spatial translation symmetry, etc."
+        },
+        "conservation_law": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Conservation laws, e.g.: energy conservation, momentum conservation, angular momentum conservation, etc."
+        },
+        "dimension": { "type": "string", "description": "Problem dimension, e.g.: 1, 2, 3 or higher dimensions" },
+        "spatial_scale": { "type": "string" },
+        "time_scale": { "type": "string" },
+        "energy_scale": { "type": "string" },
+        "boundary_condition": { "type": "string", "description": "Boundary conditions, e.g.: periodic boundary conditions, Dirichlet boundary conditions, etc." },
+        "initial_condition": { "type": "string", "description": "Description of initial conditions" },
+        "geometry_constraints": { "type": "array", "items": { "type": "string" }, "description": "Geometric constraints, e.g.: spherical symmetry, cylindrical symmetry, specific geometric shapes, etc." },
+        "mathematical_constraints": { "type": "array", "items": { "type": "string" }, "description": "Mathematical constraint equations, e.g.: Schrödinger equation, Maxwell's equations, etc." }
+      }
+    },
+
+    "sub_tasks": {
+      "title": "Subtask Schema",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "subtask_type": { "type": "string", "enum": ["reasoning", "coding", "analysis"] },
+          "input": { "type": "string" },
+          "expected_output": { "type": "string" },
+          "description": { "type": "string" }
+        },
+        "required": ["id", "subtask_type", "description"]
+      }
+    }
+  }
+}

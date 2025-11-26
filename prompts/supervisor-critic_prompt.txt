@@ -1,0 +1,24 @@
+Core result: {result} 
+Analysis, code and files: {context}.
+
+Based on the result above, you should provide:
+- A decision that indicates the quality of this node
+- A brief summary to act as short-term memory
+- Your judgement on such result, including a score and a short piece of opinion
+
+NOTICE: As for the files provided, you have to execute code to read the data from the file before proceeding with the analysis.
+
+Decision type:
+- "to_revise": the current solution method has errors or gaps — generate revised nodes that fix it.
+- "to_improve": the method is generally correct but can be further refined — generate improved nodes.
+- "to_redraft": the current approach/idea is fundamentally wrong — discard it and draft new alternative approaches.
+- "complete": the current subtask is sufficiently solved; stop focusing on this subtask and proceed to draft the next subtask.
+
+OUTPUT FORMAT:
+Only return a valid JSON object with the following keys:
+  - decision: "to_revise", "to_improve", "to_redraft" or "complete"
+  - opinion: brief bullet-like diagnostics about errors, assumptions, or important steps.
+  - score: float between 0 and 1 (higher is better). which is an evaluation of 
+  - summary: short textual summary of current progress and the key points the next node should focus on (2-5 sentences).
+  - core_results: list of key numeric results / formulas / intermediate values (can be empty).
+  - code: short code snippets or commands relevant for continuation (string or array).

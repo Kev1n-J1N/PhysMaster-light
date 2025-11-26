@@ -1,0 +1,13 @@
+{
+  "completed_subtasks": [],
+  "total_nodes": 5,
+  "tree_stats": {
+    "total_nodes": 5,
+    "subtasks": 2,
+    "nodes_by_subtask": {
+      "0": 1,
+      "1": 4
+    }
+  },
+  "best_trajectory": []
+}

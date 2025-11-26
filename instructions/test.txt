@@ -1,0 +1,1 @@
+How long does it take for a small ball to land from a height of 5 meters? Then, calculate its final velocity.

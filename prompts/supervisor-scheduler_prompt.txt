@@ -1,0 +1,10 @@
+
+The structured problem: {structured} 
+Node info: {node}
+
+Your should determine the next subtask to complete and add necessary knowledge for reference.
+
+When collecting related knowledge, you should use serach_kb tool.【记得写知识库搜索！】
+
+OUTPUT FORMAT:
+The subtask to assign and provide necessary background knowledge in ONE STRING.

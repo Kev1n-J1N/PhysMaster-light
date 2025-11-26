@@ -1,0 +1,15 @@
+The subtask and background knowledge: {subtask}
+Short-term memory from parent node: {memory}
+Node metadata: {node_metadata}
+
+Node type explanation: 
+- "revise": the former solution method has errors or gaps, you should fix it.
+- "improve": the former method is generally correct but can be further refined or execute on more sets of parameters.
+- "draft": draft new subtask solution or propose new alternative approaches.
+
+OUTPUT FORMAT:
+Current node output path: {path}
+NOTICE: Any files created by the code you provide (plots, data, CSVs, etc.) MUST be written into the directory above (`{path}`).
+
+Return strict JSON. The JSON object should include analysis, any code to run (Python/Julia), numerical results, filenames of any produced files (saved under `{path}`), and a confidence score. 
+Example return: {{"core_results": {{"t": 1.01}}, "analysis": "...", "code": "print(1+1)", "files": ["result.csv","plot.png"]}}
