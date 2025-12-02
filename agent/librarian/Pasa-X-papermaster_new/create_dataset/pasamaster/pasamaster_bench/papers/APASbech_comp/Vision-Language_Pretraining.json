@@ -1,0 +1,71 @@
+[
+  {
+    "id": "2501.00958",
+    "title": "2.5 Years in Class: A Multimodal Textbook for Vision-Language Pretraining",
+    "authors": [
+      "Wenqi Zhang",
+      "Hang Zhang",
+      "Xin Li",
+      "Jiashuo Sun",
+      "Yongliang Shen",
+      "Weiming Lu",
+      "Deli Zhao",
+      "Yueting Zhuang",
+      "Lidong Bing"
+    ],
+    "published": "2025-01-01T21:29:37+00:00",
+    "cited_by": "",
+    "description": "Compared to image-text pair data, interleaved corpora enable Vision-Language Models (VLMs) to understand the world more naturally like humans. However, such existing datasets are crawled from webpage, facing challenges like low knowledge density, loose image-text relations, and poor logical coherence between images. On the other hand, the internet hosts vast instructional videos (e.g., online geometry courses) that are widely used by humans to learn foundational subjects, yet these valuable resources remain underexplored in VLM training. In this paper, we introduce a high-quality \\textbf{multimodal textbook} corpus with richer foundational knowledge for VLM pretraining. It collects over 2.5 years of instructional videos, totaling 22,000 class hours. We first use an LLM-proposed taxonomy to systematically gather instructional videos. Then we progressively extract and refine visual (keyframes), audio (ASR), and textual knowledge (OCR) from the videos, and organize as an image-text interleaved corpus based on temporal order. Compared to its counterparts, our video-centric textbook offers more coherent context, richer knowledge, and better image-text alignment. Experiments demonstrate its superb pretraining performance, particularly in knowledge- and reasoning-intensive tasks like ScienceQA and MathVista. Moreover, VLMs pre-trained on our textbook exhibit outstanding interleaved context awareness, leveraging visual and textual cues in their few-shot context for task solving. Our code are available at https://github.com/DAMO-NLP-SG/multimodal_textbook."
+  },
+  {
+    "id": "2405.01483",
+    "title": "MANTIS: Interleaved Multi-Image Instruction Tuning",
+    "authors": [
+      "Dongfu Jiang",
+      "Xuan He",
+      "Huaye Zeng",
+      "Cong Wei",
+      "Max Ku",
+      "Qian Liu",
+      "Wenhu Chen"
+    ],
+    "published": "2024-05-02T17:14:57+00:00",
+    "cited_by": "2501.00958",
+    "description": "Pretraining on a combination of interleaved corpus and image-\npair datasets enables VLMs to handle interwoven multi-modal inputs, while also\nunlocking advanced capabilities such as in-context learning[27]and multi-image\ncomparison[18]."
+  },
+  {
+    "id": "2404.12387",
+    "title": "Reka Core, Flash, and Edge: A Series of Powerful Multimodal Language Models",
+    "authors": [
+      "Reka Team",
+      "Aitor Ormazabal",
+      "Che Zheng",
+      "Cyprien de Masson d'Autume",
+      "Dani Yogatama",
+      "Deyu Fu",
+      "Donovan Ong",
+      "Eric Chen",
+      "Eugenie Lamprecht",
+      "Hai Pham",
+      "Isaac Ong",
+      "Kaloyan Aleksiev",
+      "Lei Li",
+      "Matthew Henderson",
+      "Max Bain",
+      "Mikel Artetxe",
+      "Nishant Relan",
+      "Piotr Padlewski",
+      "Qi Liu",
+      "Ren Chen",
+      "Samuel Phua",
+      "Yazheng Yang",
+      "Yi Tay",
+      "Yuqi Wang",
+      "Zhongkai Zhu",
+      "Zhihui Xie"
+    ],
+    "published": "2024-04-18T17:59:48+00:00",
+    "cited_by": "2405.01483",
+    "description": "Both\nclosed-source models like GPT-4V[1], Gemini[2], Reka[3], MM1[4]and open-source\nmodels like LLaVA[5,6], LLaVA-NeXT[7], BLIP[8], CogVLM[9], Idefics[10]have shown\nstrong visual-language understanding and generation capabilities in single-image\ntasks like VQA[11], TextVQA[12], GQA[13], etc."
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "2502.09897",
+    "title": "Artificial Intelligence in Spectroscopy: Advancing Chemistry from Prediction to Generation and Beyond",
+    "authors": [
+      "Kehan Guo",
+      "Yili Shen",
+      "Gisela Abigail Gonzalez-Montiel",
+      "Yue Huang",
+      "Yujun Zhou",
+      "Mihir Surve",
+      "Zhichun Guo",
+      "Prayel Das",
+      "Nitesh V Chawla",
+      "Olaf Wiest",
+      "Xiangliang Zhang"
+    ],
+    "published": "2025-02-14T04:07:25+00:00",
+    "cited_by": "",
+    "description": "The rapid advent of machine learning (ML) and artificial intelligence (AI) has catalyzed major transformations in chemistry, yet the application of these methods to spectroscopic and spectrometric data, referred to as Spectroscopy Machine Learning (SpectraML), remains relatively underexplored. Modern spectroscopic techniques (MS, NMR, IR, Raman, UV-Vis) generate an ever-growing volume of high-dimensional data, creating a pressing need for automated and intelligent analysis beyond traditional expert-based workflows. In this survey, we provide a unified review of SpectraML, systematically examining state-of-the-art approaches for both forward tasks (molecule-to-spectrum prediction) and inverse tasks (spectrum-to-molecule inference). We trace the historical evolution of ML in spectroscopy, from early pattern recognition to the latest foundation models capable of advanced reasoning, and offer a taxonomy of representative neural architectures, including graph-based and transformer-based methods. Addressing key challenges such as data quality, multimodal integration, and computational scalability, we highlight emerging directions such as synthetic data generation, large-scale pretraining, and few- or zero-shot learning. To foster reproducible research, we also release an open-source repository containing recent papers and their corresponding curated datasets (https://github.com/MINE-Lab-ND/SpectrumML_Survey_Papers). Our survey serves as a roadmap for researchers, guiding progress at the intersection of spectroscopy and AI."
+  },
+  {
+    "id": "2412.12119",
+    "title": "Mastering Board Games by External and Internal Planning with Language Models",
+    "authors": [
+      "John Schultz",
+      "Jakub Adamek",
+      "Matej Jusup",
+      "Marc Lanctot",
+      "Michael Kaisers",
+      "Sarah Perrin",
+      "Daniel Hennes",
+      "Jeremy Shar",
+      "Cannada Lewis",
+      "Anian Ruoss",
+      "Tom Zahavy",
+      "Petar Veličković",
+      "Laurel Prince",
+      "Satinder Singh",
+      "Eric Malmi",
+      "Nenad Tomašev"
+    ],
+    "published": "2024-12-02T18:56:51+00:00",
+    "cited_by": "2502.09897",
+    "description": "Additionally, transfer learning and pre-\ntrained models[31]enable these algorithms to generalize across diverse spectra,\nthereby reducing the need for extensive retraining."
+  }
+]

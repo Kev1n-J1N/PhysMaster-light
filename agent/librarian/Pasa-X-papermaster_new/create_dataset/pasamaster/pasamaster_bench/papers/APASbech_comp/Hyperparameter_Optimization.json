@@ -1,0 +1,30 @@
+[
+  {
+    "id": "2312.04528",
+    "title": "Using Large Language Models for Hyperparameter Optimization",
+    "authors": [
+      "Michael R. Zhang",
+      "Nishkrit Desai",
+      "Juhan Bae",
+      "Jonathan Lorraine",
+      "Jimmy Ba"
+    ],
+    "published": "2023-12-07T18:46:50+00:00",
+    "cited_by": "",
+    "description": "This paper explores the use of foundational large language models (LLMs) in hyperparameter optimization (HPO). Hyperparameters are critical in determining the effectiveness of machine learning models, yet their optimization often relies on manual approaches in limited-budget settings. By prompting LLMs with dataset and model descriptions, we develop a methodology where LLMs suggest hyperparameter configurations, which are iteratively refined based on model performance. Our empirical evaluations on standard benchmarks reveal that within constrained search budgets, LLMs can match or outperform traditional HPO methods like Bayesian optimization across different models on standard benchmarks. Furthermore, we propose to treat the code specifying our model as a hyperparameter, which the LLM outputs and affords greater flexibility than existing HPO approaches."
+  },
+  {
+    "id": "2412.06604",
+    "title": "VOPy: A Framework for Black-box Vector Optimization",
+    "authors": [
+      "Yaşar Cahit Yıldırım",
+      "Efe Mert Karagözlü",
+      "İlter Onat Korkmaz",
+      "Çağın Ararat",
+      "Cem Tekin"
+    ],
+    "published": "2024-12-09T15:53:02+00:00",
+    "cited_by": "2312.04528",
+    "description": ", are compute-environment-aware[20],\ncompute-budget-aware[32], multi-task[52], like transfer-learning[21]or multi-\nfidelity[30], iterative-optimization-aware[33], online[26], or multi-\nobjective[15]."
+  }
+]

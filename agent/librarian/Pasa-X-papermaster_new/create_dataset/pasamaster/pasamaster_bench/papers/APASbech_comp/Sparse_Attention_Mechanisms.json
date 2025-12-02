@@ -1,0 +1,46 @@
+[
+  {
+    "id": "2406.16747",
+    "title": "Sparser is Faster and Less is More: Efficient Sparse Attention for Long-Range Transformers",
+    "authors": [
+      "Chao Lou",
+      "Zixia Jia",
+      "Zilong Zheng",
+      "Kewei Tu"
+    ],
+    "published": "2024-06-24T15:55:59+00:00",
+    "cited_by": "",
+    "description": "Accommodating long sequences efficiently in autoregressive Transformers, especially within an extended context window, poses significant challenges due to the quadratic computational complexity and substantial KV memory requirements inherent in self-attention mechanisms. In this work, we introduce SPARSEK Attention, a novel sparse attention mechanism designed to overcome these computational and memory obstacles while maintaining performance. Our approach integrates a scoring network and a differentiable top-k mask operator, SPARSEK, to select a constant number of KV pairs for each query, thereby enabling gradient-based optimization. As a result, SPARSEK Attention offers linear time complexity and constant memory footprint during generation. Experimental results reveal that SPARSEK Attention outperforms previous sparse attention methods and provides significant speed improvements during both training and inference, particularly in language modeling and downstream tasks. Furthermore, our method can be seamlessly integrated into pre-trained Large Language Models (LLMs) with minimal fine-tuning, offering a practical solution for effectively managing long-range dependencies in diverse applications."
+  },
+  {
+    "id": "2502.00299",
+    "title": "ChunkKV: Semantic-Preserving KV Cache Compression for Efficient Long-Context LLM Inference",
+    "authors": [
+      "Xiang Liu",
+      "Zhenheng Tang",
+      "Peijie Dong",
+      "Zeyu Li",
+      "Yue Liu",
+      "Bo Li",
+      "Xuming Hu",
+      "Xiaowen Chu"
+    ],
+    "published": "2025-02-01T03:49:47+00:00",
+    "cited_by": "2406.16747",
+    "description": "Some sparse attention utilized fixed patterns to restrict the number of tokens\ninvolved, such as sliding windows[56,51], dilated sliding windows[4,22],\ncombination of patterns[34,13], or domain-specific patterns[31]."
+  },
+  {
+    "id": "2310.13682",
+    "title": "Optimizing Retrieval-augmented Reader Models via Token Elimination",
+    "authors": [
+      "Moshe Berchansky",
+      "Peter Izsak",
+      "Avi Caciularu",
+      "Ido Dagan",
+      "Moshe Wasserblat"
+    ],
+    "published": "2023-10-20T17:41:36+00:00",
+    "cited_by": "2406.16747",
+    "description": "[1]incorporates aSoftTopKoperator[41]to compute\nsoft masks in Transformer encoders."
+  }
+]

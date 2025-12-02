@@ -2,20 +2,36 @@ import json
 import yaml
 import sys
 import os
-from pathlib import Path
-from typing import Any, Dict
 
-from agent.mid.supervisor import SupervisorOrchestrator
-from agent.pre.clarifier import Clarifier
+from pathlib import Path
+from typing import Any, Dict, Tuple
+
+from agent.MCTS.supervisor import SupervisorOrchestrator
+from agent.clarifier.clarifier import Clarifier
+from agent.librarian.librarian import run_pasax_for_kb
 
 
 class EmptyLocalKB:
     def to_brief(self, n: int = 3):
         return []
 
+    def search(self, query: str, top_k: int = 5):
+        """
+        占位 KB 搜索函数。
+        真实 KB 实现后会替换这个逻辑。
+        现在为了不让程序报错，统一返回空列表。
+        """
+        return []
+
+
 class EmptyGlobalKB:
     def to_brief(self, n: int = 3):
         return []
+
+    def search(self, query: str, top_k: int = 5):
+        return []
+
+
 
 def load_config(path: str = "config.yaml") -> Dict[str, Any]:
     p = Path(path)
@@ -38,28 +54,22 @@ def clarify_query(query_path: str, clr_cfg) -> Dict[str, Any]:
     兼容 main() 里的调用：
         structured_problem, task_dir = clarify_query(query_path, clarifier_cfg)
     """
-    # 用 main 传进来的 query_path
     path = query_path
-
     with open(path, 'r', encoding='utf-8') as file:
         content = file.read()
 
-    # Clarifier 吃 clarifier 区那一整块 config（里面有 schema_file_path 等）
     clr = Clarifier(clr_cfg)
     structured_problem = clr.run(content)
 
-    # 从文件名推一个 task_name
     instruction_filename = Path(path).stem
     structured_problem["instruction_filename"] = instruction_filename
     task_name = get_task_name(structured_problem)
 
-    # 输出根目录：优先用 config 里的 output_path
     output_root = clr_cfg.get("output_path", "outputs")
     task_dir = Path(output_root) / task_name
     os.makedirs(task_dir, exist_ok=True)
 
-    # 把 structured_problem 存下来，方便后面 para 那套来读
-    with open(task_dir / "structured_problem.json", "w", encoding="utf-8") as f:
+    with open(task_dir / "contract.json", "w", encoding="utf-8") as f:
         json.dump(structured_problem, f, ensure_ascii=False, indent=2)
 
     return structured_problem, task_dir
@@ -71,17 +81,45 @@ def main(config_path: str = "config.yaml"):
     clarifier_cfg = cfg.get("clarifier", {})
     pipeline_cfg = cfg.get("pipeline", {})
     mcts_cfg = cfg.get("mcts", {})
-    query_path = cfg.get("query_file", "instructions/test.txt")
 
-    structured_problem, task_dir = clarify_query(query_path,clarifier_cfg)
+    query_path = clarifier_cfg.get("query_file", "instructions/test.txt")
 
-    kb_cfg = cfg.get("knowledge_base", {})
+    structured_problem, task_dir = clarify_query(query_path, clarifier_cfg)
+    task_name = get_task_name(structured_problem)
+
+    kb_cfg = cfg.get("knowledge_base", {}) or {}
+    task_local_kb_dir = None  
+
     if not kb_cfg.get("enabled", False):
+        print("[KB] knowledge_base.enabled = False，跳过 PasaX 和 KB 加载")
         local_kb = EmptyLocalKB()
         global_kb = EmptyGlobalKB()
     else:
-        local_kb = EmptyLocalKB()
-        global_kb = EmptyGlobalKB()
+        task_local_kb_dir = run_pasax_for_kb(task_dir, task_name, kb_cfg)
+
+        from knowledge_base.local_store import LocalKnowledgeBase
+        from knowledge_base.global_store import GlobalKnowledgeBase
+
+        project_root = Path(__file__).resolve().parent
+        base_local_root = kb_cfg.get("local_root", "knowledge_base/local_knowledge_base")
+
+        if task_local_kb_dir is not None:
+            local_root_dir = task_local_kb_dir
+        else:
+            local_root_dir = (project_root / base_local_root / task_name).resolve()
+
+        print(f"[LocalKB] Using local KB dir: {local_root_dir}")
+        local_kb = LocalKnowledgeBase(str(local_root_dir))
+
+        global_cfg = kb_cfg.get("global", {}) or {}
+        if global_cfg.get("enabled", False):
+            global_kb = GlobalKnowledgeBase(global_cfg)
+        else:
+            global_kb = EmptyGlobalKB()
+
+        if kb_cfg.get("merge_local_into_global", False):
+            print("[KB] merge_local_into_global = True，global_kb 将与 local_kb 共用。")
+            global_kb = local_kb
 
     processes = pipeline_cfg.get("parallel_processes", 2)
     max_nodes = pipeline_cfg.get("max_nodes", 4)
@@ -106,6 +144,7 @@ def main(config_path: str = "config.yaml"):
     with open(summary_file, "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
     print("Supervisor finished. Summary saved to:", summary_file)
+
 
 
 if __name__ == "__main__":

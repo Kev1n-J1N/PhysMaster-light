@@ -1,0 +1,54 @@
+[
+  {
+    "id": "2306.08960",
+    "title": "Neural Network Compression using Binarization and Few Full-Precision Weights",
+    "authors": [
+      "Franco Maria Nardini",
+      "Cosimo Rulli",
+      "Salvatore Trani",
+      "Rossano Venturini"
+    ],
+    "published": "2023-06-15T08:52:00+00:00",
+    "cited_by": "",
+    "description": "Quantization and pruning are two effective Deep Neural Networks model compression methods. In this paper, we propose Automatic Prune Binarization (APB), a novel compression technique combining quantization with pruning. APB enhances the representational capability of binary networks using a few full-precision weights. Our technique jointly maximizes the accuracy of the network while minimizing its memory impact by deciding whether each weight should be binarized or kept in full precision. We show how to efficiently perform a forward pass through layers compressed using APB by decomposing it into a binary and a sparse-dense matrix multiplication. Moreover, we design two novel efficient algorithms for extremely quantized matrix multiplication on CPU, leveraging highly efficient bitwise operations. The proposed algorithms are 6.9x and 1.5x faster than available state-of-the-art solutions. We extensively evaluate APB on two widely adopted model compression datasets, namely CIFAR10 and ImageNet. APB delivers better accuracy/memory trade-off compared to state-of-the-art methods based on i) quantization, ii) pruning, and iii) combination of pruning and quantization. APB outperforms quantization in the accuracy/efficiency trade-off, being up to 2x faster than the 2-bit quantized model with no loss in accuracy."
+  },
+  {
+    "id": "2202.00834",
+    "title": "Nonlinear Initialization Methods for Low-Rank Neural Networks",
+    "authors": [
+      "Kiran Vodrahalli",
+      "Rakesh Shivanna",
+      "Maheswaran Sathiamoorthy",
+      "Sagar Jain",
+      "Ed H. Chi"
+    ],
+    "published": "2022-02-02T01:08:29+00:00",
+    "cited_by": "2306.08960",
+    "description": "Model compression is the field of Deep Learning devoted to\ndecreasing the computational requirements of Deep Neural Networks (DNNs) by\nleveraging their largely proven over-parametrization[4]."
+  },
+  {
+    "id": "2209.15287",
+    "title": "Verifiable and Energy Efficient Medical Image Analysis with Quantised Self-attentive Deep Neural Networks",
+    "authors": [
+      "Rakshith Sathish",
+      "Swanand Khare",
+      "Debdoot Sheet"
+    ],
+    "published": "2022-09-30T07:51:29+00:00",
+    "cited_by": "2306.08960",
+    "description": "We provide a high-performance implementation of these novel algorithms on CPU\nand show that our implementation can be much faster than currently available,\ngeneral-purpose solutions[15]for quantized matrix multiplication."
+  },
+  {
+    "id": "2205.13574",
+    "title": "Pruning has a disparate impact on model accuracy",
+    "authors": [
+      "Cuong Tran",
+      "Ferdinando Fioretto",
+      "Jung-Eun Kim",
+      "Rakshit Naidu"
+    ],
+    "published": "2022-05-26T18:32:25+00:00",
+    "cited_by": "2306.08960",
+    "description": ", CIFAR-10[16]and ImageNet[17]."
+  }
+]

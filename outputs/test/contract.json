@@ -1,0 +1,53 @@
+{
+  "topic": "Free fall from 5 m: time to impact and final velocity",
+  "domain": "Classical mechanics",
+  "subdomain": "Kinematics",
+  "related_knowledge": [
+    "Constant-acceleration (kinematic) equations",
+    "Free fall near Earth's surface (g ≈ 9.8 m/s^2)",
+    "Mechanical energy conservation (no air resistance)",
+    "Negligible air resistance approximation"
+  ],
+  "task_type": "calculation",
+  "task_background": "A small ball is dropped from rest from a height of 5 meters in a uniform gravitational field near Earth's surface; air resistance is neglected.",
+  "task_description": "Compute the time to reach the ground and the final velocity upon impact for an object dropped from rest from a height of 5 meters under constant gravitational acceleration g ≈ 9.8 m/s^2, neglecting air resistance.",
+  "expected_output": [
+    {
+      "format": "Text",
+      "path": "none",
+      "description": "Numerical results with units and equations used: time to impact t ≈ 1.01 s, final speed v ≈ 9.90 m/s downward; assumptions stated."
+    }
+  ],
+  "constraints": {
+    "symmetry": [
+      "Time-translation symmetry (constant g, no explicit time dependence)"
+    ],
+    "conservation_law": [
+      "Mechanical energy conservation (in absence of air resistance)"
+    ],
+    "dimension": "1",
+    "spatial_scale": "Meters (height = 5 m)",
+    "time_scale": "Seconds (~1 s)",
+    "energy_scale": "Per unit mass: mgh ≈ 49 J/kg",
+    "boundary_condition": "Ground at y = 0; motion terminates at first contact (y = 0).",
+    "initial_condition": "At t = 0: y0 = 5 m, v0 = 0 (dropped from rest), g = 9.8 m/s^2 downward.",
+    "geometry_constraints": [
+      "One-dimensional vertical motion",
+      "Flat ground plane at y = 0"
+    ],
+    "mathematical_constraints": [
+      "y(t) = y0 + v0 t - (1/2) g t^2",
+      "v^2 = v0^2 + 2 g (y0 - y)"
+    ]
+  },
+  "sub_tasks": [
+    {
+      "id": 1,
+      "subtask_type": "reasoning",
+      "input": "h = 5 m; g = 9.8 m/s^2; y0 = 5 m; v0 = 0",
+      "expected_output": "t ≈ 1.01 s; final velocity ≈ 9.90 m/s downward; show formulas t = sqrt(2h/g) and v = sqrt(2gh).",
+      "description": "Apply constant-acceleration kinematics for free fall with no air resistance: compute the time to impact t = sqrt(2h/g) and the final speed v = sqrt(2gh) using h = 5 m and g = 9.8 m/s^2."
+    }
+  ],
+  "instruction_filename": "test"
+}

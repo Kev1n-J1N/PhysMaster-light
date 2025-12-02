@@ -1,0 +1,64 @@
+[
+  {
+    "id": "2312.15181",
+    "title": "Multilingual Bias Detection and Mitigation for Indian Languages",
+    "authors": [
+      "Ankita Maity",
+      "Anubhav Sharma",
+      "Rudra Dhar",
+      "Tushar Abhishek",
+      "Manish Gupta",
+      "Vasudeva Varma"
+    ],
+    "published": "2023-12-23T07:36:20+00:00",
+    "cited_by": "",
+    "description": "Lack of diverse perspectives causes neutrality bias in Wikipedia content leading to millions of worldwide readers getting exposed by potentially inaccurate information. Hence, neutrality bias detection and mitigation is a critical problem. Although previous studies have proposed effective solutions for English, no work exists for Indian languages. First, we contribute two large datasets, mWikiBias and mWNC, covering 8 languages, for the bias detection and mitigation tasks respectively. Next, we investigate the effectiveness of popular multilingual Transformer-based models for the two tasks by modeling detection as a binary classification problem and mitigation as a style transfer problem. We make the code and data publicly available."
+  },
+  {
+    "id": "2505.20933",
+    "title": "Information-Theoretic Complementary Prompts for Improved Continual Text Classification",
+    "authors": [
+      "Duzhen Zhang",
+      "Yong Ren",
+      "Chenxing Li",
+      "Dong Yu",
+      "Tielin Zhang"
+    ],
+    "published": "2025-05-27T09:22:14+00:00",
+    "cited_by": "2312.15181",
+    "description": "For bias detection, we\nperform binary classification using MuRIL[11], InfoXLM[4]and mDeBERTa[9]in zero-\nshot, monolingual and multilingual settings."
+  },
+  {
+    "id": "2504.07097",
+    "title": "Sculpting Subspaces: Constrained Full Fine-Tuning in LLMs for Continual Learning",
+    "authors": [
+      "Nikhil Shivakumar Nayak",
+      "Krishnateja Killamsetty",
+      "Ligong Han",
+      "Abhishek Bhandwaldar",
+      "Prateek Chanda",
+      "Kai Xu",
+      "Hao Wang",
+      "Aldo Pareja",
+      "Oleg Silkin",
+      "Mustafa Eyceoz",
+      "Akash Srivastava"
+    ],
+    "published": "2025-04-09T17:59:42+00:00",
+    "cited_by": "2505.20933",
+    "description": "Recently, Progressive Prompt (ProgPrompt) has been introduced as an extension of\nPT for handling sequential downstream tasks, achieving State-Of-The-Art (SOTA)\nperformance on various CTC benchmarks[13]."
+  },
+  {
+    "id": "2502.08037",
+    "title": "Franken-Adapter: Cross-Lingual Adaptation of LLMs by Embedding Surgery",
+    "authors": [
+      "Fan Jiang",
+      "Honglin Yu",
+      "Grace Chung",
+      "Trevor Cohn"
+    ],
+    "published": "2025-02-12T00:38:11+00:00",
+    "cited_by": "2312.15181",
+    "description": "For bias mitigation, we\nperform style transfer using IndicBART[5], mT0[14]and mT5[21]."
+  }
+]

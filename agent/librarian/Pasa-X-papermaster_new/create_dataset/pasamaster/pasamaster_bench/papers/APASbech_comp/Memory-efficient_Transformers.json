@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2106.06899",
+    "title": "Memory-efficient Transformers via Top-$k$ Attention",
+    "authors": [
+      "Ankit Gupta",
+      "Guy Dar",
+      "Shaya Goodman",
+      "David Ciprut",
+      "Jonathan Berant"
+    ],
+    "published": "2021-06-13T02:30:23+00:00",
+    "cited_by": "",
+    "description": "Following the success of dot-product attention in Transformers, numerous approximations have been recently proposed to address its quadratic complexity with respect to the input length. While these variants are memory and compute efficient, it is not possible to directly use them with popular pre-trained language models trained using vanilla attention, without an expensive corrective pre-training stage. In this work, we propose a simple yet highly accurate approximation for vanilla attention. We process the queries in chunks, and for each query, compute the top-$k$ scores with respect to the keys. Our approach offers several advantages: (a) its memory usage is linear in the input size, similar to linear attention variants, such as Performer and RFA (b) it is a drop-in replacement for vanilla attention that does not require any corrective pre-training, and (c) it can also lead to significant memory savings in the feed-forward layers after casting them into the familiar query-key-value framework. We evaluate the quality of top-$k$ approximation for multi-head attention layers on the Long Range Arena Benchmark, and for feed-forward layers of T5 and UnifiedQA on multiple QA datasets. We show our approach leads to accuracy that is nearly-identical to vanilla attention in multiple setups including training from scratch, fine-tuning, and zero-shot inference."
+  },
+  {
+    "id": "2505.00315",
+    "title": "Mixture of Sparse Attention: Content-Based Learnable Sparse Attention via Expert-Choice Routing",
+    "authors": [
+      "Piotr Piękos",
+      "Róbert Csordás",
+      "Jürgen Schmidhuber"
+    ],
+    "published": "2025-05-01T05:22:11+00:00",
+    "cited_by": "2106.06899",
+    "description": "The Transformer architecture[48]has been successful in a wide range of natural\nlanguage processing tasks, including machine translation[11], language\nmodeling[40], question-answering[18], and many more."
+  },
+  {
+    "id": "2508.08435",
+    "title": "Fast weight programming and linear transformers: from machine learning to neurobiology",
+    "authors": [
+      "Kazuki Irie",
+      "Samuel J. Gershman"
+    ],
+    "published": "2025-08-11T19:50:03+00:00",
+    "cited_by": "2505.00315",
+    "description": "Linear attention[14,15,16]***Note thatunnormalized linear transformers(with\n”linear attention”) were first published in 1992 under the namefast weight\ncontrollers[16]orfast weight programmers."
+  }
+]

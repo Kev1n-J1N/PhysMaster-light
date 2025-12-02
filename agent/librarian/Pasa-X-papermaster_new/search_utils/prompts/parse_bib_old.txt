@@ -1,0 +1,99 @@
+任务：解析用户提供的bib内容，提取论文的参考文献列表，返回所有bibkey-title对。
+提示：
+1. bibkey是latex正文中引用的标签，title是对应参考文献的标题；
+2. 你可能遇到不同格式的bib内容，基本都以\bibitem为分隔；
+3. 有一些bib内容无法提取有效的论文标题，需要返回空字典{}；
+步骤：
+1. 判断bib中是否能轻易地提取有效的论文title，如果格式过于复杂难以提取，直接返回空字典{}；
+2. 如果能够提取，结果中的title需要保留在bib内容原本的格式，以便后续进行字符串比对；
+3. 如果提取的title在开头或结尾出现了时间、版本等无关信息，需要去除，出现在中间则不需要；
+4. 检查你提取的title是否在原文出现，禁止输出不存在的bibkey、title；
+5. 返回一个json格式的字典，键为bibkey，值为title。字典可为空，禁止输出任何解释。
+例子：
+[例子1]
+[用户输入]
+\bibitem[Cal15]{Calvert}
+W.~Calvert, \emph{{PAC} learning, {VC} dimension, and the arithmetic
+  hierarchy}, Arch. Math. Logic \textbf{54} (2015), no.~7-8, 871--883.
+
+\bibitem[CMPR21]{Crook}
+T.~Crook, J.~Morgan, A.~Pauly, and M.~Roggenbach, \emph{A computability
+  perspective on (verified) machine learning}, arXiv e-print 2102.06585 (2021).
+
+\bibitem{source_code}
+\BIBentryALTinterwordspacing
+``{FixDrive} source code \& supplementary materials,'' 2025. [Online].
+  Available: \url{https://github.com/lawbreaker2022/FixDrive2025}
+\BIBentrySTDinterwordspacing
+
+\bibitem{allen2016even}
+{\sc Z.~Allen-Zhu, Z.~Qu, P.~Richt{\'a}rik, and Y.~Yuan}, {\em Even faster
+  accelerated coordinate descent using non-uniform sampling}, in International
+  Conference on Machine Learning, 2016, pp.~1110--1119.
+
+\bibitem {recording} R. L. White, R. M. H. New, and R. F. W. Pease, “Patterned media: a viable route to 50 Gbit/in$^2$ and up for magnetic recording?,” \textit{IEEE Trans. Magn.}, vol. 33, no. 1, pp. 990–995, Jan. 1997.
+[返回值]
+{
+    "Calvert": "{PAC} learning, {VC} dimension, and the arithmetic hierarchy",
+    "Crook": "A computability perspective on (verified) machine learning",
+    "source_code": "{FixDrive} source code \& supplementary materials",
+    "allen2016even": "Even faster accelerated coordinate descent using non-uniform sampling",
+    "recording": "Patterned media: a viable route to 50 Gbit/in$^2$ and up for magnetic recording"
+}
+[例子2]
+[用户输入]
+\bibitem [{\citenamefont {Smola}\ and\ \citenamefont
+  {Sch{\"{o}}lkopf}(2001)}]{Scholkopfa}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~J.}\ \bibnamefont
+  {Smola}}\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Sch{\"{o}}lkopf}},\ }\href
+  {http://scholar.google.com/scholar?hl=en{\&}btnG=Search{\&}q=intitle:Learning+with+Kernels{\#}0
+  http://scholar.google.com/scholar?hl=en{\&}btnG=Search{\&}q=intitle:Learning+with+kernels{\#}0}
+  {\emph {\bibinfo {title} {{Learning with Kernels: Support Vector Machines,
+  Regularization, Optimization, and Beyond}}}}\ (\bibinfo  {publisher} {MIT
+  Press},\ \bibinfo {address} {Cambridge, MA, USA},\ \bibinfo {year}
+  {2001})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bart{\'{o}}k}\ \emph {et~al.}(2010)\citenamefont
+  {Bart{\'{o}}k}, \citenamefont {Payne}, \citenamefont {Kondor},\ and\
+  \citenamefont {Cs{\'{a}}nyi}}]{Bartok2010}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~P.}\ \bibnamefont
+  {Bart{\'{o}}k}}, \bibinfo {author} {\bibfnamefont {M.~C.}\ \bibnamefont
+  {Payne}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Kondor}}, \
+  and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Cs{\'{a}}nyi}},\
+  }\href {\doibase 10.1103/PhysRevLett.104.136403} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {104}},\
+  \bibinfo {pages} {136403} (\bibinfo {year} {2010})}\BibitemShut {NoStop}%
+
+\bibitem [\protect \citeauthoryear {%
+Chomsky%
+}{%
+Chomsky%
+}{%
+{\protect \APACyear {1980}}%
+}]{%
+chomsky1980}
+\APACinsertmetastar {%
+chomsky1980}%
+\begin{APACrefauthors}%
+Chomsky, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1980}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Rules and representations} {Rules and
+  representations}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{{BBS}}{3}{1}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [{\citenamefont {Behler}(2016)}]{behler2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Behler}},\ }\href {\doibase 10.1063/1.4966192} {\bibfield  {journal}
+  {\bibinfo  {journal} {J. Chem. Phys.}\ }\textbf {\bibinfo {volume} {145}},\
+  \bibinfo {pages} {170901} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+[返回值（解释：格式过于复杂，不包含论文title，直接返回空字典{}）]
+{}

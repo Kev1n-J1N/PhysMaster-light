@@ -1,0 +1,25 @@
+[
+  {
+    "id": "2208.11970",
+    "title": "Understanding Diffusion Models: A Unified Perspective",
+    "authors": [
+      "Calvin Luo"
+    ],
+    "published": "2022-08-25T09:55:25+00:00",
+    "cited_by": "",
+    "description": "Diffusion models have shown incredible capabilities as generative models; indeed, they power the current state-of-the-art models on text-conditioned image generation such as Imagen and DALL-E 2. In this work we review, demystify, and unify the understanding of diffusion models across both variational and score-based perspectives. We first derive Variational Diffusion Models (VDM) as a special case of a Markovian Hierarchical Variational Autoencoder, where three key assumptions enable tractable computation and scalable optimization of the ELBO. We then prove that optimizing a VDM boils down to learning a neural network to predict one of three potential objectives: the original source input from any arbitrary noisification of it, the original source noise from any arbitrarily noisified input, or the score function of a noisified input at any arbitrary noise level. We then dive deeper into what it means to learn the score function, and connect the variational perspective of a diffusion model explicitly with the Score-based Generative Modeling perspective through Tweedie's Formula. Lastly, we cover how to learn a conditional distribution using diffusion models via guidance."
+  },
+  {
+    "id": "2107.00630",
+    "title": "Variational Diffusion Models",
+    "authors": [
+      "Diederik P. Kingma",
+      "Tim Salimans",
+      "Ben Poole",
+      "Jonathan Ho"
+    ],
+    "published": "2021-07-01T17:43:20+00:00",
+    "cited_by": "2208.11970",
+    "description": "Unlike a Markovian HVAE, the structure of the encoder at each\ntimestept𝑡tis not learned; it is fixed as a linear Gaussian model, where the\nmean and standard deviation can be set beforehand as hyperparameters[5], or\nlearned as parameters[6]."
+  }
+]

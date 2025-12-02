@@ -1,0 +1,44 @@
+[
+  {
+    "id": "2011.05525",
+    "title": "Proximal Policy Optimization via Enhanced Exploration Efficiency",
+    "authors": [
+      "Junwei Zhang",
+      "Zhenghao Zhang",
+      "Shuai Han",
+      "Shuai Lü"
+    ],
+    "published": "2020-11-11T03:03:32+00:00",
+    "cited_by": "",
+    "description": "Proximal policy optimization (PPO) algorithm is a deep reinforcement learning algorithm with outstanding performance, especially in continuous control tasks. But the performance of this method is still affected by its exploration ability. For classical reinforcement learning, there are some schemes that make exploration more full and balanced with data exploitation, but they can't be applied in complex environments due to the complexity of algorithm. Based on continuous control tasks with dense reward, this paper analyzes the assumption of the original Gaussian action exploration mechanism in PPO algorithm, and clarifies the influence of exploration ability on performance. Afterward, aiming at the problem of exploration, an exploration enhancement mechanism based on uncertainty estimation is designed in this paper. Then, we apply exploration enhancement theory to PPO algorithm and propose the proximal policy optimization algorithm with intrinsic exploration module (IEM-PPO) which can be used in complex environments. In the experimental parts, we evaluate our method on multiple tasks of MuJoCo physical simulator, and compare IEM-PPO algorithm with curiosity driven exploration algorithm (ICM-PPO) and original algorithm (PPO). The experimental results demonstrate that IEM-PPO algorithm needs longer training time, but performs better in terms of sample efficiency and cumulative reward, and has stability and robustness."
+  },
+  {
+    "id": "2409.03996",
+    "title": "Goal-Reaching Policy Learning from Non-Expert Observations via Effective Subgoal Guidance",
+    "authors": [
+      "RenMing Huang",
+      "Shaochong Liu",
+      "Yunqiang Pei",
+      "Peng Wang",
+      "Guoqing Wang",
+      "Yang Yang",
+      "Hengtao Shen"
+    ],
+    "published": "2024-09-06T02:49:12+00:00",
+    "cited_by": "",
+    "description": "In this work, we address the challenging problem of long-horizon goal-reaching policy learning from non-expert, action-free observation data. Unlike fully labeled expert data, our data is more accessible and avoids the costly process of action labeling. Additionally, compared to online learning, which often involves aimless exploration, our data provides useful guidance for more efficient exploration. To achieve our goal, we propose a novel subgoal guidance learning strategy. The motivation behind this strategy is that long-horizon goals offer limited guidance for efficient exploration and accurate state transition. We develop a diffusion strategy-based high-level policy to generate reasonable subgoals as waypoints, preferring states that more easily lead to the final goal. Additionally, we learn state-goal value functions to encourage efficient subgoal reaching. These two components naturally integrate into the off-policy actor-critic framework, enabling efficient goal attainment through informative exploration. We evaluate our method on complex robotic navigation and manipulation tasks, demonstrating a significant performance advantage over existing methods. Our ablation study further shows that our method is robust to observation data with various corruptions."
+  },
+  {
+    "id": "2410.20092",
+    "title": "OGBench: Benchmarking Offline Goal-Conditioned RL",
+    "authors": [
+      "Seohong Park",
+      "Kevin Frans",
+      "Benjamin Eysenbach",
+      "Sergey Levine"
+    ],
+    "published": "2024-10-26T06:06:08+00:00",
+    "cited_by": "2409.03996",
+    "description": "During the pre-training phase, the state-\ngoal value function assists the high-level policy in generating optimal subgoals\nfrom non-expert observation data, and the subgoals, acting as nearer goals,\naddressing issues of guidance decay and prediction inaccuracy[14]encountered by\nthe state-goal value function when dealing with long-horizon final goals."
+  }
+]

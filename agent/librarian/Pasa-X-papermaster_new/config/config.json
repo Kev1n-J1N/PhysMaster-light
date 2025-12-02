@@ -1,0 +1,132 @@
+{
+    "save_data": true, 
+    "use_local_search": false,
+    "use_local_db": true,
+    "use_local_pdf": false,
+    "use_stream": false,
+    "ranker_use_stream": true,
+    "arxiv_database_path": "/data/public_data/arxiv_database",
+    "meta_info_path":"/data/cxliu/paper_metainfo_1029.jsonl",
+    "locate_section" : false,
+    "timeout":60,
+    "tool_model": "glm-4.6",
+    "common_config": {
+        "google_api_key": "c80766158631645962b9611228b0f60a2e35aae4",
+        "proxy": {
+            "http_proxy": "http://127.0.0.1:7890",
+            "https_proxy": "http://127.0.0.1:7890"
+        },
+        "arxiv_search_url":"http://127.0.0.1:30003/search",
+        "meta_info_url":"http://127.0.0.1:1111/search_meta_info"
+    },
+    "model_config": {
+        "gpt-4o": {
+            "base_url": "https://llm.dp.tech",
+            "api_key": "sk-okw9QP2pmoTGqu4oYRSnHQ",
+            "tokenizer_path": "gpt2",
+            "model_type": "gpt"
+        },
+        "glm-4.6": {
+            "base_url": "https://llm.dp.tech",
+            "api_key": "sk-okw9QP2pmoTGqu4oYRSnHQ", 
+            "tokenizer_path": "gpt2",
+            "model_type": "gpt"
+        },
+        "pasa-7b-selector": {
+            "base_url": "http://localhost:30433/v1",
+            "api_key": "EMPTY",
+            "tokenizer_path": "/data/Tianjin/pasa/checkpoints/pasa-7b-selector",
+            "model_type": "open"
+        },
+        
+        "gpt-5": {
+            "base_url": "http://123.129.219.111:3000/v1",
+            "api_key": "sk-5pA2vs64hjXfc8vncYbUkN9IxDjNXrLYZPhIjDpyiM7tUwlk",
+            "tokenizer_path": "gpt2",
+            "model_type": "gpt"
+        },
+        
+        "qwen2.5-7b": {
+            "base_url": "http://127.0.0.1:30010/v1",
+            "api_key": "EMPTY",
+            "tokenizer_path": "/data/public_model/Qwen2.5-7B",
+            "model_type": "open"
+        },
+        "qwen3-30b": {
+        "base_url": "http://9.3.37.142:30010/v1",
+        "api_key": "EMPTY",
+        "tokenizer_path": "/data/public_model/Qwen3-30B-A3B-Thinking-2507",
+        "model_type": "open"
+        },
+        "reason_rank":{
+            "base_url": "http://127.0.0.1:30011/v1",
+            "api_key": "EMPTY",
+            "tokenizer_path": "/data/public_model/Qwen2.5-7B",
+            "model_type": "open"
+        },
+        "qwen2.5-7b-sft": {
+            "base_url": "http://localhost:30017/v1",
+            "api_key": "EMPTY",
+            "tokenizer_path": "/mnt/chensiheng/Tianjin/checkpoints/qwen2.5-7b-sft-cot",
+            "model_type": "open"
+        },
+        "deepseek-r1":{
+            "base_url": "http://127.0.0.1:8888/v1",
+            "api_key": "EMPTY"
+        },
+        "glm":{
+            "base_url": "http://127.0.0.1:8889/v1",
+            "api_key": "EMPTY"
+        },
+        "qwen2.5-7b-instruct": {
+            "base_url": "http://localhost:30001/v1",
+            "api_key": "EMPTY",
+            "tokenizer_path": "/home/ma-user/modelarts/work/model/Qwen2.5-7B-Instruct",
+            "model_type": "open"
+        },
+        "qwen2.5-7b-instruct-sft": {
+            "base_url": "http://localhost:30089/v1",
+            "api_key": "EMPTY",
+            "tokenizer_path": "/mnt/chensiheng/Tianjin/checkpoints/qwen2.5-7b-sft-ins",
+            "model_type": "open"
+        },
+        "DeepSeek-R1-Distill-Qwen-7B": {
+            "base_url": "http://localhost:30099/v1",
+            "api_key": "EMPTY",
+            "tokenizer_path": "/mnt/chensiheng/model/DeepSeek-R1-Distill-Qwen-7B",
+            "model_type": "open"
+        },
+
+        "qwen-72b": {
+            "base_url": "http://127.0.0.1:30020/v1",
+            "api_key": "EMPTY",
+            "tokenizer_path": "/data/public_model/Qwen2.5-72B-Instruct/Qwen2.5-72B-Instruct",
+            "model_type": "open"
+        },
+        "qwen-72b-tool": {
+            "base_url": "http://127.0.0.1:30020/v1",
+            "api_key": "EMPTY",
+            "tokenizer_path": "/data/public_model/Qwen2.5-72B-Instruct/Qwen2.5-72B-Instruct",
+            "model_type": "open"
+        },
+        "qwen-plus":{
+            "base_url":"https://dashscope.aliyuncs.com/compatible-mode/v1",
+            "api_key":"sk-9dc76561c2a044d9af8467d65a722b33",
+            "tokenizer_path": "/data/public_model/Qwen2.5-72B-Instruct/Qwen2.5-72B-Instruct",
+            "model_type": "open"
+        },
+        "qwen3-30b-a3b-instruct-2507":{
+            "base_url":"https://dashscope.aliyuncs.com/compatible-mode/v1",
+            "api_key":"sk-9dc76561c2a044d9af8467d65a722b33",
+            "tokenizer_path": "/data/public_model/Qwen2.5-72B-Instruct/Qwen2.5-72B-Instruct",
+            "model_type": "open"
+        },
+        "qwen3-30b-a3b-instruct-2507-2":{
+            "base_url":"https://dashscope.aliyuncs.com/compatible-mode/v1",
+            "api_key":"sk-e0a520f500c64b3199492e958545fffc",
+            "tokenizer_path": "/data/public_model/Qwen2.5-72B-Instruct/Qwen2.5-72B-Instruct",
+            "model_type": "open"
+        }
+    },
+    "metric_path":"/data/duyuwen/Pasa-X/result/metric"
+}

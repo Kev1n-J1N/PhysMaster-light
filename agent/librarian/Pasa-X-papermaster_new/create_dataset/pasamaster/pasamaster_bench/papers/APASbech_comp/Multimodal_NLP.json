@@ -1,0 +1,35 @@
+[
+  {
+    "id": "2409.07388",
+    "title": "Recent Trends of Multimodal Affective Computing: A Survey from NLP Perspective",
+    "authors": [
+      "Guimin Hu",
+      "Yi Xin",
+      "Weimin Lyu",
+      "Haojian Huang",
+      "Chang Sun",
+      "Zhihong Zhu",
+      "Lin Gui",
+      "Ruichu Cai",
+      "Erik Cambria",
+      "Hasti Seifi"
+    ],
+    "published": "2024-09-11T16:24:06+00:00",
+    "cited_by": "",
+    "description": "Multimodal affective computing (MAC) has garnered increasing attention due to its broad applications in analyzing human behaviors and intentions, especially in text-dominated multimodal affective computing field. This survey presents the recent trends of multimodal affective computing from NLP perspective through four hot tasks: multimodal sentiment analysis, multimodal emotion recognition in conversation, multimodal aspect-based sentiment analysis and multimodal multi-label emotion recognition. The goal of this survey is to explore the current landscape of multimodal affective research, identify development trends, and highlight the similarities and differences across various tasks, offering a comprehensive report on the recent progress in multimodal affective computing from an NLP perspective. This survey covers the formalization of tasks, provides an overview of relevant works, describes benchmark datasets, and details the evaluation metrics for each task. Additionally, it briefly discusses research in multimodal affective computing involving facial expressions, acoustic signals, physiological signals, and emotion causes. Additionally, we discuss the technical approaches, challenges, and future directions in multimodal affective computing. To support further research, we released a repository that compiles related works in multimodal affective computing, providing detailed resources and references for the community."
+  },
+  {
+    "id": "2412.11139",
+    "title": "ViSymRe: Vision-guided Multimodal Symbolic Regression",
+    "authors": [
+      "Da Li",
+      "Junping Yin",
+      "Jin Xu",
+      "Xinxin Li",
+      "Juan Zhang"
+    ],
+    "published": "2024-12-15T10:05:31+00:00",
+    "cited_by": "2409.07388",
+    "description": "Multimodal sentiment analysis (MSA)[41]origins from sentiment analysis (SA)\ntask[42]and it extends SA with the multimodal input."
+  }
+]

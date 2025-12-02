@@ -1,0 +1,54 @@
+{
+  "title": "Constant-acceleration kinematics equations",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {},
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": -1,
+  "extra": {
+    "touch_ids": [
+      "2206.04203",
+      "2209.05956",
+      "0902.4243",
+      "2303.08960",
+      "2207.14331",
+      "2411.18758",
+      "2405.06647"
+    ],
+    "recall_papers": [],
+    "recall_papers_abstract": [],
+    "arxiv_ids": [],
+    "score": [],
+    "sorted_papers": [],
+    "final_selected_papers_title": [],
+    "all_papers": [],
+    "all_papers_title": [],
+    "subqueries": {},
+    "false_sample": {
+      "prompt": [],
+      "answer": [],
+      "title": []
+    },
+    "core_knowledge_list": []
+  },
+  "relevant_section": {},
+  "relevant_section_ref": {},
+  "reason": "",
+  "journal": "",
+  "year": "",
+  "authors": [
+    ""
+  ],
+  "citations": -1,
+  "h5": "",
+  "IF": "",
+  "CCF": "",
+  "output": "没有找到符合要求的相关论文。",
+  "execution_time": {
+    "paper_agent_run_duration": 90.54155659675598,
+    "total_batch_time": 90.54246973991394,
+    "timestamp": "2025-12-02T00:39:11.937872"
+  }
+}

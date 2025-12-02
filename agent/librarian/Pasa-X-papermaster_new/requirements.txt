@@ -1,0 +1,6 @@
+arxiv
+wandb
+rich
+lxml
+pymupdf
+loguru

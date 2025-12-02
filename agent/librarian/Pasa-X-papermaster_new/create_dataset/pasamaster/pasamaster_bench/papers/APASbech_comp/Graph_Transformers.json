@@ -1,0 +1,64 @@
+[
+  {
+    "id": "2407.09777",
+    "title": "Graph Transformers: A Survey",
+    "authors": [
+      "Ahsan Shehzad",
+      "Feng Xia",
+      "Shagufta Abid",
+      "Ciyuan Peng",
+      "Shuo Yu",
+      "Dongyu Zhang",
+      "Karin Verspoor"
+    ],
+    "published": "2024-07-13T05:15:24+00:00",
+    "cited_by": "",
+    "description": "Graph transformers are a recent advancement in machine learning, offering a new class of neural network models for graph-structured data. The synergy between transformers and graph learning demonstrates strong performance and versatility across various graph-related tasks. This survey provides an in-depth review of recent progress and challenges in graph transformer research. We begin with foundational concepts of graphs and transformers. We then explore design perspectives of graph transformers, focusing on how they integrate graph inductive biases and graph attention mechanisms into the transformer architecture. Furthermore, we propose a taxonomy classifying graph transformers based on depth, scalability, and pre-training strategies, summarizing key principles for effective development of graph transformer models. Beyond technical analysis, we discuss the applications of graph transformer models for node-level, edge-level, and graph-level tasks, exploring their potential in other application scenarios as well. Finally, we identify remaining challenges in the field, such as scalability and efficiency, generalization and robustness, interpretability and explainability, dynamic and complex graphs, as well as data quality and diversity, charting future directions for graph transformer research."
+  },
+  {
+    "id": "2502.07081",
+    "title": "Fast Clustering of Categorical Big Data",
+    "authors": [
+      "Bipana Thapaliya",
+      "Yu Zhuang"
+    ],
+    "published": "2025-02-10T22:19:08+00:00",
+    "cited_by": "2407.09777",
+    "description": "To effectively\ndeal with graph-structured data, researchers have developed various graph\nlearning models, such as graph neural networks (GNNs), learning meaningful\nrepresentations of nodes, edges and graphs[8]."
+  },
+  {
+    "id": "2502.16533",
+    "title": "A Survey of Graph Transformers: Architectures, Theories and Applications",
+    "authors": [
+      "Chaohao Yuan",
+      "Kangfei Zhao",
+      "Ercan Engin Kuruoglu",
+      "Liang Wang",
+      "Tingyang Xu",
+      "Wenbing Huang",
+      "Deli Zhao",
+      "Hong Cheng",
+      "Yu Rong"
+    ],
+    "published": "2025-02-23T10:55:19+00:00",
+    "cited_by": "2407.09777",
+    "description": ", prior knowledge or assumptions about\ngraph properties) to effectively process graph data[15]."
+  },
+  {
+    "id": "2401.07103",
+    "title": "Leveraging Large Language Models for NLG Evaluation: Advances and Challenges",
+    "authors": [
+      "Zhen Li",
+      "Xiaohan Xu",
+      "Tao Shen",
+      "Can Xu",
+      "Jia-Chen Gu",
+      "Yuxuan Lai",
+      "Chongyang Tao",
+      "Shuai Ma"
+    ],
+    "published": "2024-01-13T15:59:09+00:00",
+    "cited_by": "2407.09777",
+    "description": "They capture both structural\nand semantic information from data, facilitating various tasks, such as\nrecommendation[2], question answering[3], anomaly detection[4], sentiment\nanalysis[5], text generation[6], and information retrieval[7]."
+  }
+]

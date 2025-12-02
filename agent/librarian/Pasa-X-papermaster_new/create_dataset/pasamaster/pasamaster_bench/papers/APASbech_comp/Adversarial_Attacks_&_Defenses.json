@@ -1,0 +1,30 @@
+[
+  {
+    "id": "2303.06302",
+    "title": "Adversarial Attacks and Defenses in Machine Learning-Powered Networks: A Contemporary Survey",
+    "authors": [
+      "Yulong Wang",
+      "Tong Sun",
+      "Shenghong Li",
+      "Xin Yuan",
+      "Wei Ni",
+      "Ekram Hossain",
+      "H. Vincent Poor"
+    ],
+    "published": "2023-03-11T04:19:31+00:00",
+    "cited_by": "",
+    "description": "Adversarial attacks and defenses in machine learning and deep neural network have been gaining significant attention due to the rapidly growing applications of deep learning in the Internet and relevant scenarios. This survey provides a comprehensive overview of the recent advancements in the field of adversarial attack and defense techniques, with a focus on deep neural network-based classification models. Specifically, we conduct a comprehensive classification of recent adversarial attack methods and state-of-the-art adversarial defense techniques based on attack principles, and present them in visually appealing tables and tree diagrams. This is based on a rigorous evaluation of the existing works, including an analysis of their strengths and limitations. We also categorize the methods into counter-attack detection and robustness enhancement, with a specific focus on regularization-based methods for enhancing robustness. New avenues of attack are also explored, including search-based, decision-based, drop-based, and physical-world attacks, and a hierarchical classification of the latest defense methods is provided, highlighting the challenges of balancing training costs with performance, maintaining clean accuracy, overcoming the effect of gradient masking, and ensuring method transferability. At last, the lessons learned and open challenges are summarized with future research opportunities recommended."
+  },
+  {
+    "id": "2501.09040",
+    "title": "Pseudolabel guided pixels contrast for domain adaptive semantic segmentation",
+    "authors": [
+      "Jianzi Xiang",
+      "Cailu Wan",
+      "Zhu Cao"
+    ],
+    "published": "2025-01-15T03:25:25+00:00",
+    "cited_by": "2303.06302",
+    "description": ", ResNet\nmodels[73], and commonly employ the Cross-Entropy loss function[74]for\nclassification tasks."
+  }
+]

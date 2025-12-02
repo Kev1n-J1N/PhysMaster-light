@@ -1,0 +1,58 @@
+[
+  {
+    "id": "2404.06114",
+    "title": "Communication-Efficient Large-Scale Distributed Deep Learning: A Comprehensive Survey",
+    "authors": [
+      "Feng Liang",
+      "Zhen Zhang",
+      "Haifeng Lu",
+      "Victor C. M. Leung",
+      "Yanyi Guo",
+      "Xiping Hu"
+    ],
+    "published": "2024-04-09T08:35:04+00:00",
+    "cited_by": "",
+    "description": "With the rapid growth in the volume of data sets, models, and devices in the domain of deep learning, there is increasing attention on large-scale distributed deep learning. In contrast to traditional distributed deep learning, the large-scale scenario poses new challenges that include fault tolerance, scalability of algorithms and infrastructures, and heterogeneity in data sets, models, and resources. Due to intensive synchronization of models and sharing of data across GPUs and computing nodes during distributed training and inference processes, communication efficiency becomes the bottleneck for achieving high performance at a large scale. This article surveys the literature over the period of 2018-2023 on algorithms and technologies aimed at achieving efficient communication in large-scale distributed deep learning at various levels, including algorithms, frameworks, and infrastructures. Specifically, we first introduce efficient algorithms for model synchronization and communication data compression in the context of large-scale distributed training. Next, we introduce efficient strategies related to resource allocation and task scheduling for use in distributed training and inference. After that, we present the latest technologies pertaining to modern communication infrastructures used in distributed deep learning with a focus on examining the impact of the communication overhead in a large-scale and heterogeneous setting. Finally, we conduct a case study on the distributed training of large language models at a large scale to illustrate how to apply these technologies in real cases. This article aims to offer researchers a comprehensive understanding of the current landscape of large-scale distributed deep learning and to reveal promising future research directions toward communication-efficient solutions in this scope."
+  },
+  {
+    "id": "2401.11471",
+    "title": "LR-CNN: Lightweight Row-centric Convolutional Neural Network Training for Memory Reduction",
+    "authors": [
+      "Zhigang Wang",
+      "Hangyu Yang",
+      "Ning Wang",
+      "Chuanfei Xu",
+      "Jie Nie",
+      "Zhiqiang Wei",
+      "Yu Gu",
+      "Ge Yu"
+    ],
+    "published": "2024-01-21T12:19:13+00:00",
+    "cited_by": "2404.06114",
+    "description": "Due to the rapid advancements in computational power of GPUs[1]and the\ndevelopment of foundation artificial neural network models such as ResNet[2]and\nTransformer[3], deep learning (DL) has become the state-of-the-art approach\nacross diverse fields over the past decade."
+  },
+  {
+    "id": "1602.07261",
+    "title": "Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning",
+    "authors": [
+      "Christian Szegedy",
+      "Sergey Ioffe",
+      "Vincent Vanhoucke",
+      "Alex Alemi"
+    ],
+    "published": "2016-02-23T18:44:39+00:00",
+    "cited_by": "2401.11471",
+    "description": "Till now, representative CNN models\ninclude VGG[1], Inception[2], and ResNet[3]."
+  },
+  {
+    "id": "2402.13029",
+    "title": "Federated Learning for Iot/Edge/Fog Computing Systems",
+    "authors": [
+      "Balqees Talal Hasan",
+      "Ali Kadhum Idrees"
+    ],
+    "published": "2024-02-20T14:14:26+00:00",
+    "cited_by": "2404.06114",
+    "description": "Distributed DL empowers IoT and IoV\nsolutions[15]by enabling them to make intelligent decisions by leveraging the\ncomputational and communication capabilities of the servers, network\ninfrastructures, and end devices."
+  }
+]

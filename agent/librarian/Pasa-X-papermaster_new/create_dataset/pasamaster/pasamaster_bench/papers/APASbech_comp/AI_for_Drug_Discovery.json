@@ -1,0 +1,34 @@
+[
+  {
+    "id": "2309.12177",
+    "title": "Explainable Artificial Intelligence for Drug Discovery and Development -- A Comprehensive Survey",
+    "authors": [
+      "Roohallah Alizadehsani",
+      "Solomon Sunday Oyelere",
+      "Sadiq Hussain",
+      "Rene Ripardo Calixto",
+      "Victor Hugo C. de Albuquerque",
+      "Mohamad Roshanzamir",
+      "Mohamed Rahouti",
+      "Senthil Kumar Jagatheesaperumal"
+    ],
+    "published": "2023-09-21T15:36:06+00:00",
+    "cited_by": "2309.12177",
+    "description": "The field of drug discovery and development has started playing a significant\nrole in the healthcare industry, in order to find new compounds and therapeutic\ntargets that can successfully cure a variety of diseases[1]."
+  },
+  {
+    "id": "2211.03808",
+    "title": "ToDD: Topological Compound Fingerprinting in Computer-Aided Drug Discovery",
+    "authors": [
+      "Andac Demir",
+      "Baris Coskunuzer",
+      "Ignacio Segovia-Dominguez",
+      "Yuzhou Chen",
+      "Yulia Gel",
+      "Bulent Kiziltan"
+    ],
+    "published": "2022-11-07T19:00:05+00:00",
+    "cited_by": "2309.12177",
+    "description": "The field of drug discovery and development has started playing a significant\nrole in the healthcare industry, in order to find new compounds and therapeutic\ntargets that can successfully cure a variety of diseases[1]."
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "2106.13884",
+    "title": "Multimodal Few-Shot Learning with Frozen Language Models",
+    "authors": [
+      "Maria Tsimpoukelli",
+      "Jacob Menick",
+      "Serkan Cabi",
+      "S. M. Ali Eslami",
+      "Oriol Vinyals",
+      "Felix Hill"
+    ],
+    "published": "2021-06-25T21:07:09+00:00",
+    "cited_by": "",
+    "description": "When trained at sufficient scale, auto-regressive language models exhibit the notable ability to learn a new language task after being prompted with just a few examples. Here, we present a simple, yet effective, approach for transferring this few-shot learning ability to a multimodal setting (vision and language). Using aligned image and caption data, we train a vision encoder to represent each image as a sequence of continuous embeddings, such that a pre-trained, frozen language model prompted with this prefix generates the appropriate caption. The resulting system is a multimodal few-shot learner, with the surprising ability to learn a variety of new tasks when conditioned on examples, represented as a sequence of multiple interleaved image and text embeddings. We demonstrate that it can rapidly learn words for new objects and novel visual categories, do visual question-answering with only a handful of examples, and make use of outside knowledge, by measuring a single model on a variety of established and new benchmarks."
+  },
+  {
+    "id": "2109.14595",
+    "title": "Generalization Bounds For Meta-Learning: An Information-Theoretic Analysis",
+    "authors": [
+      "Qi Chen",
+      "Changjian Shui",
+      "Mario Marchand"
+    ],
+    "published": "2021-09-29T17:45:54+00:00",
+    "cited_by": "2106.13884",
+    "description": "More surprisingly, it gets better at these tasks after\nseeing a handful of examples “in-context” as in[4], and also performs above\nchance on tests of fast category learning such as miniImageNet[41]."
+  },
+  {
+    "id": "1810.09502",
+    "title": "How to train your MAML",
+    "authors": [
+      "Antreas Antoniou",
+      "Harrison Edwards",
+      "Amos Storkey"
+    ],
+    "published": "2018-10-22T18:48:16+00:00",
+    "cited_by": "2109.14595",
+    "description": "Meta-Learning[3]or learning-to-learn (LTL) aims to extract such\ninformation through previous training tasks, which has recently re-emerged as an\nimportant topic."
+  },
+  {
+    "id": "2103.05247",
+    "title": "Pretrained Transformers as Universal Computation Engines",
+    "authors": [
+      "Kevin Lu",
+      "Aditya Grover",
+      "Pieter Abbeel",
+      "Igor Mordatch"
+    ],
+    "published": "2021-03-09T06:39:56+00:00",
+    "cited_by": "2106.13884",
+    "description": "[25]show that the knowledge\nencoded in transformer language models can be a valuable prior for tasks\ninvolving reasoning and memory across discrete sequences, and even\nclassification of images presented as sequences of spatial regions."
+  }
+]

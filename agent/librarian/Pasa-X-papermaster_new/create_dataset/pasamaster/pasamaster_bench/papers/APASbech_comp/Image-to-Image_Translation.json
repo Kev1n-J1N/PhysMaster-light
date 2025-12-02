@@ -1,0 +1,61 @@
+[
+  {
+    "id": "2505.16001",
+    "title": "Image-to-Image Translation with Diffusion Transformers and CLIP-Based Image Conditioning",
+    "authors": [
+      "Qiang Zhu",
+      "Kuan Lu",
+      "Menghao Huo",
+      "Yuxiao Li"
+    ],
+    "published": "2025-05-21T20:37:33+00:00",
+    "cited_by": "",
+    "description": "Image-to-image translation aims to learn a mapping between a source and a target domain, enabling tasks such as style transfer, appearance transformation, and domain adaptation. In this work, we explore a diffusion-based framework for image-to-image translation by adapting Diffusion Transformers (DiT), which combine the denoising capabilities of diffusion models with the global modeling power of transformers. To guide the translation process, we condition the model on image embeddings extracted from a pre-trained CLIP encoder, allowing for fine-grained and structurally consistent translations without relying on text or class labels. We incorporate both a CLIP similarity loss to enforce semantic consistency and an LPIPS perceptual loss to enhance visual fidelity during training. We validate our approach on two benchmark datasets: face2comics, which translates real human faces to comic-style illustrations, and edges2shoes, which translates edge maps to realistic shoe images. Experimental results demonstrate that DiT, combined with CLIP-based conditioning and perceptual similarity objectives, achieves high-quality, semantically faithful translations, offering a promising alternative to GAN-based models for paired image-to-image translation tasks."
+  },
+  {
+    "id": "2212.09748",
+    "title": "Scalable Diffusion Models with Transformers",
+    "authors": [
+      "William Peebles",
+      "Saining Xie"
+    ],
+    "published": "2022-12-19T18:59:58+00:00",
+    "cited_by": "2505.16001",
+    "description": "[8]substituted the conventional U-Net generative backbone in diffusion\nframeworks with a transformer-driven backbone, known as diffusion\ntransformer(DiT)."
+  },
+  {
+    "id": "2112.10752",
+    "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+    "authors": [
+      "Robin Rombach",
+      "Andreas Blattmann",
+      "Dominik Lorenz",
+      "Patrick Esser",
+      "Björn Ommer"
+    ],
+    "published": "2021-12-20T18:55:25+00:00",
+    "cited_by": "2505.16001",
+    "description": "To further enhance computational\nefficiency, Latent Diffusion Models (LDMs)[6]transfer the denoising operation\nfrom high-dimensional pixel space to a more compact latent representation,\nsignificantly accelerating training while maintaining high-quality results."
+  },
+  {
+    "id": "2103.00020",
+    "title": "Learning Transferable Visual Models From Natural Language Supervision",
+    "authors": [
+      "Alec Radford",
+      "Jong Wook Kim",
+      "Chris Hallacy",
+      "Aditya Ramesh",
+      "Gabriel Goh",
+      "Sandhini Agarwal",
+      "Girish Sastry",
+      "Amanda Askell",
+      "Pamela Mishkin",
+      "Jack Clark",
+      "Gretchen Krueger",
+      "Ilya Sutskever"
+    ],
+    "published": "2021-02-26T19:04:58+00:00",
+    "cited_by": "2505.16001",
+    "description": "In this work, we explore CLIP-based[9]image conditioning for DiT-based image-to-\nimage translation."
+  }
+]

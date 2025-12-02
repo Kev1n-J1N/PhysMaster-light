@@ -1,0 +1,30 @@
+[
+  {
+    "id": "2505.03361",
+    "title": "Interpretable Zero-shot Learning with Infinite Class Concepts",
+    "authors": [
+      "Zihan Ye",
+      "Shreyank N Gowda",
+      "Shiming Chen",
+      "Yaochu Jin",
+      "Kaizhu Huang",
+      "Xiaobo Jin"
+    ],
+    "published": "2025-05-06T09:30:30+00:00",
+    "cited_by": "",
+    "description": "Zero-shot learning (ZSL) aims to recognize unseen classes by aligning images with intermediate class semantics, like human-annotated concepts or class definitions. An emerging alternative leverages Large-scale Language Models (LLMs) to automatically generate class documents. However, these methods often face challenges with transparency in the classification process and may suffer from the notorious hallucination problem in LLMs, resulting in non-visual class semantics. This paper redefines class semantics in ZSL with a focus on transferability and discriminability, introducing a novel framework called Zero-shot Learning with Infinite Class Concepts (InfZSL). Our approach leverages the powerful capabilities of LLMs to dynamically generate an unlimited array of phrase-level class concepts. To address the hallucination challenge, we introduce an entropy-based scoring process that incorporates a ``goodness\" concept selection mechanism, ensuring that only the most transferable and discriminative concepts are selected. Our InfZSL framework not only demonstrates significant improvements on three popular benchmark datasets but also generates highly interpretable, image-grounded concepts. Code will be released upon acceptance."
+  },
+  {
+    "id": "2501.06031",
+    "title": "Generate, Transduct, Adapt: Iterative Transduction with VLMs",
+    "authors": [
+      "Oindrila Saha",
+      "Logan Lawrence",
+      "Grant Van Horn",
+      "Subhransu Maji"
+    ],
+    "published": "2025-01-10T15:07:57+00:00",
+    "cited_by": "2505.03361",
+    "description": "LLM-generated documents\n\nWe use the prompt of I2MVformer[20]for prompting LLMs generate class documents."
+  }
+]

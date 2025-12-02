@@ -1,0 +1,44 @@
+[
+  {
+    "id": "2408.14785",
+    "title": "Unsupervised-to-Online Reinforcement Learning",
+    "authors": [
+      "Junsu Kim",
+      "Seohong Park",
+      "Sergey Levine"
+    ],
+    "published": "2024-08-27T05:23:45+00:00",
+    "cited_by": "",
+    "description": "Offline-to-online reinforcement learning (RL), a framework that trains a policy with offline RL and then further fine-tunes it with online RL, has been considered a promising recipe for data-driven decision-making. While sensible, this framework has drawbacks: it requires domain-specific offline RL pre-training for each task, and is often brittle in practice. In this work, we propose unsupervised-to-online RL (U2O RL), which replaces domain-specific supervised offline RL with unsupervised offline RL, as a better alternative to offline-to-online RL. U2O RL not only enables reusing a single pre-trained model for multiple downstream tasks, but also learns better representations, which often result in even better performance and stability than supervised offline-to-online RL. To instantiate U2O RL in practice, we propose a general recipe for U2O RL to bridge task-agnostic unsupervised offline skill-based policy pre-training and supervised online fine-tuning. Throughout our experiments in nine state-based and pixel-based environments, we empirically demonstrate that U2O RL achieves strong performance that matches or even outperforms previous offline-to-online RL approaches, while being able to reuse a single pre-trained model for a number of different downstream tasks."
+  },
+  {
+    "id": "2508.06806",
+    "title": "Offline-to-Online Reinforcement Learning with Classifier-Free Diffusion Generation",
+    "authors": [
+      "Xiao Huang",
+      "Xu Liu",
+      "Enze Zhang",
+      "Tong Yu",
+      "Shuai Li"
+    ],
+    "published": "2025-08-09T03:32:23+00:00",
+    "cited_by": "2408.14785, 2408.14785",
+    "description": "Since naïve offline-to-online RL is often\nunstable in practice due to the distributional shift between the dataset and\nonline interactions, prior works have proposed several techniques, such as\nbalanced sampling[37], actor-critic alignment[86], adaptive conservatism[78],\nand return lower-bounding[51].\nSince naïve offline-to-online RL is often\nunstable in practice due to the distributional shift between the dataset and\nonline interactions, prior works have proposed several techniques, such as\nbalanced sampling[37], actor-critic alignment[86], adaptive conservatism[78],\nand return lower-bounding[51]."
+  },
+  {
+    "id": "2505.19761",
+    "title": "Divide and Conquer: Grounding LLMs as Efficient Decision-Making Agents via Offline Hierarchical Reinforcement Learning",
+    "authors": [
+      "Zican Hu",
+      "Wei Liu",
+      "Xiaoye Qu",
+      "Xiangyu Yue",
+      "Chunlin Chen",
+      "Zhi Wang",
+      "Yu Cheng"
+    ],
+    "published": "2025-05-26T09:43:40+00:00",
+    "cited_by": "2408.14785",
+    "description": "Since naïve offline-to-online RL is often\nunstable in practice due to the distributional shift between the dataset and\nonline interactions, prior works have proposed several techniques, such as\nbalanced sampling[37], actor-critic alignment[86], adaptive conservatism[78],\nand return lower-bounding[51]."
+  }
+]

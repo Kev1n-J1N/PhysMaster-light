@@ -1,0 +1,56 @@
+[
+  {
+    "id": "2312.03126",
+    "title": "Learning Curricula in Open-Ended Worlds",
+    "authors": [
+      "Minqi Jiang"
+    ],
+    "published": "2023-12-03T16:44:00+00:00",
+    "cited_by": "",
+    "description": "Deep reinforcement learning (RL) provides powerful methods for training optimal sequential decision-making agents. As collecting real-world interactions can entail additional costs and safety risks, the common paradigm of sim2real conducts training in a simulator, followed by real-world deployment. Unfortunately, RL agents easily overfit to the choice of simulated training environments, and worse still, learning ends when the agent masters the specific set of simulated environments. In contrast, the real world is highly open-ended, featuring endlessly evolving environments and challenges, making such RL approaches unsuitable. Simply randomizing over simulated environments is insufficient, as it requires making arbitrary distributional assumptions and can be combinatorially less likely to sample specific environment instances that are useful for learning. An ideal learning process should automatically adapt the training environment to maximize the learning potential of the agent over an open-ended task space that matches or surpasses the complexity of the real world. This thesis develops a class of methods called Unsupervised Environment Design (UED), which aim to produce such open-ended processes. Given an environment design space, UED automatically generates an infinite sequence or curriculum of training environments at the frontier of the learning agent's capabilities. Through extensive empirical studies and theoretical arguments founded on minimax-regret decision theory and game theory, the findings in this thesis show that UED autocurricula can produce RL agents exhibiting significantly improved robustness and generalization to previously unseen environment instances. Such autocurricula are promising paths toward open-ended learning systems that achieve more general intelligence by continually generating and mastering additional challenges of their own design."
+  },
+  {
+    "id": "2505.01372",
+    "title": "Evaluating Explanations: An Explanatory Virtues Framework for Mechanistic Interpretability -- The Strange Science Part I.ii",
+    "authors": [
+      "Kola Ayonrinde",
+      "Louis Jaburi"
+    ],
+    "published": "2025-05-02T16:18:40+00:00",
+    "cited_by": "2312.03126",
+    "description": "The resulting algorithms step\nus closer to a new kind of software, one that self-improves by generating its\nown task data, toward more robust and general behaviors—in short, software that\nbetter reflects the distinct human capacity to universally explore, explain, and\ncreate our world[65]."
+  },
+  {
+    "id": "2409.13116",
+    "title": "BGDB: Bernoulli-Gaussian Decision Block with Improved Denoising Diffusion Probabilistic Models",
+    "authors": [
+      "Chengkun Sun",
+      "Jinqian Pan",
+      "Russell Stevens Terry",
+      "Jiang Bian",
+      "Jie Xu"
+    ],
+    "published": "2024-09-19T22:52:55+00:00",
+    "cited_by": "2312.03126",
+    "description": "Common supervised learning methods include\nlogistic regression[28], support vector machines[SVM,34], and Gaussian process\nmodels[217]."
+  },
+  {
+    "id": "2310.13032",
+    "title": "Quality-Diversity through AI Feedback",
+    "authors": [
+      "Herbie Bradley",
+      "Andrew Dai",
+      "Hannah Teufel",
+      "Jenny Zhang",
+      "Koen Oostermeijer",
+      "Marco Bellagente",
+      "Jeff Clune",
+      "Kenneth Stanley",
+      "Grégory Schott",
+      "Joel Lehman"
+    ],
+    "published": "2023-10-19T12:13:58+00:00",
+    "cited_by": "2312.03126",
+    "description": "Still, deep learning\nmethods commonly rely on humans to fully specify the problem of interest, which\nrisks overfitting to the specific problem provided[267]."
+  }
+]

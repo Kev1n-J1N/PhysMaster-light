@@ -1,0 +1,49 @@
+[
+  {
+    "id": "2305.00813",
+    "title": "Neurosymbolic AI -- Why, What, and How",
+    "authors": [
+      "Amit Sheth",
+      "Kaushik Roy",
+      "Manas Gaur"
+    ],
+    "published": "2023-05-01T13:27:22+00:00",
+    "cited_by": "2305.00813",
+    "description": "These systems have the ability to blend the\npowerful approximation abilities of neural networks with the symbolic reasoning\ncapabilities that enable them to reason about abstract concepts, extrapolate\nfrom limited data, and generate explainable results[7]."
+  },
+  {
+    "id": "2410.08328",
+    "title": "Agents Thinking Fast and Slow: A Talker-Reasoner Architecture",
+    "authors": [
+      "Konstantina Christakopoulou",
+      "Shibl Mourad",
+      "Maja Matarić"
+    ],
+    "published": "2024-10-10T19:31:35+00:00",
+    "cited_by": "2305.00813",
+    "description": "Daniel Kahneman\npopularized a distinction between the goals and functions of System 1 and System\n2[1]."
+  },
+  {
+    "id": "2303.12712",
+    "title": "Sparks of Artificial General Intelligence: Early experiments with GPT-4",
+    "authors": [
+      "Sébastien Bubeck",
+      "Varun Chandrasekaran",
+      "Ronen Eldan",
+      "Johannes Gehrke",
+      "Eric Horvitz",
+      "Ece Kamar",
+      "Peter Lee",
+      "Yin Tat Lee",
+      "Yuanzhi Li",
+      "Scott Lundberg",
+      "Harsha Nori",
+      "Hamid Palangi",
+      "Marco Tulio Ribeiro",
+      "Yi Zhang"
+    ],
+    "published": "2023-03-22T16:51:28+00:00",
+    "cited_by": "2305.00813",
+    "description": "Perhaps current generative AI systems such as GPT-4 can\nacquire the knowledge structures to support cognitive functionality from data\nalone[5]."
+  }
+]

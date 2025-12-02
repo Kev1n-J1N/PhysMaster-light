@@ -1,0 +1,48 @@
+[
+  {
+    "id": "2307.05782",
+    "title": "Large Language Models",
+    "authors": [
+      "Michael R. Douglas"
+    ],
+    "published": "2023-07-11T20:21:02+00:00",
+    "cited_by": "",
+    "description": "Artificial intelligence is making spectacular progress, and one of the best examples is the development of large language models (LLMs) such as OpenAI's GPT series. In these lectures, written for readers with a background in mathematics or physics, we give a brief history and survey of the state of the art, and describe the underlying transformer architecture in detail. We then explore some current ideas on how LLMs work and how models trained to predict the next word in a text are able to perform other tasks displaying intelligence."
+  },
+  {
+    "id": "2502.16292",
+    "title": "Generative diffusion for perceptron problems: statistical physics analysis and efficient algorithms",
+    "authors": [
+      "Elizaveta Demyanenko",
+      "Davide Straziota",
+      "Carlo Baldassi",
+      "Carlo Lucibello"
+    ],
+    "published": "2025-02-22T16:43:01+00:00",
+    "cited_by": "2307.05782",
+    "description": "While the\nidea is very old[117], before 2012 it was widely believed to be impractical."
+  },
+  {
+    "id": "2405.13536",
+    "title": "Attention Mechanisms Don't Learn Additive Models: Rethinking Feature Importance for Transformers",
+    "authors": [
+      "Tobias Leemann",
+      "Alina Fastowski",
+      "Felix Pfeiffer",
+      "Gjergji Kasneci"
+    ],
+    "published": "2024-05-22T11:14:00+00:00",
+    "cited_by": "2307.05782",
+    "description": "This “interpretability problem” remains a key issue with deep learning\nmodels, and is the subject of much research[52]."
+  },
+  {
+    "id": "2310.13942",
+    "title": "Approximate Implication for Probabilistic Graphical Models",
+    "authors": [
+      "Batya Kenig"
+    ],
+    "published": "2023-10-21T08:33:49+00:00",
+    "cited_by": "2307.05782",
+    "description": "One can state and use such rules in a symbolic approach (see for\nexample[69]), the essential distinction with connectionism is not the use of\nprobabilities but rather the representation of knowledge in terms of explicit\nand meaningful rules."
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "id": "2505.10012",
+    "title": "Quantum Computing and AI: Perspectives on Advanced Automation in Science and Engineering",
+    "authors": [
+      "Tadashi Kadowaki"
+    ],
+    "published": "2025-05-15T06:53:30+00:00",
+    "cited_by": "",
+    "description": "Recent advances in artificial intelligence (AI) and quantum computing are accelerating automation in scientific and engineering processes, fundamentally reshaping research methodologies. This perspective highlights parallels between scientific automation and established Computer-Aided Engineering (CAE) practices, introducing Quantum CAE as a framework that leverages quantum algorithms for simulation, optimization, and machine learning within engineering design. Practical implementations of Quantum CAE are illustrated through case studies for combinatorial optimization problems. Further discussions include advancements toward higher automation levels, highlighting the critical role of specialized AI agents proficient in quantum algorithm design. The integration of quantum computing with AI raises significant questions about the collaborative dynamics among human scientists and engineers, AI systems, and quantum computational resources, underscoring a transformative future for automated discovery and innovation."
+  },
+  {
+    "id": "2402.03774",
+    "title": "Learning a Decision Tree Algorithm with Transformers",
+    "authors": [
+      "Yufan Zhuang",
+      "Liyuan Liu",
+      "Chandan Singh",
+      "Jingbo Shang",
+      "Jianfeng Gao"
+    ],
+    "published": "2024-02-06T07:40:53+00:00",
+    "cited_by": "2505.10012",
+    "description": "Subsequent\ninnovations, including support vector machines (SVM) by Cortes and Vapnik[3],\ndecision trees[4], and ensemble methods such as random forests[5]and gradient\nboosting[6], significantly enhanced performance in practical applications."
+  },
+  {
+    "id": "2308.09728",
+    "title": "Learning representations by forward-propagating errors",
+    "authors": [
+      "Ryoungwoo Jang"
+    ],
+    "published": "2023-08-17T13:56:26+00:00",
+    "cited_by": "2505.10012",
+    "description": "Initially constrained by the simplicity of linear classifiers,\nprogress stagnated until breakthroughs in multilayer neural networks and the\npopularization of the backpropagation algorithm in the late 1980s[2]."
+  },
+  {
+    "id": "2005.14165",
+    "title": "Language Models are Few-Shot Learners",
+    "authors": [
+      "Tom B. Brown",
+      "Benjamin Mann",
+      "Nick Ryder",
+      "Melanie Subbiah",
+      "Jared Kaplan",
+      "Prafulla Dhariwal",
+      "Arvind Neelakantan",
+      "Pranav Shyam",
+      "Girish Sastry",
+      "Amanda Askell",
+      "Sandhini Agarwal",
+      "Ariel Herbert-Voss",
+      "Gretchen Krueger",
+      "Tom Henighan",
+      "Rewon Child",
+      "Aditya Ramesh",
+      "Daniel M. Ziegler",
+      "Jeffrey Wu",
+      "Clemens Winter",
+      "Christopher Hesse",
+      "Mark Chen",
+      "Eric Sigler",
+      "Mateusz Litwin",
+      "Scott Gray",
+      "Benjamin Chess",
+      "Jack Clark",
+      "Christopher Berner",
+      "Sam McCandlish",
+      "Alec Radford",
+      "Ilya Sutskever",
+      "Dario Amodei"
+    ],
+    "published": "2020-05-28T17:29:03+00:00",
+    "cited_by": "2505.10012",
+    "description": "Particularly in natural language processing (NLP), Transformers\nfacilitated major advancements exemplified by large language models such as\nGPT[11]and BERT[12]."
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "2409.16654",
+    "title": "Speech Recognition Rescoring with Large Speech-Text Foundation Models",
+    "authors": [
+      "Prashanth Gurunath Shivakumar",
+      "Jari Kolehmainen",
+      "Aditya Gourav",
+      "Yi Gu",
+      "Ankur Gandhe",
+      "Ariya Rastrow",
+      "Ivan Bulyko"
+    ],
+    "published": "2024-09-25T06:17:23+00:00",
+    "cited_by": "",
+    "description": "Large language models (LLM) have demonstrated the ability to understand human language by leveraging large amount of text data. Automatic speech recognition (ASR) systems are often limited by available transcribed speech data and benefit from a second pass rescoring using LLM. Recently multi-modal large language models, particularly speech and text foundational models have demonstrated strong spoken language understanding. Speech-Text foundational models leverage large amounts of unlabelled and labelled data both in speech and text modalities to model human language. In this work, we propose novel techniques to use multi-modal LLM for ASR rescoring. We also explore discriminative training to further improve the foundational model rescoring performance. We demonstrate cross-modal knowledge transfer in speech-text LLM can benefit rescoring. Our experiments demonstrate up-to 20% relative improvements over Whisper large ASR and up-to 15% relative improvements over text-only LLM."
+  },
+  {
+    "id": "2408.16542",
+    "title": "SALSA: Speedy ASR-LLM Synchronous Aggregation",
+    "authors": [
+      "Ashish Mittal",
+      "Darshan Prabhu",
+      "Sunita Sarawagi",
+      "Preethi Jyothi"
+    ],
+    "published": "2024-08-29T14:00:57+00:00",
+    "cited_by": "2409.16654",
+    "description": "Authors in[6], conducted a\ncomprehensive study on application and relevance of LLMs in rescoring on state-\nof-the-art ASR baselines."
+  },
+  {
+    "id": "2408.14418",
+    "title": "MEDSAGE: Enhancing Robustness of Medical Dialogue Summarization to ASR Errors with LLM-generated Synthetic Dialogues",
+    "authors": [
+      "Kuluhan Binici",
+      "Abhinav Ramesh Kashyap",
+      "Viktor Schlegel",
+      "Andy T. Liu",
+      "Vijay Prakash Dwivedi",
+      "Thanh-Tung Nguyen",
+      "Xiaoxue Gao",
+      "Nancy F. Chen",
+      "Stefan Winkler"
+    ],
+    "published": "2024-08-26T17:04:00+00:00",
+    "cited_by": "2408.16542",
+    "description": "We will show that such a coupling\nleads to significantly faster training of the coupling parameters than existing\napproaches such as Whispering-Llama[6]."
+  }
+]

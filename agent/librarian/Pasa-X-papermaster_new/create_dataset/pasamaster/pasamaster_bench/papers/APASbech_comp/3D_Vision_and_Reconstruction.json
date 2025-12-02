@@ -1,0 +1,52 @@
+[
+  {
+    "id": "2506.15087",
+    "title": "3D Vision-tactile Reconstruction from Infrared and Visible Images for Robotic Fine-grained Tactile Perception",
+    "authors": [
+      "Yuankai Lin",
+      "Xiaofan Lu",
+      "Jiahui Chen",
+      "Hua Yang"
+    ],
+    "published": "2025-06-18T02:53:08+00:00",
+    "cited_by": "",
+    "description": "To achieve human-like haptic perception in anthropomorphic grippers, the compliant sensing surfaces of vision tactile sensor (VTS) must evolve from conventional planar configurations to biomimetically curved topographies with continuous surface gradients. However, planar VTSs have challenges when extended to curved surfaces, including insufficient lighting of surfaces, blurring in reconstruction, and complex spatial boundary conditions for surface structures. With an end goal of constructing a human-like fingertip, our research (i) develops GelSplitter3D by expanding imaging channels with a prism and a near-infrared (NIR) camera, (ii) proposes a photometric stereo neural network with a CAD-based normal ground truth generation method to calibrate tactile geometry, and (iii) devises a normal integration method with boundary constraints of depth prior information to correcting the cumulative error of surface integrals. We demonstrate better tactile sensing performance, a 40$\\%$ improvement in normal estimation accuracy, and the benefits of sensor shapes in grasping and manipulation tasks."
+  },
+  {
+    "id": "2401.16802",
+    "title": "Kinesthetic-based In-Hand Object Recognition with an Underactuated Robotic Hand",
+    "authors": [
+      "Julius Arolovitch",
+      "Osher Azulay",
+      "Avishai Sintov"
+    ],
+    "published": "2024-01-30T07:45:38+00:00",
+    "cited_by": "2506.15087",
+    "description": "The applications of these span a broad spectrum, including object\ndetection[4], six-degree-of-freedom (6-DOF) force estimation[5], robust grasping\nmechanisms[6], gait planning strategies[7], and imitation learning\nframeworks[8]."
+  },
+  {
+    "id": "2303.11191",
+    "title": "A Survey of Demonstration Learning",
+    "authors": [
+      "André Correia",
+      "Luís A. Alexandre"
+    ],
+    "published": "2023-03-20T15:22:10+00:00",
+    "cited_by": "2506.15087",
+    "description": "The applications of these span a broad spectrum, including object\ndetection[4], six-degree-of-freedom (6-DOF) force estimation[5], robust grasping\nmechanisms[6], gait planning strategies[7], and imitation learning\nframeworks[8]."
+  },
+  {
+    "id": "2212.07422",
+    "title": "ECON: Explicit Clothed humans Optimized via Normal integration",
+    "authors": [
+      "Yuliang Xiu",
+      "Jinlong Yang",
+      "Xu Cao",
+      "Dimitrios Tzionas",
+      "Michael J. Black"
+    ],
+    "published": "2022-12-14T18:59:19+00:00",
+    "cited_by": "2506.15087",
+    "description": "[27]addressed global depth drift through\nvariational optimization that reconstructs high-frequency details while\nincorporating low-frequency depth priors."
+  }
+]

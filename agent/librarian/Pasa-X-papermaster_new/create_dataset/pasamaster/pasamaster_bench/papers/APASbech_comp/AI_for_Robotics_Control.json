@@ -1,0 +1,105 @@
+[
+  {
+    "id": "2503.16579",
+    "title": "World Knowledge from AI Image Generation for Robot Control",
+    "authors": [
+      "Jonas Krumme",
+      "Christoph Zetzsche"
+    ],
+    "published": "2025-03-20T12:25:36+00:00",
+    "cited_by": "",
+    "description": "When interacting with the world robots face a number of difficult questions, having to make decisions when given under-specified tasks where they need to make choices, often without clearly defined right and wrong answers. Humans, on the other hand, can often rely on their knowledge and experience to fill in the gaps. For example, the simple task of organizing newly bought produce into the fridge involves deciding where to put each thing individually, how to arrange them together meaningfully, e.g. putting related things together, all while there is no clear right and wrong way to accomplish this task. We could encode all this information on how to do such things explicitly into the robots' knowledge base, but this can quickly become overwhelming, considering the number of potential tasks and circumstances the robot could encounter. However, images of the real world often implicitly encode answers to such questions and can show which configurations of objects are meaningful or are usually used by humans. An image of a full fridge can give a lot of information about how things are usually arranged in relation to each other and the full fridge at large. Modern generative systems are capable of generating plausible images of the real world and can be conditioned on the environment in which the robot operates. Here we investigate the idea of using the implicit knowledge about the world of modern generative AI systems given by their ability to generate convincing images of the real world to solve under-specified tasks."
+  },
+  {
+    "id": "2506.16596",
+    "title": "A Community-driven vision for a new Knowledge Resource for AI",
+    "authors": [
+      "Vinay K Chaudhri",
+      "Chaitan Baru",
+      "Brandon Bennett",
+      "Mehul Bhatt",
+      "Darion Cassel",
+      "Anthony G Cohn",
+      "Rina Dechter",
+      "Esra Erdem",
+      "Dave Ferrucci",
+      "Ken Forbus",
+      "Gregory Gelfond",
+      "Michael Genesereth",
+      "Andrew S. Gordon",
+      "Benjamin Grosof",
+      "Gopal Gupta",
+      "Jim Hendler",
+      "Sharat Israni",
+      "Tyler R. Josephson",
+      "Patrick Kyllonen",
+      "Yuliya Lierler",
+      "Vladimir Lifschitz",
+      "Clifton McFate",
+      "Hande K. McGinty",
+      "Leora Morgenstern",
+      "Alessandro Oltramari",
+      "Praveen Paritosh",
+      "Dan Roth",
+      "Blake Shepard",
+      "Cogan Shimzu",
+      "Denny Vrandečić",
+      "Mark Whiting",
+      "Michael Witbrock"
+    ],
+    "published": "2025-06-19T20:51:28+00:00",
+    "cited_by": "2503.16579",
+    "description": "We could encode all relevant\ninformation explicitly into an extensive knowledge base[1]for the robot, but\nconsidering the number of tasks and circumstances that a robot could encounter,\ncorrectly handling all situations could become very challenging[2]or even\noverwhelming when the robot needs to act in widely different environments."
+  },
+  {
+    "id": "2403.04132",
+    "title": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
+    "authors": [
+      "Wei-Lin Chiang",
+      "Lianmin Zheng",
+      "Ying Sheng",
+      "Anastasios Nikolas Angelopoulos",
+      "Tianle Li",
+      "Dacheng Li",
+      "Hao Zhang",
+      "Banghua Zhu",
+      "Michael Jordan",
+      "Joseph E. Gonzalez",
+      "Ion Stoica"
+    ],
+    "published": "2024-03-07T01:22:38+00:00",
+    "cited_by": "2506.16596",
+    "description": "To this end, Chatbot Arena[10]is proposed as a platform developed for evaluating\nlarge language models (LLMs)."
+  },
+  {
+    "id": "2408.14468",
+    "title": "K-Sort Arena: Efficient and Reliable Benchmarking for Generative Models via K-wise Human Preferences",
+    "authors": [
+      "Zhikai Li",
+      "Xuewen Liu",
+      "Dongrong Joe Fu",
+      "Jianquan Li",
+      "Qingyi Gu",
+      "Kurt Keutzer",
+      "Zhen Dong"
+    ],
+    "published": "2024-08-26T17:58:20+00:00",
+    "cited_by": "2503.16579",
+    "description": "1[9]expanded the state of the art in text-to-image generation and image\ngeneration in general."
+  },
+  {
+    "id": "1812.01717",
+    "title": "Towards Accurate Generative Models of Video: A New Metric & Challenges",
+    "authors": [
+      "Thomas Unterthiner",
+      "Sjoerd van Steenkiste",
+      "Karol Kurach",
+      "Raphael Marinier",
+      "Marcin Michalski",
+      "Sylvain Gelly"
+    ],
+    "published": "2018-12-03T03:57:42+00:00",
+    "cited_by": "2408.14468",
+    "description": "However, traditional evaluation\nmetrics, such as IS[44], FID[19], FVD[48], etc."
+  }
+]

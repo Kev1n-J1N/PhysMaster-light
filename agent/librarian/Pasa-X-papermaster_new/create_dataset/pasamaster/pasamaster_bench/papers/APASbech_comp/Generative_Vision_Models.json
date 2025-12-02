@@ -1,0 +1,50 @@
+[
+  {
+    "id": "2402.16369",
+    "title": "Generative AI in Vision: A Survey on Models, Metrics and Applications",
+    "authors": [
+      "Gaurav Raut",
+      "Apoorv Singh"
+    ],
+    "published": "2024-02-26T07:47:12+00:00",
+    "cited_by": "",
+    "description": "Generative AI models have revolutionized various fields by enabling the creation of realistic and diverse data samples. Among these models, diffusion models have emerged as a powerful approach for generating high-quality images, text, and audio. This survey paper provides a comprehensive overview of generative AI diffusion and legacy models, focusing on their underlying techniques, applications across different domains, and their challenges. We delve into the theoretical foundations of diffusion models, including concepts such as denoising diffusion probabilistic models (DDPM) and score-based generative modeling. Furthermore, we explore the diverse applications of these models in text-to-image, image inpainting, and image super-resolution, along with others, showcasing their potential in creative tasks and data augmentation. By synthesizing existing research and highlighting critical advancements in this field, this survey aims to provide researchers and practitioners with a comprehensive understanding of generative AI diffusion and legacy models and inspire future innovations in this exciting area of artificial intelligence."
+  },
+  {
+    "id": "2209.04747",
+    "title": "Diffusion Models in Vision: A Survey",
+    "authors": [
+      "Florinel-Alin Croitoru",
+      "Vlad Hondru",
+      "Radu Tudor Ionescu",
+      "Mubarak Shah"
+    ],
+    "published": "2022-09-10T22:00:30+00:00",
+    "cited_by": "2402.16369",
+    "description": "Using this, we obtain the variational lower bound\nloss, which is[15],\n\nHere, we observe that the𝐋Tsubscript𝐋𝑇\\mathbf{L}_{T}doesn’t depend on any\nlearnable parameters from the network and hence can be omitted from the loss."
+  },
+  {
+    "id": "2211.00802",
+    "title": "Concrete Score Matching: Generalized Score Matching for Discrete Data",
+    "authors": [
+      "Chenlin Meng",
+      "Kristy Choi",
+      "Jiaming Song",
+      "Stefano Ermon"
+    ],
+    "published": "2022-11-02T00:41:37+00:00",
+    "cited_by": "2402.16369",
+    "description": "Using the score function instead of the probability distribution\nallows the network to work with a tractable objective by eliminating the\nnormalizing constant[35]."
+  },
+  {
+    "id": "2105.05233",
+    "title": "Diffusion Models Beat GANs on Image Synthesis",
+    "authors": [
+      "Prafulla Dhariwal",
+      "Alex Nichol"
+    ],
+    "published": "2021-05-11T17:50:24+00:00",
+    "cited_by": "2402.16369",
+    "description": "However, in practice,\nGANs suffered several shortcomings in their architecture[17]."
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "title": "Energy conservation in a uniform gravitational field",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {},
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": -1,
+  "extra": {
+    "touch_ids": [
+      "2010.06448",
+      "1003.5403",
+      "2209.06773",
+      "2004.11616",
+      "2112.14643",
+      "0803.2560",
+      "2411.15164",
+      "2306.03676"
+    ],
+    "recall_papers": [],
+    "recall_papers_abstract": [],
+    "arxiv_ids": [],
+    "score": [],
+    "sorted_papers": [],
+    "final_selected_papers_title": [],
+    "all_papers": [],
+    "all_papers_title": [],
+    "subqueries": {},
+    "false_sample": {
+      "prompt": [],
+      "answer": [],
+      "title": []
+    },
+    "core_knowledge_list": []
+  },
+  "relevant_section": {},
+  "relevant_section_ref": {},
+  "reason": "",
+  "journal": "",
+  "year": "",
+  "authors": [
+    ""
+  ],
+  "citations": -1,
+  "h5": "",
+  "IF": "",
+  "CCF": "",
+  "output": "没有找到符合要求的相关论文。",
+  "execution_time": {
+    "paper_agent_run_duration": 87.45191025733948,
+    "total_batch_time": 87.4521369934082,
+    "timestamp": "2025-12-02T00:42:17.924893"
+  }
+}

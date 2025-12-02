@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1810.13306",
+    "title": "Automated Machine Learning: From Principles to Practices",
+    "authors": [
+      "Zhenqian Shen",
+      "Yongqi Zhang",
+      "Lanning Wei",
+      "Huan Zhao",
+      "Quanming Yao"
+    ],
+    "published": "2018-10-31T14:35:38+00:00",
+    "cited_by": "",
+    "description": "Machine learning (ML) methods have been developing rapidly, but configuring and selecting proper methods to achieve a desired performance is increasingly difficult and tedious. To address this challenge, automated machine learning (AutoML) has emerged, which aims to generate satisfactory ML configurations for given tasks in a data-driven way. In this paper, we provide a comprehensive survey on this topic. We begin with the formal definition of AutoML and then introduce its principles, including the bi-level learning objective, the learning strategy, and the theoretical interpretation. Then, we summarize the AutoML practices by setting up the taxonomy of existing works based on three main factors: the search space, the search algorithm, and the evaluation strategy. Each category is also explained with the representative methods. Then, we illustrate the principles and practices with exemplary applications from configuring ML pipeline, one-shot neural architecture search, and integration with foundation models. Finally, we highlight the emerging directions of AutoML and conclude the survey."
+  },
+  {
+    "id": "2202.04513",
+    "title": "The no-free-lunch theorems of supervised learning",
+    "authors": [
+      "Tom F. Sterkenburg",
+      "Peter D. Grünwald"
+    ],
+    "published": "2022-02-09T15:24:30+00:00",
+    "cited_by": "1810.13306",
+    "description": "Since there are no\nalgorithms that can achieve good performance on all possible learning problems\nwith equal importance (according to No Free Lunch theorems[5][6]), every aspect\nof machine learning applications, such as feature engineering, model selection,\nand algorithm selection (Figure1), needs to be carefully configured."
+  },
+  {
+    "id": "2004.04686",
+    "title": "Machine Learning in Artificial Intelligence: Towards a Common Understanding",
+    "authors": [
+      "Niklas Kühl",
+      "Marc Goutier",
+      "Robin Hirt",
+      "Gerhard Satzger"
+    ],
+    "published": "2020-03-27T19:09:57+00:00",
+    "cited_by": "1810.13306",
+    "description": "Mitchell’s famous machine learning textbook[1]begins with the statement: “Ever\nsince computers were invented, we have wondered whether they might be made to\nlearn."
+  }
+]

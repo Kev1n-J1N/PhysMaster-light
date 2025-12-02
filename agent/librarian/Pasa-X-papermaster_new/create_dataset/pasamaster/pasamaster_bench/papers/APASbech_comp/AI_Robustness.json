@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2504.13314",
+    "title": "On the Definition of Robustness and Resilience of AI Agents for Real-time Congestion Management",
+    "authors": [
+      "Timothy Tjhay",
+      "Ricardo J. Bessa",
+      "Jose Paulos"
+    ],
+    "published": "2025-04-17T20:01:48+00:00",
+    "cited_by": "2504.13314",
+    "description": "Robustness\nrefers to a system’s ability to maintain performance under natural or\nadversarial perturbations, either locally (sample-specific) or globally\n(deterministic guarantees)[2]."
+  },
+  {
+    "id": "2407.01294",
+    "title": "A Collaborative, Human-Centred Taxonomy of AI, Algorithmic, and Automation Harms",
+    "authors": [
+      "Gavin Abercrombie",
+      "Djalel Benbouzid",
+      "Paolo Giudici",
+      "Delaram Golpayegani",
+      "Julio Hernandez",
+      "Pierre Noro",
+      "Harshvardhan Pandit",
+      "Eva Paraschou",
+      "Charlie Pownall",
+      "Jyoti Prajapati",
+      "Mark A. Sayre",
+      "Ushnish Sengupta",
+      "Arthit Suriyawongkul",
+      "Ruby Thelot",
+      "Sofia Vei",
+      "Laura Waltersdorfer"
+    ],
+    "published": "2024-07-01T13:47:53+00:00",
+    "cited_by": "2504.13314",
+    "description": "Resilience, by contrast, is the ability of an AI\nsystem to prepare for, adapt to, and recover rapidly from perturbations or\nunexpected changes[3], emphasizing recovery."
+  }
+]

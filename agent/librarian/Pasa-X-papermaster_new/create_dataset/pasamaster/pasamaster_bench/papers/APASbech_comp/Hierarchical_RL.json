@@ -1,0 +1,26 @@
+[
+  {
+    "id": "2309.14237",
+    "title": "Hierarchical Reinforcement Learning Based on Planning Operators",
+    "authors": [
+      "Jing Zhang",
+      "Emmanuel Dean",
+      "Karinne Ramirez-Amaro"
+    ],
+    "published": "2023-09-25T15:54:32+00:00",
+    "cited_by": "",
+    "description": "Long-horizon manipulation tasks such as stacking represent a longstanding challenge in the field of robotic manipulation, particularly when using reinforcement learning (RL) methods which often struggle to learn the correct sequence of actions for achieving these complex goals. To learn this sequence, symbolic planning methods offer a good solution based on high-level reasoning, however, planners often fall short in addressing the low-level control specificity needed for precise execution. This paper introduces a novel framework that integrates symbolic planning with hierarchical RL through the cooperation of high-level operators and low-level policies. Our contribution integrates planning operators (e.g. preconditions and effects) as part of the hierarchical RL algorithm based on the Scheduled Auxiliary Control (SAC-X) method. We developed a dual-purpose high-level operator, which can be used both in holistic planning and as independent, reusable policies. Our approach offers a flexible solution for long-horizon tasks, e.g., stacking a cube. The experimental results show that our proposed method obtained an average of 97.2% success rate for learning and executing the whole stack sequence, and the success rate for learning independent policies, e.g. reach (98.9%), lift (99.7%), stack (85%), etc. The training time is also reduced by 68% when using our proposed approach."
+  },
+  {
+    "id": "2501.19128",
+    "title": "Shaping Sparse Rewards in Reinforcement Learning: A Semi-supervised Approach",
+    "authors": [
+      "Wenyun Li",
+      "Wenjie Huang",
+      "Chen Sun"
+    ],
+    "published": "2025-01-31T13:35:19+00:00",
+    "cited_by": "2309.14237",
+    "description": "Particularly, we will use the planning\noperators used for example in the PDDL algorithm[4]to build the hierarchy of\nactions used in the hierarchical RL method Schedule Auxiliary Control\n(SAC-X)[5]."
+  }
+]

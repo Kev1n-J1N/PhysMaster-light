@@ -1,0 +1,13 @@
+[
+  {
+    "id": "2310.10449",
+    "title": "Text Summarization Using Large Language Models: A Comparative Study of MPT-7b-instruct, Falcon-7b-instruct, and OpenAI Chat-GPT Models",
+    "authors": [
+      "Lochan Basyal",
+      "Mihir Sanghvi"
+    ],
+    "published": "2023-10-16T14:33:02+00:00",
+    "cited_by": "2310.10449, 2310.10449, 2310.10449",
+    "description": "Recent advancements in NLP have been characterized by the rise of Large Language\nModels (LLMs), OpenAI ChatGPT[1], MPT-7b-instruct[2,3], flan-t5-xl[4],\nfalcon-7b-instruct[5,6], and others, which have demonstrated remarkable\ncapabilities in understanding and generating human-like text.\n0[7]and the Extreme Summarization (XSum)[8]to assess the\nperformance of various Large Language Models (LLMs) in the context of text\nsummarization.\nMetrics were computed for each LLM,\noffering a comprehensive perspective on their summarization capabilities, as\navailable on the GitHub repository cited in this paper[13]."
+  }
+]

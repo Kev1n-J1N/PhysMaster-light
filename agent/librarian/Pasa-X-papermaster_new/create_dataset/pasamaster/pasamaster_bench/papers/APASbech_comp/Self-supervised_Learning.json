@@ -1,0 +1,85 @@
+[
+  {
+    "id": "2301.05712",
+    "title": "A Survey on Self-supervised Learning: Algorithms, Applications, and Future Trends",
+    "authors": [
+      "Jie Gui",
+      "Tuo Chen",
+      "Jing Zhang",
+      "Qiong Cao",
+      "Zhenan Sun",
+      "Hao Luo",
+      "Dacheng Tao"
+    ],
+    "published": "2023-01-13T14:41:05+00:00",
+    "cited_by": "",
+    "description": "Deep supervised learning algorithms typically require a large volume of labeled data to achieve satisfactory performance. However, the process of collecting and labeling such data can be expensive and time-consuming. Self-supervised learning (SSL), a subset of unsupervised learning, aims to learn discriminative features from unlabeled data without relying on human-annotated labels. SSL has garnered significant attention recently, leading to the development of numerous related algorithms. However, there is a dearth of comprehensive studies that elucidate the connections and evolution of different SSL variants. This paper presents a review of diverse SSL methods, encompassing algorithmic aspects, application domains, three key trends, and open research questions. Firstly, we provide a detailed introduction to the motivations behind most SSL algorithms and compare their commonalities and differences. Secondly, we explore representative applications of SSL in domains such as image processing, computer vision, and natural language processing. Lastly, we discuss the three primary trends observed in SSL research and highlight the open questions that remain. A curated collection of valuable resources can be accessed at https://github.com/guijiejie/SSL."
+  },
+  {
+    "id": "2401.15635",
+    "title": "RecDCL: Dual Contrastive Learning for Recommendation",
+    "authors": [
+      "Dan Zhang",
+      "Yangliao Geng",
+      "Wenwen Gong",
+      "Zhongang Qi",
+      "Zhiyu Chen",
+      "Xing Tang",
+      "Ying Shan",
+      "Yuxiao Dong",
+      "Jie Tang"
+    ],
+    "published": "2024-01-28T11:51:09+00:00",
+    "cited_by": "2301.05712",
+    "description": "Differences from previous work: Previous works have provided reviews on SSL that\ncater to specific applications such as recommender systems[26], graphs[27,28],\nsequential transfer learning[29], videos[30], adversarial pre-training of self-\nsupervised deep networks[31], and visual feature learning[32]."
+  },
+  {
+    "id": "2402.03740",
+    "title": "BotSSCL: Social Bot Detection with Self-Supervised Contrastive Learning",
+    "authors": [
+      "Mohammad Majid Akhtar",
+      "Navid Shadman Bhuiyan",
+      "Rahat Masood",
+      "Muhammad Ikram",
+      "Salil S. Kanhere"
+    ],
+    "published": "2024-02-06T06:13:13+00:00",
+    "cited_by": "2401.15635",
+    "description": "For example, rotation and crop are the\ncommonly used augmentation techniques for image data[16]."
+  },
+  {
+    "id": "2306.10125",
+    "title": "Self-Supervised Learning for Time Series Analysis: Taxonomy, Progress, and Prospects",
+    "authors": [
+      "Kexin Zhang",
+      "Qingsong Wen",
+      "Chaoli Zhang",
+      "Rongyao Cai",
+      "Ming Jin",
+      "Yong Liu",
+      "James Zhang",
+      "Yuxuan Liang",
+      "Guansong Pang",
+      "Dongjin Song",
+      "Shirui Pan"
+    ],
+    "published": "2023-06-16T18:23:10+00:00",
+    "cited_by": "2301.05712",
+    "description": "[33]centered their survey on contrastive learning\n(CL)."
+  },
+  {
+    "id": "2206.02353",
+    "title": "Beyond Just Vision: A Review on Self-Supervised Representation Learning on Multimodal and Temporal Data",
+    "authors": [
+      "Shohreh Deldari",
+      "Hao Xue",
+      "Aaqib Saeed",
+      "Jiayuan He",
+      "Daniel V. Smith",
+      "Flora D. Salim"
+    ],
+    "published": "2022-06-06T04:59:44+00:00",
+    "cited_by": "2306.10125",
+    "description": "[20]are partly similar to our work."
+  }
+]

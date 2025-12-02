@@ -1,0 +1,72 @@
+[
+  {
+    "id": "2504.09480",
+    "title": "Vision-Language Model for Object Detection and Segmentation: A Review and Evaluation",
+    "authors": [
+      "Yongchao Feng",
+      "Yajie Liu",
+      "Shuai Yang",
+      "Wenrui Cai",
+      "Jinqing Zhang",
+      "Qiqi Zhan",
+      "Ziyue Huang",
+      "Hongxi Yan",
+      "Qiao Wan",
+      "Chenguang Liu",
+      "Junzhe Wang",
+      "Jiahui Lv",
+      "Ziqi Liu",
+      "Tengyuan Shi",
+      "Qingjie Liu",
+      "Yunhong Wang"
+    ],
+    "published": "2025-04-13T08:28:13+00:00",
+    "cited_by": "",
+    "description": "Vision-Language Model (VLM) have gained widespread adoption in Open-Vocabulary (OV) object detection and segmentation tasks. Despite they have shown promise on OV-related tasks, their effectiveness in conventional vision tasks has thus far been unevaluated. In this work, we present the systematic review of VLM-based detection and segmentation, view VLM as the foundational model and conduct comprehensive evaluations across multiple downstream tasks for the first time: 1) The evaluation spans eight detection scenarios (closed-set detection, domain adaptation, crowded objects, etc.) and eight segmentation scenarios (few-shot, open-world, small object, etc.), revealing distinct performance advantages and limitations of various VLM architectures across tasks. 2) As for detection tasks, we evaluate VLMs under three finetuning granularities: \\textit{zero prediction}, \\textit{visual fine-tuning}, and \\textit{text prompt}, and further analyze how different finetuning strategies impact performance under varied task. 3) Based on empirical findings, we provide in-depth analysis of the correlations between task characteristics, model architectures, and training methodologies, offering insights for future VLM design. 4) We believe that this work shall be valuable to the pattern recognition experts working in the fields of computer vision, multimodal learning, and vision foundation models by introducing them to the problem, and familiarizing them with the current status of the progress while providing promising directions for future research. A project associated with this review and evaluation has been created at https://github.com/better-chao/perceptual_abilities_evaluation."
+  },
+  {
+    "id": "2409.19846",
+    "title": "Towards Open-Vocabulary Semantic Segmentation Without Semantic Labels",
+    "authors": [
+      "Heeseong Shin",
+      "Chaehyun Kim",
+      "Sunghwan Hong",
+      "Seokju Cho",
+      "Anurag Arnab",
+      "Paul Hongsuck Seo",
+      "Seungryong Kim"
+    ],
+    "published": "2024-09-30T01:13:03+00:00",
+    "cited_by": "2504.09480",
+    "description": "In the context of segmentation tasks, recent works\nhave focused on transferring global multi-modal alignment capabilities of VLMs\nto fine-grained alignment tasks, specifically region-text[21]and pixel-text\nalignment[22]."
+  },
+  {
+    "id": "2502.06818",
+    "title": "Rethinking the Global Knowledge of CLIP in Training-Free Open-Vocabulary Semantic Segmentation",
+    "authors": [
+      "Jingyun Wang",
+      "Cilin Yan",
+      "Guoliang Kang"
+    ],
+    "published": "2025-02-05T03:37:50+00:00",
+    "cited_by": "2409.19846",
+    "description": "GroupViT[11]and ViL-Seg[12]are pioneering works for identifying groups or\nclusters emerging from captions."
+  },
+  {
+    "id": "2505.12641",
+    "title": "Single Image Reflection Removal via inter-layer Complementarity",
+    "authors": [
+      "Yue Huang",
+      "Zi'ang Li",
+      "Tianle Hu",
+      "Jie Wen",
+      "Guanbin Li",
+      "Jinglin Zhang",
+      "Guoxu Zhou",
+      "Xiaozhao Fang"
+    ],
+    "published": "2025-05-19T02:50:15+00:00",
+    "cited_by": "2502.06818",
+    "description": "We conduct extensive experiments on five standard semantic segmentation\nbenchmarks, including PASCAL VOC[13], PASCAL Context[26], ADE20K[42],\nCityscapes[10]and COCO Stuff[2]."
+  }
+]

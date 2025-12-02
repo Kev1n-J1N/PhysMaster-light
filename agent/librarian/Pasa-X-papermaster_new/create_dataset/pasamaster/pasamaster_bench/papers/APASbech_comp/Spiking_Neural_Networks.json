@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1804.08150",
+    "title": "Deep Learning in Spiking Neural Networks",
+    "authors": [
+      "Amirhossein Tavanaei",
+      "Masoud Ghodrati",
+      "Saeed Reza Kheradpisheh",
+      "Timothee Masquelier",
+      "Anthony S. Maida"
+    ],
+    "published": "2018-04-22T18:27:34+00:00",
+    "cited_by": "",
+    "description": "In recent years, deep learning has been a revolution in the field of machine learning, for computer vision in particular. In this approach, a deep (multilayer) artificial neural network (ANN) is trained in a supervised manner using backpropagation. Huge amounts of labeled examples are required, but the resulting classification accuracy is truly impressive, sometimes outperforming humans. Neurons in an ANN are characterized by a single, static, continuous-valued activation. Yet biological neurons use discrete spikes to compute and transmit information, and the spike times, in addition to the spike rates, matter. Spiking neural networks (SNNs) are thus more biologically realistic than ANNs, and arguably the only viable option if one wants to understand how the brain computes. SNNs are also more hardware friendly and energy-efficient than ANNs, and are thus appealing for technology, especially for portable devices. However, training deep SNNs remains a challenge. Spiking neurons' transfer function is usually non-differentiable, which prevents using backpropagation. Here we review recent supervised and unsupervised methods to train deep SNNs, and compare them in terms of accuracy, but also computational cost and hardware friendliness. The emerging picture is that SNNs still lag behind ANNs in terms of accuracy, but the gap is decreasing, and can even vanish on some tasks, while the SNNs typically require much fewer operations."
+  },
+  {
+    "id": "2404.04549",
+    "title": "Stable Learning Using Spiking Neural Networks Equipped With Affine Encoders and Decoders",
+    "authors": [
+      "A. Martina Neuman",
+      "Dominik Dold",
+      "Philipp Christian Petersen"
+    ],
+    "published": "2024-04-06T08:17:07+00:00",
+    "cited_by": "1804.08150",
+    "description": "This naturally\nleads to interest in using artificial SNNs in applications that brains are good\nat, such as pattern recognition[49]."
+  },
+  {
+    "id": "2506.01311",
+    "title": "Energy Considerations for Large Pretrained Neural Networks",
+    "authors": [
+      "Leo Mei",
+      "Mark Stamp"
+    ],
+    "published": "2025-06-02T04:39:24+00:00",
+    "cited_by": "2404.04549",
+    "description": "It is well-documented that deep learning in modern applications can have extreme\nrequirements on computational resources and the hardware requirements scale in\nan unsustainable way[52]."
+  },
+  {
+    "id": "2506.22015",
+    "title": "Towards Universal & Efficient Model Compression via Exponential Torque Pruning",
+    "authors": [
+      "Sarthak Ketanbhai Modi",
+      "Zi Pong Lim",
+      "Shourya Kuchhal",
+      "Yushi Cao",
+      "Yupeng Cheng",
+      "Yon Shin Teo",
+      "Shang-Wei Lin",
+      "Zhiming Li"
+    ],
+    "published": "2025-06-27T08:28:21+00:00",
+    "cited_by": "2506.01311",
+    "description": "However, its effect on training time and computational costs remains\nuncertain[30]."
+  }
+]

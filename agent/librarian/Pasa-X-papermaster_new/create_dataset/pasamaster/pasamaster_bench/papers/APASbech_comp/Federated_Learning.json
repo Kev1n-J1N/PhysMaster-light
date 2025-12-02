@@ -1,0 +1,34 @@
+[
+  {
+    "id": "2410.08892",
+    "title": "Federated Learning in Practice: Reflections and Projections",
+    "authors": [
+      "Katharine Daly",
+      "Hubert Eichner",
+      "Peter Kairouz",
+      "H. Brendan McMahan",
+      "Daniel Ramage",
+      "Zheng Xu"
+    ],
+    "published": "2024-10-11T15:10:38+00:00",
+    "cited_by": "",
+    "description": "Federated Learning (FL) is a machine learning technique that enables multiple entities to collaboratively learn a shared model without exchanging their local data. Over the past decade, FL systems have achieved substantial progress, scaling to millions of devices across various learning domains while offering meaningful differential privacy (DP) guarantees. Production systems from organizations like Google, Apple, and Meta demonstrate the real-world applicability of FL. However, key challenges remain, including verifying server-side DP guarantees and coordinating training across heterogeneous devices, limiting broader adoption. Additionally, emerging trends such as large (multi-modal) models and blurred lines between training, inference, and personalization challenge traditional FL frameworks. In response, we propose a redefined FL framework that prioritizes privacy principles rather than rigid definitions. We also chart a path forward by leveraging trusted execution environments and open-source ecosystems to address these challenges and facilitate future advancements in FL."
+  },
+  {
+    "id": "2406.02958",
+    "title": "PrE-Text: Training Language Models on Private Federated Data in the Age of LLMs",
+    "authors": [
+      "Charlie Hou",
+      "Akshat Shrivastava",
+      "Hongyuan Zhan",
+      "Rylan Conway",
+      "Trang Le",
+      "Adithya Sagar",
+      "Giulia Fanti",
+      "Daniel Lazar"
+    ],
+    "published": "2024-06-05T05:27:02+00:00",
+    "cited_by": "2410.08892",
+    "description": "At Google, FL has been applied to training several machine learning models\npowering advanced features in mobile keyboard (Gboard) including next word\nprediction[31,76,61], smart compose and on-the-fly rescoring for\nsuggestions[76], and emoji suggestion[56]."
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "id": "2507.13411",
+    "title": "Aligning Knowledge Graphs and Language Models for Factual Accuracy",
+    "authors": [
+      "Nur A Zarin Nishat",
+      "Andrea Coletta",
+      "Luigi Bellomarini",
+      "Kossi Amouzouvi",
+      "Jens Lehmann",
+      "Sahar Vahdati"
+    ],
+    "published": "2025-07-17T08:15:50+00:00",
+    "cited_by": "2506.14567",
+    "description": "Despite the promise of fine-tuning and RAG approaches, linearizing\nKGs into text format often leads to a loss of structure information and is not\nable to fully utilize the relational context[16], sometimes resulting in\nirrelevant retrieved information to the question and ungrounded generated answer\nwith respect to the retrieved knowledge[3]."
+  },
+  {
+    "id": "2506.14567",
+    "title": "Controlling Context: Generative AI at Work in Integrated Circuit Design and Other High-Precision Domains",
+    "authors": [
+      "Emanuel Moss",
+      "Elizabeth Watkins",
+      "Christopher Persaud",
+      "Passant Karunaratne",
+      "Dawn Nafus"
+    ],
+    "published": "2025-06-17T14:25:32+00:00",
+    "cited_by": "2507.13411",
+    "description": "■\\blacksquare\n\nAlthough hallucinations can be considered inherent characteristics of LLM\narchitectures[7], approaches have emerged that try to mitigate this phenomenon,\nunacceptable in critical domains."
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "2412.19419",
+    "title": "Introduction to Graph Neural Networks: A Starting Point for Machine Learning Engineers",
+    "authors": [
+      "James H. Tanis",
+      "Chris Giannella",
+      "Adrian V. Mariano"
+    ],
+    "published": "2024-12-27T03:13:02+00:00",
+    "cited_by": "",
+    "description": "Graph neural networks are deep neural networks designed for graphs with attributes attached to nodes or edges. The number of research papers in the literature concerning these models is growing rapidly due to their impressive performance on a broad range of tasks. This survey introduces graph neural networks through the encoder-decoder framework and provides examples of decoders for a range of graph analytic tasks. It uses theory and numerous experiments on homogeneous graphs to illustrate the behavior of graph neural networks for different training sizes and degrees of graph complexity."
+  },
+  {
+    "id": "2412.05146",
+    "title": "ROS: A GNN-based Relax-Optimize-and-Sample Framework for Max-k-Cut Problems",
+    "authors": [
+      "Yeqing Qiu",
+      "Ye Xue",
+      "Akang Wang",
+      "Yiheng Wang",
+      "Qingjiang Shi",
+      "Zhi-Quan Luo"
+    ],
+    "published": "2024-12-06T16:02:02+00:00",
+    "cited_by": "2412.19419",
+    "description": "In addition, community detection algorithms use node\nembeddings to define the communities, either in an end-to-end fashion[50]or as\npart of a two-step process by applying thekk-means algorithm to the node\nembeddings[51,52]."
+  }
+]

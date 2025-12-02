@@ -1,0 +1,61 @@
+[
+  {
+    "id": "2311.05610",
+    "title": "Efficient Parallelization Layouts for Large-Scale Distributed Model Training",
+    "authors": [
+      "Johannes Hagemann",
+      "Samuel Weinbach",
+      "Konstantin Dobler",
+      "Maximilian Schall",
+      "Gerard de Melo"
+    ],
+    "published": "2023-11-09T18:59:38+00:00",
+    "cited_by": "2311.05610",
+    "description": "We also investigate the impact of newer methods, such\nasFlashAttention[5]and sequence parallelism[8], finding that these can affect\nthe optimal training configuration considerably."
+  },
+  {
+    "id": "2403.14097",
+    "title": "Parcae: Proactive, Liveput-Optimized DNN Training on Preemptible Instances",
+    "authors": [
+      "Jiangfei Duan",
+      "Ziang Song",
+      "Xupeng Miao",
+      "Xiaoli Xi",
+      "Dahua Lin",
+      "Harry Xu",
+      "Minjia Zhang",
+      "Zhihao Jia"
+    ],
+    "published": "2024-03-21T03:08:03+00:00",
+    "cited_by": "2311.05610",
+    "description": "PipeDream[12]is a scheduling algorithm to reduce these by using micro-\nbatches and scheduling their forward and backward computations across pipeline\nstages."
+  },
+  {
+    "id": "2503.12563",
+    "title": "Diffusion on Graph: Augmentation of Graph Structure for Node Classification",
+    "authors": [
+      "Yancheng Wang",
+      "Changyu Liu",
+      "Yingzhen Yang"
+    ],
+    "published": "2025-03-16T16:39:25+00:00",
+    "cited_by": "2403.14097",
+    "description": "Deep neural networks (DNNs) have surpassed human predictive performance on a\nspectrum of tasks, including computer vision[18], natural language\nprogressing[14], game playing[44], and content generation[46]."
+  },
+  {
+    "id": "2507.19845",
+    "title": "MegatronApp: Efficient and Comprehensive Management on Distributed LLM Training",
+    "authors": [
+      "Bohan Zhao",
+      "Guang Yang",
+      "Shuo Chen",
+      "Ruitao Liu",
+      "Tingrui Zhang",
+      "Yongchao He",
+      "Wei Xu"
+    ],
+    "published": "2025-07-26T07:39:30+00:00",
+    "cited_by": "2311.05610",
+    "description": "We also investigate the impact of newer methods, such\nasFlashAttention[5]and sequence parallelism[8], finding that these can affect\nthe optimal training configuration considerably."
+  }
+]

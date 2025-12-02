@@ -1,0 +1,56 @@
+[
+  {
+    "id": "2205.10330",
+    "title": "A Review of Safe Reinforcement Learning: Methods, Theory and Applications",
+    "authors": [
+      "Shangding Gu",
+      "Long Yang",
+      "Yali Du",
+      "Guang Chen",
+      "Florian Walter",
+      "Jun Wang",
+      "Alois Knoll"
+    ],
+    "published": "2022-05-20T17:42:38+00:00",
+    "cited_by": "",
+    "description": "Reinforcement Learning (RL) has achieved tremendous success in many complex decision-making tasks. However, safety concerns are raised during deploying RL in real-world applications, leading to a growing demand for safe RL algorithms, such as in autonomous driving and robotics scenarios. While safe control has a long history, the study of safe RL algorithms is still in the early stages. To establish a good foundation for future safe RL research, in this paper, we provide a review of safe RL from the perspectives of methods, theories, and applications. Firstly, we review the progress of safe RL from five dimensions and come up with five crucial problems for safe RL being deployed in real-world applications, coined as \"2H3W\". Secondly, we analyze the algorithm and theory progress from the perspectives of answering the \"2H3W\" problems. Particularly, the sample complexity of safe RL algorithms is reviewed and discussed, followed by an introduction to the applications and benchmarks of safe RL algorithms. Finally, we open the discussion of the challenging problems in safe RL, hoping to inspire future research on this thread. To advance the study of safe RL algorithms, we release an open-sourced repository containing the implementations of major safe RL algorithms at the link: https://github.com/chauncygu/Safe-Reinforcement-Learning-Baselines.git."
+  },
+  {
+    "id": "2410.09728",
+    "title": "Meta-Reinforcement Learning with Universal Policy Adaptation: Provable Near-Optimality under All-task Optimum Comparator",
+    "authors": [
+      "Siyuan Xu",
+      "Minghui Zhu"
+    ],
+    "published": "2024-10-13T05:17:58+00:00",
+    "cited_by": "2205.10330",
+    "description": "The fifth type of safety definitions: Moldovan and Abbeel[200]consider\nan agent “safe” if “it meets an ergodicity requirement: it can reach each state\nit visits from any other state it visits, allowing for reversible errors”."
+  },
+  {
+    "id": "2403.12309",
+    "title": "Reinforcement Learning from Delayed Observations via World Models",
+    "authors": [
+      "Armin Karamzade",
+      "Kyungmin Kim",
+      "Montek Kalsi",
+      "Roy Fox"
+    ],
+    "published": "2024-03-18T23:18:27+00:00",
+    "cited_by": "2205.10330",
+    "description": "In some\napplications, the agent’s safety is much more important than the agent’s\nreward[78]."
+  },
+  {
+    "id": "2007.02151",
+    "title": "Variational Policy Gradient Method for Reinforcement Learning with General Utilities",
+    "authors": [
+      "Junyu Zhang",
+      "Alec Koppel",
+      "Amrit Singh Bedi",
+      "Csaba Szepesvari",
+      "Mengdi Wang"
+    ],
+    "published": "2020-07-04T17:51:53+00:00",
+    "cited_by": "2205.10330",
+    "description": "Moreover, it is deduced that the mean minus variance[184]and percentile\noptimisation[71]of safe RL are, in general, NP-hard problems[199]."
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "id": "2503.02891",
+    "title": "Vision Transformers on the Edge: A Comprehensive Survey of Model Compression and Acceleration Strategies",
+    "authors": [
+      "Shaibal Saha",
+      "Lanyu Xu"
+    ],
+    "published": "2025-02-26T22:34:44+00:00",
+    "cited_by": "",
+    "description": "In recent years, vision transformers (ViTs) have emerged as powerful and promising techniques for computer vision tasks such as image classification, object detection, and segmentation. Unlike convolutional neural networks (CNNs), which rely on hierarchical feature extraction, ViTs treat images as sequences of patches and leverage self-attention mechanisms. However, their high computational complexity and memory demands pose significant challenges for deployment on resource-constrained edge devices. To address these limitations, extensive research has focused on model compression techniques and hardware-aware acceleration strategies. Nonetheless, a comprehensive review that systematically categorizes these techniques and their trade-offs in accuracy, efficiency, and hardware adaptability for edge deployment remains lacking. This survey bridges this gap by providing a structured analysis of model compression techniques, software tools for inference on edge, and hardware acceleration strategies for ViTs. We discuss their impact on accuracy, efficiency, and hardware adaptability, highlighting key challenges and emerging research directions to advance ViT deployment on edge platforms, including graphics processing units (GPUs), application-specific integrated circuit (ASICs), and field-programmable gate arrays (FPGAs). The goal is to inspire further research with a contemporary guide on optimizing ViTs for efficient deployment on edge devices."
+  },
+  {
+    "id": "2502.17941",
+    "title": "Optimal Brain Apoptosis",
+    "authors": [
+      "Mingyuan Sun",
+      "Zheng Fang",
+      "Jiaxu Wang",
+      "Junjie Jiang",
+      "Delei Kong",
+      "Chenming Hu",
+      "Yuetong Fang",
+      "Renjing Xu"
+    ],
+    "published": "2025-02-25T08:03:04+00:00",
+    "cited_by": "2503.02891",
+    "description": "Most of the initial\npruning techniques based on biased weight decay[28], second-order\nderivatives[29], and channels[30]."
+  },
+  {
+    "id": "2302.05442",
+    "title": "Scaling Vision Transformers to 22 Billion Parameters",
+    "authors": [
+      "Mostafa Dehghani",
+      "Josip Djolonga",
+      "Basil Mustafa",
+      "Piotr Padlewski",
+      "Jonathan Heek",
+      "Justin Gilmer",
+      "Andreas Steiner",
+      "Mathilde Caron",
+      "Robert Geirhos",
+      "Ibrahim Alabdulmohsin",
+      "Rodolphe Jenatton",
+      "Lucas Beyer",
+      "Michael Tschannen",
+      "Anurag Arnab",
+      "Xiao Wang",
+      "Carlos Riquelme",
+      "Matthias Minderer",
+      "Joan Puigcerver",
+      "Utku Evci",
+      "Manoj Kumar",
+      "Sjoerd van Steenkiste",
+      "Gamaleldin F. Elsayed",
+      "Aravindh Mahendran",
+      "Fisher Yu",
+      "Avital Oliver",
+      "Fantine Huot",
+      "Jasmijn Bastings",
+      "Mark Patrick Collier",
+      "Alexey Gritsenko",
+      "Vighnesh Birodkar",
+      "Cristina Vasconcelos",
+      "Yi Tay",
+      "Thomas Mensink",
+      "Alexander Kolesnikov",
+      "Filip Pavetić",
+      "Dustin Tran",
+      "Thomas Kipf",
+      "Mario Lučić",
+      "Xiaohua Zhai",
+      "Daniel Keysers",
+      "Jeremiah Harmsen",
+      "Neil Houlsby"
+    ],
+    "published": "2023-02-10T18:58:21+00:00",
+    "cited_by": "2503.02891",
+    "description": "For instance, ViT-Huge includes over 632M parameters[4]and recently\nextended to 22B parameters[11], demanding extensive computational resources."
+  }
+]

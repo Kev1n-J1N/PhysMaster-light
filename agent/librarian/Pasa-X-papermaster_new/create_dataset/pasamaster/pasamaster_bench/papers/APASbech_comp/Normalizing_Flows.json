@@ -1,0 +1,52 @@
+[
+  {
+    "id": "2110.00351",
+    "title": "Smooth Normalizing Flows",
+    "authors": [
+      "Jonas Köhler",
+      "Andreas Krämer",
+      "Frank Noé"
+    ],
+    "published": "2021-10-01T12:27:14+00:00",
+    "cited_by": "",
+    "description": "Normalizing flows are a promising tool for modeling probability distributions in physical systems. While state-of-the-art flows accurately approximate distributions and energies, applications in physics additionally require smooth energies to compute forces and higher-order derivatives. Furthermore, such densities are often defined on non-trivial topologies. A recent example are Boltzmann Generators for generating 3D-structures of peptides and small proteins. These generative models leverage the space of internal coordinates (dihedrals, angles, and bonds), which is a product of hypertori and compact intervals. In this work, we introduce a class of smooth mixture transformations working on both compact intervals and hypertori. Mixture transformations employ root-finding methods to invert them in practice, which has so far prevented bi-directional flow training. To this end, we show that parameter gradients and forces of such inverses can be computed from forward evaluations via the inverse function theorem. We demonstrate two advantages of such smooth flows: they allow training by force matching to simulation data and can be used as potentials in molecular dynamics simulations."
+  },
+  {
+    "id": "2301.05475",
+    "title": "Designing losses for data-free training of normalizing flows on Boltzmann distributions",
+    "authors": [
+      "Loris Felardos",
+      "Jérôme Hénin",
+      "Guillaume Charpiat"
+    ],
+    "published": "2023-01-13T10:56:13+00:00",
+    "cited_by": "2110.00351",
+    "description": "Later work[9]approached the problem usingC1superscript𝐶1C^{1}-smooth\nsplines flows which leads to accurate samples, however results in broken forces."
+  },
+  {
+    "id": "1912.02762",
+    "title": "Normalizing Flows for Probabilistic Modeling and Inference",
+    "authors": [
+      "George Papamakarios",
+      "Eric Nalisnick",
+      "Danilo Jimenez Rezende",
+      "Shakir Mohamed",
+      "Balaji Lakshminarayanan"
+    ],
+    "published": "2019-12-05T17:55:27+00:00",
+    "cited_by": "2301.05475",
+    "description": "Flow-based models (often just called normalizing flows) are a valuable type of\narchitecture for this purpose ([1],[2],[3]and[4]for an overview), which is\ninvertible and yields not only samplesx𝑥xbut also the probability\ndensitypG​(x)subscript𝑝𝐺𝑥p_{G}(x)of the generated distribution."
+  },
+  {
+    "id": "2209.15217",
+    "title": "Hyperbolic VAE via Latent Gaussian Distributions",
+    "authors": [
+      "Seunghyuk Cho",
+      "Juyong Lee",
+      "Dongwoo Kim"
+    ],
+    "published": "2022-09-30T04:09:06+00:00",
+    "cited_by": "2110.00351",
+    "description": "Flows on non-trivial manifolds have been discussed for hypertori and\n-spheres[43], Lie groups[16,4], hyperbolic spaces[3]as well as on general\nmanifolds[15,18,33,32,5,27]."
+  }
+]

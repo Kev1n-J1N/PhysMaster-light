@@ -1,0 +1,58 @@
+[
+  {
+    "id": "2208.09579",
+    "title": "Learning in Audio-visual Context: A Review, Analysis, and New Perspective",
+    "authors": [
+      "Yake Wei",
+      "Di Hu",
+      "Yapeng Tian",
+      "Xuelong Li"
+    ],
+    "published": "2022-08-20T02:15:44+00:00",
+    "cited_by": "",
+    "description": "Sight and hearing are two senses that play a vital role in human communication and scene understanding. To mimic human perception ability, audio-visual learning, aimed at developing computational approaches to learn from both audio and visual modalities, has been a flourishing field in recent years. A comprehensive survey that can systematically organize and analyze studies of the audio-visual field is expected. Starting from the analysis of audio-visual cognition foundations, we introduce several key findings that have inspired our computational studies. Then, we systematically review the recent audio-visual learning studies and divide them into three categories: audio-visual boosting, cross-modal perception and audio-visual collaboration. Through our analysis, we discover that, the consistency of audio-visual data across semantic, spatial and temporal support the above studies. To revisit the current development of the audio-visual learning field from a more macro view, we further propose a new perspective on audio-visual scene understanding, then discuss and analyze the feasible future direction of the audio-visual learning area. Overall, this survey reviews and outlooks the current audio-visual learning field from different aspects. We hope it can provide researchers with a better understanding of this area. A website including constantly-updated survey is released: \\url{https://gewu-lab.github.io/audio-visual-learning/}."
+  },
+  {
+    "id": "2411.05715",
+    "title": "On the Role of Noise in AudioVisual Integration: Evidence from Artificial Neural Networks that Exhibit the McGurk Effect",
+    "authors": [
+      "Lukas Grasse",
+      "Matthew S. Tata"
+    ],
+    "published": "2024-11-08T17:16:27+00:00",
+    "cited_by": "2208.09579",
+    "description": "One representative demonstration is McGurk effect[10],\nwhere two different audio-visual speech content results in a single received\ninformation."
+  },
+  {
+    "id": "2403.20177",
+    "title": "Preliminaries to artificial consciousness: a multidimensional heuristic approach",
+    "authors": [
+      "K. Evers",
+      "M. Farisco",
+      "R. Chatila",
+      "B. D. Earp",
+      "I. T. Freire",
+      "F. Hamker",
+      "E. Nemeth",
+      "P. F. M. J. Verschure",
+      "M. Khamassi"
+    ],
+    "published": "2024-03-29T13:47:47+00:00",
+    "cited_by": "2208.09579",
+    "description": "Meanwhile, the intensity and interaural time differences between two\nears provide cues for the sound location, which is called the binaural\neffect[9]."
+  },
+  {
+    "id": "2305.07216",
+    "title": "Versatile audio-visual learning for emotion recognition",
+    "authors": [
+      "Lucas Goncalves",
+      "Seong-Gyun Leem",
+      "Wei-Cheng Lin",
+      "Berrak Sisman",
+      "Carlos Busso"
+    ],
+    "published": "2023-05-12T03:13:37+00:00",
+    "cited_by": "2208.09579",
+    "description": "[3]provided a survey of deep learning-based audio-visual\napplications."
+  }
+]

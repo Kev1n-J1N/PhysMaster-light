@@ -1,0 +1,30 @@
+[
+  {
+    "id": "2206.02664",
+    "title": "Learning with Capsules: A Survey",
+    "authors": [
+      "Fabio De Sousa Ribeiro",
+      "Kevin Duarte",
+      "Miles Everett",
+      "Georgios Leontidis",
+      "Mubarak Shah"
+    ],
+    "published": "2022-06-06T15:05:36+00:00",
+    "cited_by": "",
+    "description": "Capsule networks were proposed as an alternative approach to Convolutional Neural Networks (CNNs) for learning object-centric representations, which can be leveraged for improved generalization and sample complexity. Unlike CNNs, capsule networks are designed to explicitly model part-whole hierarchical relationships by using groups of neurons to encode visual entities, and learn the relationships between those entities. Promising early results achieved by capsule networks have motivated the deep learning community to continue trying to improve their performance and scalability across several application areas. However, a major hurdle for capsule network research has been the lack of a reliable point of reference for understanding their foundational ideas and motivations. The aim of this survey is to provide a comprehensive overview of the capsule network research landscape, which will serve as a valuable resource for the community going forward. To that end, we start with an introduction to the fundamental concepts and motivations behind capsule networks, such as equivariant inference in computer vision. We then cover the technical advances in the capsule routing mechanisms and the various formulations of capsule networks, e.g. generative and geometric. Additionally, we provide a detailed explanation of how capsule networks relate to the popular attention mechanism in Transformers, and highlight non-trivial conceptual similarities between them in the context of representation learning. Afterwards, we explore the extensive applications of capsule networks in computer vision, video and motion, graph representation learning, natural language processing, medical imaging and many others. To conclude, we provide an in-depth discussion regarding the main hurdles in capsule network research, and highlight promising research directions for future work."
+  },
+  {
+    "id": "2309.07181",
+    "title": "The Grand Illusion: The Myth of Software Portability and Implications for ML Progress",
+    "authors": [
+      "Fraser Mince",
+      "Dzung Dinh",
+      "Jonas Kgomo",
+      "Neil Thompson",
+      "Sara Hooker"
+    ],
+    "published": "2023-09-12T22:11:55+00:00",
+    "cited_by": "2206.02664",
+    "description": "[23]explained that\nalthough their convolutional capsule model required around 4 times fewer\nfloating point operations (FLOPS) with 16 times fewer parameters than their CNN,\nimplementations in both TensorFlow[24]and PyTorch[25]ran significantly slower\nand ran out of memory with much smaller models."
+  }
+]

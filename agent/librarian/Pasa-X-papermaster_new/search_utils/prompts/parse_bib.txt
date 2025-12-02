@@ -1,0 +1,30 @@
+任务：解析bib内容，返回一个json格式的bibkey-title字典，结果需要保留原本的格式。如果无法提取有效论文标题，直接返回空字典{}。
+例子：
+[输入]
+\bibitem[Cal15]{Calvert}
+W.~Calvert, \emph{{PAC} learning, {VC} dimension, and the arithmetic
+  hierarchy}, Arch. Math. Logic \textbf{54} (2015), no.~7-8, 871--883.
+[返回]
+{
+    "Calvert": "{PAC} learning, {VC} dimension, and the arithmetic hierarchy"
+}
+[输入]
+\bibitem{source_code}
+\BIBentryALTinterwordspacing
+``{FixDrive} source code \& supplementary materials,'' 2025. [Online].
+  Available: \url{https://github.com/lawbreaker2022/FixDrive2025}
+\BIBentrySTDinterwordspacing
+[返回]
+{
+    "source_code": "{FixDrive} source code \& supplementary materials"
+}
+[输入]
+\bibitem [{\citenamefont {Behler}(2016)}]{behler2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Behler}},\ }\href {\doibase 10.1063/1.4966192} {\bibfield  {journal}
+  {\bibinfo  {journal} {J. Chem. Phys.}\ }\textbf {\bibinfo {volume} {145}},\
+  \bibinfo {pages} {170901} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+[返回]
+{}
+请你根据下面的输入返回字典：

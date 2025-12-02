@@ -1,0 +1,77 @@
+[
+  {
+    "id": "2102.11107",
+    "title": "Towards Causal Representation Learning",
+    "authors": [
+      "Bernhard Schölkopf",
+      "Francesco Locatello",
+      "Stefan Bauer",
+      "Nan Rosemary Ke",
+      "Nal Kalchbrenner",
+      "Anirudh Goyal",
+      "Yoshua Bengio"
+    ],
+    "published": "2021-02-22T15:26:57+00:00",
+    "cited_by": "",
+    "description": "The two fields of machine learning and graphical causality arose and developed separately. However, there is now cross-pollination and increasing interest in both fields to benefit from the advances of the other. In the present paper, we review fundamental concepts of causal inference and relate them to crucial open problems of machine learning, including transfer and generalization, thereby assaying how causality can contribute to modern machine learning research. This also applies in the opposite direction: we note that most work in causality starts from the premise that the causal variables are given. A central problem for AI and causality is, thus, causal representation learning, the discovery of high-level causal variables from low-level observations. Finally, we delineate some implications of causality for machine learning and propose key research areas at the intersection of both communities."
+  },
+  {
+    "id": "2311.11045",
+    "title": "Orca 2: Teaching Small Language Models How to Reason",
+    "authors": [
+      "Arindam Mitra",
+      "Luciano Del Corro",
+      "Shweti Mahajan",
+      "Andres Codas",
+      "Clarisse Simoes",
+      "Sahaj Agarwal",
+      "Xuxi Chen",
+      "Anastasia Razdaibiedina",
+      "Erik Jones",
+      "Kriti Aggarwal",
+      "Hamid Palangi",
+      "Guoqing Zheng",
+      "Corby Rosset",
+      "Hamed Khanpour",
+      "Ahmed Awadallah"
+    ],
+    "published": "2023-11-18T11:44:52+00:00",
+    "cited_by": "2102.11107",
+    "description": "Causal relations can also be viewed as the components of\nreasoning chains[151]that provide predictions for situations that are very far\nfrom the observed distribution and may even remain purely\nhypothetical[163,183]or require conscious deliberation[128]."
+  },
+  {
+    "id": "2408.04032",
+    "title": "The Evolution of Information Seeking in Software Development: Understanding the Role and Impact of AI Assistants",
+    "authors": [
+      "Ebtesam Al Haque",
+      "Chris Brown",
+      "Thomas D. LaToza",
+      "Brittany Johnson"
+    ],
+    "published": "2024-08-07T18:27:13+00:00",
+    "cited_by": "2311.11045",
+    "description": "Large Language Models (LLMs) are enabling more natural and sophisticated\ninteractions between humans and machines, enhancing user experience in existing\napplications like coding[3], web search[36], chatbots[45,56], customer service\nand content creation."
+  },
+  {
+    "id": "2206.11473",
+    "title": "Complementary datasets to COCO for object detection",
+    "authors": [
+      "Ali Borji"
+    ],
+    "published": "2022-06-23T04:03:32+00:00",
+    "cited_by": "2102.11107",
+    "description": "Motivated by this, new\nbenchmarks were proposed to specifically test generalization of classification\nand detection methods with respect to simple algorithmically generated\ninterventions like spatial shifts, blur, changes in brightness or\ncontrast[106,170], time consistency[94,227], control over background and\nrotation[11], as well as images collected in multiple environments[19]."
+  },
+  {
+    "id": "2501.01118",
+    "title": "Pruning-based Data Selection and Network Fusion for Efficient Deep Learning",
+    "authors": [
+      "Humaira Kousar",
+      "Hasnain Irshad Bhatti",
+      "Jaekyun Moon"
+    ],
+    "published": "2025-01-02T07:35:53+00:00",
+    "cited_by": "2206.11473",
+    "description": ", JFT-300M[16]) to achieve SOTA accuracy in object recognition\n(about 90% top-1 acc; 10% improvement over models trained on ImageNet), here we\nextend the COCO dataset building on top of its ecosystem."
+  }
+]

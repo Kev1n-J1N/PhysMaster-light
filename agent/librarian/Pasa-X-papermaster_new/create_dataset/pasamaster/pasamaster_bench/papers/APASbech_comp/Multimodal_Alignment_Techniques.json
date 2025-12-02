@@ -1,0 +1,72 @@
+[
+  {
+    "id": "2411.17040",
+    "title": "Multimodal Alignment and Fusion: A Survey",
+    "authors": [
+      "Songtao Li",
+      "Hao Tang"
+    ],
+    "published": "2024-11-26T02:10:27+00:00",
+    "cited_by": "",
+    "description": "This survey offers a comprehensive review of recent advancements in multimodal alignment and fusion within machine learning, spurred by the growing diversity of data types such as text, images, audio, and video. Multimodal integration enables improved model accuracy and broader applicability by leveraging complementary information across different modalities, as well as facilitating knowledge transfer in situations with limited data. We systematically categorize and analyze existing alignment and fusion techniques, drawing insights from an extensive review of more than 200 relevant papers. Furthermore, this survey addresses the challenges of multimodal data integration - including alignment issues, noise resilience, and disparities in feature representation - while focusing on applications in domains like social media analysis, medical imaging, and emotion recognition. The insights provided are intended to guide future research towards optimizing multimodal learning systems to enhance their scalability, robustness, and generalizability across various applications."
+  },
+  {
+    "id": "2504.12080",
+    "title": "DC-SAM: In-Context Segment Anything in Images and Videos via Dual Consistency",
+    "authors": [
+      "Mengshi Qi",
+      "Pengfei Zhu",
+      "Xiangtai Li",
+      "Xiaoyang Bi",
+      "Lu Qi",
+      "Huadong Ma",
+      "Ming-Hsuan Yang"
+    ],
+    "published": "2025-04-16T13:41:59+00:00",
+    "cited_by": "2411.17040",
+    "description": "Similarly, in the vision domain,\nlarge vision models (LVMs) have been proposed, including Segment Anything[67],\nDINO[68], and DINOv2[69]."
+  },
+  {
+    "id": "2501.13183",
+    "title": "MONA: Moving Object Detection from Videos Shot by Dynamic Camera",
+    "authors": [
+      "Boxun Hu",
+      "Mingze Xia",
+      "Ding Zhao",
+      "Guanlin Wu"
+    ],
+    "published": "2025-01-22T19:30:28+00:00",
+    "cited_by": "2504.12080",
+    "description": "Using large-scale data co-training,\nSAM[1]presents a novel data engine and a portable model for segmentation."
+  },
+  {
+    "id": "2406.09412",
+    "title": "Explore the Limits of Omni-modal Pretraining at Scale",
+    "authors": [
+      "Yiyuan Zhang",
+      "Handong Li",
+      "Jing Liu",
+      "Xiangyu Yue"
+    ],
+    "published": "2024-06-13T17:59:53+00:00",
+    "cited_by": "2411.17040",
+    "description": "To extend the strong performance of LLMs in text processing to tasks involving\nother modalities, significant research efforts have focused on the development\nof large-scale multimodal models[71]."
+  },
+  {
+    "id": "2305.16103",
+    "title": "ChatBridge: Bridging Modalities with Large Language Model as a Language Catalyst",
+    "authors": [
+      "Zijia Zhao",
+      "Longteng Guo",
+      "Tongtian Yue",
+      "Sihan Chen",
+      "Shuai Shao",
+      "Xinxin Zhu",
+      "Zehuan Yuan",
+      "Jing Liu"
+    ],
+    "published": "2023-05-25T14:34:08+00:00",
+    "cited_by": "2406.09412",
+    "description": "audio[8], point clouds[9], and more\ncomprehensive tasks,e."
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "id": "2110.09240",
+    "title": "Value alignment: a formal approach",
+    "authors": [
+      "Carles Sierra",
+      "Nardine Osman",
+      "Pablo Noriega",
+      "Jordi Sabater-Mir",
+      "Antoni Perelló"
+    ],
+    "published": "2021-10-18T12:40:04+00:00",
+    "cited_by": "",
+    "description": "principles that should govern autonomous AI systems. It essentially states that a system's goals and behaviour should be aligned with human values. But how to ensure value alignment? In this paper we first provide a formal model to represent values through preferences and ways to compute value aggregations; i.e. preferences with respect to a group of agents and/or preferences with respect to sets of values. Value alignment is then defined, and computed, for a given norm with respect to a given value through the increase/decrease that it results in the preferences of future states of the world. We focus on norms as it is norms that govern behaviour, and as such, the alignment of a given system with a given value will be dictated by the norms the system follows."
+  },
+  {
+    "id": "2505.21479",
+    "title": "Are Language Models Consequentialist or Deontological Moral Reasoners?",
+    "authors": [
+      "Keenan Samway",
+      "Max Kleiman-Weiner",
+      "David Guzman Piedrahita",
+      "Rada Mihalcea",
+      "Bernhard Schölkopf",
+      "Zhijing Jin"
+    ],
+    "published": "2025-05-27T17:51:18+00:00",
+    "cited_by": "2110.09240",
+    "description": "Our second assumption is aconsequentalistview of values[22]by which the\n“worthiness” of a value, and therefore, its social meaning, is given by the\noutcomes of the actions that are aligned with it."
+  }
+]

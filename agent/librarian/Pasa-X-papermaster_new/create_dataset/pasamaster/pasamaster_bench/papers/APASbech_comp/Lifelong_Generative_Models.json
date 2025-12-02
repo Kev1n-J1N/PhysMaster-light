@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1705.09847",
+    "title": "Lifelong Generative Modeling",
+    "authors": [
+      "Jason Ramapuram",
+      "Magda Gregorova",
+      "Alexandros Kalousis"
+    ],
+    "published": "2017-05-27T17:34:15+00:00",
+    "cited_by": "",
+    "description": "Lifelong learning is the problem of learning multiple consecutive tasks in a sequential manner, where knowledge gained from previous tasks is retained and used to aid future learning over the lifetime of the learner. It is essential towards the development of intelligent machines that can adapt to their surroundings. In this work we focus on a lifelong learning approach to unsupervised generative modeling, where we continuously incorporate newly observed distributions into a learned model. We do so through a student-teacher Variational Autoencoder architecture which allows us to learn and preserve all the distributions seen so far, without the need to retain the past data nor the past models. Through the introduction of a novel cross-model regularizer, inspired by a Bayesian update rule, the student model leverages the information learned by the teacher, which acts as a probabilistic knowledge store. The regularizer reduces the effect of catastrophic interference that appears when we learn over sequences of distributions. We validate our model's performance on sequential variants of MNIST, FashionMNIST, PermutedMNIST, SVHN and Celeb-A and demonstrate that our model mitigates the effects of catastrophic interference faced by neural networks in sequential learning scenarios."
+  },
+  {
+    "id": "2502.00197",
+    "title": "Learning Model Successors",
+    "authors": [
+      "Yingshan Chang",
+      "Yonatan Bisk"
+    ],
+    "published": "2025-01-31T22:27:09+00:00",
+    "cited_by": "1705.09847",
+    "description": "[67]demonstrates that humans can classify and\ngenerate new concepts of two wheel vehicles given just a single related sample."
+  },
+  {
+    "id": "2407.18837",
+    "title": "Distributionally Robust Kalman Filtering over Finite and Infinite Horizon",
+    "authors": [
+      "Taylan Kargin",
+      "Joudi Hajar",
+      "Vikrant Malik",
+      "Babak Hassibi"
+    ],
+    "published": "2024-07-26T15:58:11+00:00",
+    "cited_by": "1705.09847",
+    "description": "The idea of learning in a continual manner has been explored extensively in\nmachine learning, seeded by the seminal works of lifelong-learning[126,125,117],\nonline-learning[32,9,11,12]and sequential linear gaussian models[105,36]such as\nthe Kalman Filter[56]and its non-linear counterpart, the Particle Filter[24]."
+  },
+  {
+    "id": "2301.11732",
+    "title": "Convolutional neural networks for valid and efficient causal inference",
+    "authors": [
+      "Mohammad Ghasempour",
+      "Niloofar Moosavi",
+      "Xavier de Luna"
+    ],
+    "published": "2023-01-27T14:16:55+00:00",
+    "cited_by": "1705.09847",
+    "description": "For example, the use of convolutions[70]to\nprocess images favors local structure; recurrent models[54,46]exploit sequential\ndependencies and graph neural networks[109,64]assume that the underlying data\ncan be modeled accurately as a graph."
+  }
+]

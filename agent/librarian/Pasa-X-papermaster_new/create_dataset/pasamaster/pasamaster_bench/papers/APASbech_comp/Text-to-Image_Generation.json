@@ -1,0 +1,63 @@
+[
+  {
+    "id": "2303.07909",
+    "title": "Text-to-image Diffusion Models in Generative AI: A Survey",
+    "authors": [
+      "Chenshuang Zhang",
+      "Chaoning Zhang",
+      "Mengchun Zhang",
+      "In So Kweon",
+      "Junmo Kim"
+    ],
+    "published": "2023-03-14T13:49:54+00:00",
+    "cited_by": "",
+    "description": "This survey reviews the progress of diffusion models in generating images from text, ~\\textit{i.e.} text-to-image diffusion models. As a self-contained work, this survey starts with a brief introduction of how diffusion models work for image synthesis, followed by the background for text-conditioned image synthesis. Based on that, we present an organized review of pioneering methods and their improvements on text-to-image generation. We further summarize applications beyond image generation, such as text-guided generation for various modalities like videos, and text-guided image editing. Beyond the progress made so far, we discuss existing challenges and promising future directions."
+  },
+  {
+    "id": "2505.20984",
+    "title": "Generative Image Compression by Estimating Gradients of the Rate-variable Feature Distribution",
+    "authors": [
+      "Minghao Han",
+      "Weiyi You",
+      "Jinhua Zhang",
+      "Leheng Zhang",
+      "Ce Zhu",
+      "Shuhang Gu"
+    ],
+    "published": "2025-05-27T10:18:24+00:00",
+    "cited_by": "2303.07909",
+    "description": "The advent of DDPM[30]can be mainly attributed to two early attempts: score-\nbased generative models (SGM)[31]being investigated in 2019 and diffusion\nprobabilistic models (DPM)[29]emerging as early as in 2015."
+  },
+  {
+    "id": "2303.13336",
+    "title": "A Survey on Audio Diffusion Models: Text To Speech Synthesis and Enhancement in Generative AI",
+    "authors": [
+      "Chenshuang Zhang",
+      "Chaoning Zhang",
+      "Sheng Zheng",
+      "Mengchun Zhang",
+      "Maryam Qamar",
+      "Sung-Ho Bae",
+      "In So Kweon"
+    ],
+    "published": "2023-03-23T15:17:15+00:00",
+    "cited_by": "2303.07909",
+    "description": "With multiple works[19,22]reviewing the\nprogress of diffusion models in all fields but lacking a detailed introduction\nto a certain specific field, some works dive deep into specific fields,\nincluding audio diffusion models[25], graph diffusion models[26]."
+  },
+  {
+    "id": "2304.01565",
+    "title": "A Survey on Graph Diffusion Models: Generative AI in Science for Molecule, Protein and Material",
+    "authors": [
+      "Mengchun Zhang",
+      "Maryam Qamar",
+      "Taegoo Kang",
+      "Yuna Jung",
+      "Chenshuang Zhang",
+      "Sung-Ho Bae",
+      "Chaoning Zhang"
+    ],
+    "published": "2023-04-04T06:41:15+00:00",
+    "cited_by": "2303.07909",
+    "description": "With multiple works[19,22]reviewing the\nprogress of diffusion models in all fields but lacking a detailed introduction\nto a certain specific field, some works dive deep into specific fields,\nincluding audio diffusion models[25], graph diffusion models[26]."
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "id": "2310.14201",
+    "title": "Prompt Engineering Through the Lens of Optimal Control",
+    "authors": [
+      "Yifan Luo",
+      "Yiming Tang",
+      "Chengfeng Shen",
+      "Zhennan Zhou",
+      "Bin Dong"
+    ],
+    "published": "2023-10-22T06:34:09+00:00",
+    "cited_by": "",
+    "description": "Prompt Engineering (PE) has emerged as a critical technique for guiding Large Language Models (LLMs) in solving intricate tasks. Its importance is highlighted by its potential to significantly enhance the efficiency and effectiveness of human-machine interaction. As tasks grow increasingly complex, recent advanced PE methods have extended beyond the limitations of single-round interactions to embrace multi-round interactions, which allows for a deeper and more nuanced engagement with LLMs. In this paper, we propose an optimal control framework tailored for multi-round interactions with LLMs. This framework provides a unified mathematical structure that not only systematizes the existing PE methods but also sets the stage for rigorous analytical improvements. Furthermore, we extend this framework to include PE via ensemble methods and multi-agent collaboration, thereby enlarging the scope of applicability. By adopting an optimal control perspective, we offer fresh insights into existing PE methods and highlight theoretical challenges that warrant future research. Besides, our work lays a foundation for the development of more effective and interpretable PE methods."
+  },
+  {
+    "id": "2506.17610",
+    "title": "The Dirac--Bergmann approach to optimal control theory",
+    "authors": [
+      "Davit Aghamalyan",
+      "Aleek Maity",
+      "Varun Narasimhachar",
+      "V V Sreedhar"
+    ],
+    "published": "2025-06-21T06:23:22+00:00",
+    "cited_by": "2310.14201",
+    "description": "This evolution in PE bears a\nstriking resemblance to the historical trajectory of optimal control theory[11],\nwhich itself originated from the need for point-to-point trajectory optimization\nand later expanded its scope to accommodate dynamic systems with feedback\nmechanisms."
+  },
+  {
+    "id": "2403.00532",
+    "title": "Introduction to Theoretical and Experimental aspects of Quantum Optimal Control",
+    "authors": [
+      "Q. Ansel",
+      "E. Dionis",
+      "F. Arrouas",
+      "B. Peaudecerf",
+      "S. Guérin",
+      "D. Guéry-Odelin",
+      "D. Sugny"
+    ],
+    "published": "2024-03-01T13:45:57+00:00",
+    "cited_by": "2506.17610",
+    "description": "In this review, we will follow the development presented in[1], with minor\nnotational modifications."
+  },
+  {
+    "id": "2412.09722",
+    "title": "GReaTer: Gradients over Reasoning Makes Smaller Language Models Strong Prompt Optimizers",
+    "authors": [
+      "Sarkar Snigdha Sarathi Das",
+      "Ryo Kamoi",
+      "Bo Pang",
+      "Yusen Zhang",
+      "Caiming Xiong",
+      "Rui Zhang"
+    ],
+    "published": "2024-12-12T20:59:43+00:00",
+    "cited_by": "2310.14201",
+    "description": "These tactics may include directing the LLM to decompose\nthe initial task[7,29], or eliciting background information from the LLM[8],\namong other approaches."
+  }
+]

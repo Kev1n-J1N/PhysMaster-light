@@ -1,0 +1,78 @@
+[
+  {
+    "id": "1911.10635",
+    "title": "Multi-Agent Reinforcement Learning: A Selective Overview of Theories and Algorithms",
+    "authors": [
+      "Kaiqing Zhang",
+      "Zhuoran Yang",
+      "Tamer Başar"
+    ],
+    "published": "2019-11-24T22:50:32+00:00",
+    "cited_by": "",
+    "description": "Recent years have witnessed significant advances in reinforcement learning (RL), which has registered great success in solving various sequential decision-making problems in machine learning. Most of the successful RL applications, e.g., the games of Go and Poker, robotics, and autonomous driving, involve the participation of more than one single agent, which naturally fall into the realm of multi-agent RL (MARL), a domain with a relatively long history, and has recently re-emerged due to advances in single-agent RL techniques. Though empirically successful, theoretical foundations for MARL are relatively lacking in the literature. In this chapter, we provide a selective overview of MARL, with focus on algorithms backed by theoretical analysis. More specifically, we review the theoretical results of MARL algorithms mainly within two representative frameworks, Markov/stochastic games and extensive-form games, in accordance with the types of tasks they address, i.e., fully cooperative, fully competitive, and a mix of the two. We also introduce several significant but challenging applications of these algorithms. Orthogonal to the existing reviews on MARL, we highlight several new angles and taxonomies of MARL theory, including learning in extensive-form games, decentralized MARL with networked agents, MARL in the mean-field regime, (non-)convergence of policy-based methods for learning in games, etc. Some of the new angles extrapolate from our own research endeavors and interests. Our overall goal with this chapter is, beyond providing an assessment of the current state of the field on the mark, to identify fruitful future research directions on theoretical studies of MARL. We expect this chapter to serve as continuing stimulus for researchers interested in working on this exciting while challenging topic."
+  },
+  {
+    "id": "2401.13884",
+    "title": "Constant Stepsize Q-learning: Distributional Convergence, Bias and Extrapolation",
+    "authors": [
+      "Yixuan Zhang",
+      "Qiaomin Xie"
+    ],
+    "published": "2024-01-25T02:01:53+00:00",
+    "cited_by": "1911.10635",
+    "description": "One of the most popular value-based algorithms is Q-learning[48], where the\nagent maintains an estimate of the Q-value functionQ^​(s,a)^𝑄𝑠𝑎\\hat{Q}(s,a)."
+  },
+  {
+    "id": "2404.02511",
+    "title": "Stochastic Constrained Decentralized Optimization for Machine Learning with Fewer Data Oracles: a Gradient Sliding Approach",
+    "authors": [
+      "Hoang Huy Nguyen",
+      "Yan Li",
+      "Tuo Zhao"
+    ],
+    "published": "2024-04-03T06:55:59+00:00",
+    "cited_by": "2401.13884",
+    "description": "One prominent example is the widely-used\nstochastic gradient descent (SGD) algorithm for finding the optimal solution to\nan objective function[69]."
+  },
+  {
+    "id": "2201.07211",
+    "title": "Human-Level Control through Directly-Trained Deep Spiking Q-Networks",
+    "authors": [
+      "Guisong Liu",
+      "Wenjie Deng",
+      "Xiurui Xie",
+      "Li Huang",
+      "Huajin Tang"
+    ],
+    "published": "2021-12-13T09:46:17+00:00",
+    "cited_by": "1911.10635",
+    "description": "Recent years have witnessed sensational advances of reinforcement learning (RL)\nin many prominent sequential decision-making problems, such as playing the game\nof Go[1,2], playing real-time strategy games[3,4], robotic control[5,6], playing\ncard games[7,8], and autonomous driving[9], especially accompanied with the\ndevelopment of deep neural networks (DNNs) for function approximation[10]."
+  },
+  {
+    "id": "2103.08392",
+    "title": "The SpiNNaker 2 Processing Element Architecture for Hybrid Digital Neuromorphic Computing",
+    "authors": [
+      "Sebastian Höppner",
+      "Yexin Yan",
+      "Andreas Dixius",
+      "Stefan Scholze",
+      "Johannes Partzsch",
+      "Marco Stolba",
+      "Florian Kelber",
+      "Bernhard Vogginger",
+      "Felix Neumärker",
+      "Georg Ellguth",
+      "Stephan Hartmann",
+      "Stefan Schiefer",
+      "Thomas Hocker",
+      "Dennis Walter",
+      "Genting Liu",
+      "Jim Garside",
+      "Steve Furber",
+      "Christian Mayr"
+    ],
+    "published": "2021-03-15T13:59:36+00:00",
+    "cited_by": "2201.07211",
+    "description": "This makes SNNs has been implemented\nsuccessfully on dedicated neuromorphic hardware, such as SpiNNaker at\nManchester, UK[2], IBM’s TrueNorth[3], and Intel’s Loihi[4], which are reported\nto be 1000 times more energy-efficient than conventional chips."
+  }
+]

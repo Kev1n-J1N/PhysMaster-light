@@ -1,0 +1,51 @@
+[
+  {
+    "id": "2507.13703",
+    "title": "Binarizing Physics-Inspired GNNs for Combinatorial Optimization",
+    "authors": [
+      "Martin Krutský",
+      "Gustav Šír",
+      "Vyacheslav Kungurtsev",
+      "Georgios Korpas"
+    ],
+    "published": "2025-07-18T07:11:50+00:00",
+    "cited_by": "",
+    "description": "Physics-inspired graph neural networks (PI-GNNs) have been utilized as an efficient unsupervised framework for relaxing combinatorial optimization problems encoded through a specific graph structure and loss, reflecting dependencies between the problem's variables. While the framework has yielded promising results in various combinatorial problems, we show that the performance of PI-GNNs systematically plummets with an increasing density of the combinatorial problem graphs. Our analysis reveals an interesting phase transition in the PI-GNNs' training dynamics, associated with degenerate solutions for the denser problems, highlighting a discrepancy between the relaxed, real-valued model outputs and the binary-valued problem solutions. To address the discrepancy, we propose principled alternatives to the naive strategy used in PI-GNNs by building on insights from fuzzy logic and binarized neural networks. Our experiments demonstrate that the portfolio of proposed methods significantly improves the performance of PI-GNNs in increasingly dense settings."
+  },
+  {
+    "id": "2502.05537",
+    "title": "Sequential Stochastic Combinatorial Optimization Using Hierarchal Reinforcement Learning",
+    "authors": [
+      "Xinsong Feng",
+      "Zihan Yu",
+      "Yanhai Xiong",
+      "Haipeng Chen"
+    ],
+    "published": "2025-02-08T12:00:30+00:00",
+    "cited_by": "2507.13703",
+    "description": "In response, it has been argued that PI-GNNs exhibit superior\nperformance ondensegraph instances[51], considered better suited for the\nnatively parallel deep learning-based approach[52]."
+  },
+  {
+    "id": "2412.18571",
+    "title": "Scalable Quantum-Inspired Optimization through Dynamic Qubit Compression",
+    "authors": [
+      "Co Tran",
+      "Quoc-Bao Tran",
+      "Hy Truong Son",
+      "Thang N Dinh"
+    ],
+    "published": "2024-12-24T17:51:42+00:00",
+    "cited_by": "2507.13703",
+    "description": "In response, it has been argued that PI-GNNs exhibit superior\nperformance ondensegraph instances[51], considered better suited for the\nnatively parallel deep learning-based approach[52]."
+  },
+  {
+    "id": "2408.02299",
+    "title": "Various Properties of Various Ultrafilters, Various Graph Width Parameters, and Various Connectivity Systems (with Survey)",
+    "authors": [
+      "Takaaki Fujita"
+    ],
+    "published": "2024-08-05T08:16:47+00:00",
+    "cited_by": "2507.13703",
+    "description": "However, the experimental\nanalysis has focused merely on sparsedd-regular graphs (d=3d=3,d=5d=5),111with\nedge density[15]ρ​(𝒢)≤0."
+  }
+]

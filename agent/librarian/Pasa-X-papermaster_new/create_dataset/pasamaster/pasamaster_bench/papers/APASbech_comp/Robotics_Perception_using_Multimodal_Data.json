@@ -1,0 +1,54 @@
+[
+  {
+    "id": "2404.04220",
+    "title": "Multi-modal perception for soft robotic interactions using generative models",
+    "authors": [
+      "Enrico Donato",
+      "Egidio Falotico",
+      "Thomas George Thuruthel"
+    ],
+    "published": "2024-04-05T17:06:03+00:00",
+    "cited_by": "",
+    "description": "Perception is essential for the active interaction of physical agents with the external environment. The integration of multiple sensory modalities, such as touch and vision, enhances this perceptual process, creating a more comprehensive and robust understanding of the world. Such fusion is particularly useful for highly deformable bodies such as soft robots. Developing a compact, yet comprehensive state representation from multi-sensory inputs can pave the way for the development of complex control strategies. This paper introduces a perception model that harmonizes data from diverse modalities to build a holistic state representation and assimilate essential information. The model relies on the causality between sensory input and robotic actions, employing a generative model to efficiently compress fused information and predict the next observation. We present, for the first time, a study on how touch can be predicted from vision and proprioception on soft robots, the importance of the cross-modal generation and why this is essential for soft robotic interactions in unstructured environments."
+  },
+  {
+    "id": "2203.04453",
+    "title": "Machine Learning in NextG Networks via Generative Adversarial Networks",
+    "authors": [
+      "Ender Ayanoglu",
+      "Kemal Davaslioglu",
+      "Yalin E. Sagduyu"
+    ],
+    "published": "2022-03-09T00:15:34+00:00",
+    "cited_by": "2404.04220",
+    "description": "To summarize,\ntheConditional VAE(CVAE)[21]in Figure2(b) implement both sensory fusion and\nsensory prediction."
+  },
+  {
+    "id": "2205.14292",
+    "title": "BulletArm: An Open-Source Robotic Manipulation Benchmark and Learning Framework",
+    "authors": [
+      "Dian Wang",
+      "Colin Kohler",
+      "Xupeng Zhu",
+      "Mingxi Jia",
+      "Robert Platt"
+    ],
+    "published": "2022-05-28T01:19:50+00:00",
+    "cited_by": "2404.04220",
+    "description": "The simulation is realized using the SoMo library[22], which is built upon the\nPyBullet[23]physics simulator."
+  },
+  {
+    "id": "1806.06176",
+    "title": "Learning Factorized Multimodal Representations",
+    "authors": [
+      "Yao-Hung Hubert Tsai",
+      "Paul Pu Liang",
+      "Amir Zadeh",
+      "Louis-Philippe Morency",
+      "Ruslan Salakhutdinov"
+    ],
+    "published": "2018-06-16T03:48:50+00:00",
+    "cited_by": "2404.04220",
+    "description": "The integration of\nmultiple sensory modalities not only provides redundancy but also augments the\nresilience of the perceptual process[2]."
+  }
+]

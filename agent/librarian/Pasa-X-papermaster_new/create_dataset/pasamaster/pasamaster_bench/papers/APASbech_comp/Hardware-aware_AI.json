@@ -1,0 +1,39 @@
+[
+  {
+    "id": "2506.13755",
+    "title": "MARCO: Hardware-Aware Neural Architecture Search for Edge Devices with Multi-Agent Reinforcement Learning and Conformal Prediction Filtering",
+    "authors": [
+      "Arya Fayyazi",
+      "Mehdi Kamal",
+      "Massoud Pedram"
+    ],
+    "published": "2025-06-16T17:58:09+00:00",
+    "cited_by": "",
+    "description": "This paper introduces MARCO (Multi-Agent Reinforcement learning with Conformal Optimization), a novel hardware-aware framework for efficient neural architecture search (NAS) targeting resource-constrained edge devices. By significantly reducing search time and maintaining accuracy under strict hardware constraints, MARCO bridges the gap between automated DNN design and CAD for edge AI deployment. MARCO's core technical contribution lies in its unique combination of multi-agent reinforcement learning (MARL) with Conformal Prediction (CP) to accelerate the hardware/software co-design process for deploying deep neural networks. Unlike conventional once-for-all (OFA) supernet approaches that require extensive pretraining, MARCO decomposes the NAS task into a hardware configuration agent (HCA) and a Quantization Agent (QA). The HCA optimizes high-level design parameters, while the QA determines per-layer bit-widths under strict memory and latency budgets using a shared reward signal within a centralized-critic, decentralized-execution (CTDE) paradigm. A key innovation is the integration of a calibrated CP surrogate model that provides statistical guarantees (with a user-defined miscoverage rate) to prune unpromising candidate architectures before incurring the high costs of partial training or hardware simulation. This early filtering drastically reduces the search space while ensuring that high-quality designs are retained with a high probability. Extensive experiments on MNIST, CIFAR-10, and CIFAR-100 demonstrate that MARCO achieves a 3-4x reduction in total search time compared to an OFA baseline while maintaining near-baseline accuracy (within 0.3%). Furthermore, MARCO also reduces inference latency. Validation on a MAX78000 evaluation board confirms that simulator trends hold in practice, with simulator estimates deviating from measured values by less than 5%."
+  },
+  {
+    "id": "2107.07511",
+    "title": "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification",
+    "authors": [
+      "Anastasios N. Angelopoulos",
+      "Stephen Bates"
+    ],
+    "published": "2021-07-15T17:59:50+00:00",
+    "cited_by": "2506.13755",
+    "description": "Accelerator‑specific heuristics[32,19]and proxy cost\nmodels[20]mitigate this burden, but do not offer statistical guarantees that\nnear‑optimal architectures survive the pruning stage[5]."
+  },
+  {
+    "id": "2501.13430",
+    "title": "Wasserstein-regularized Conformal Prediction under General Distribution Shift",
+    "authors": [
+      "Rui Xu",
+      "Chao Chen",
+      "Yue Sun",
+      "Parvathinathan Venkitasubramaniam",
+      "Sihong Xie"
+    ],
+    "published": "2025-01-23T07:29:44+00:00",
+    "cited_by": "2107.07511",
+    "description": "See[31,32,33]and[34]for two differing perspectives."
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "2012.06567",
+    "title": "A Comprehensive Study of Deep Video Action Recognition",
+    "authors": [
+      "Yi Zhu",
+      "Xinyu Li",
+      "Chunhui Liu",
+      "Mohammadreza Zolfaghari",
+      "Yuanjun Xiong",
+      "Chongruo Wu",
+      "Zhi Zhang",
+      "Joseph Tighe",
+      "R. Manmatha",
+      "Mu Li"
+    ],
+    "published": "2020-12-11T18:54:08+00:00",
+    "cited_by": "",
+    "description": "Video action recognition is one of the representative tasks for video understanding. Over the last decade, we have witnessed great advancements in video action recognition thanks to the emergence of deep learning. But we also encountered new challenges, including modeling long-range temporal information in videos, high computation costs, and incomparable results due to datasets and evaluation protocol variances. In this paper, we provide a comprehensive survey of over 200 existing papers on deep learning for video action recognition. We first introduce the 17 video action recognition datasets that influenced the design of models. Then we present video action recognition models in chronological order: starting with early attempts at adapting deep learning, then to the two-stream networks, followed by the adoption of 3D convolutional kernels, and finally to the recent compute-efficient models. In addition, we benchmark popular methods on several representative datasets and release code for reproducibility. In the end, we discuss open problems and shed light on opportunities for video action recognition to facilitate new research ideas."
+  },
+  {
+    "id": "2405.15160",
+    "title": "ARVideo: Autoregressive Pretraining for Self-Supervised Video Representation Learning",
+    "authors": [
+      "Sucheng Ren",
+      "Hongru Zhu",
+      "Chen Wei",
+      "Yijiang Li",
+      "Alan Yuille",
+      "Cihang Xie"
+    ],
+    "published": "2024-05-24T02:29:03+00:00",
+    "cited_by": "2012.06567",
+    "description": "g, from 7K videos over515151classes in HMDB51[109]to 8M videos\nover3,86238623,862classes in YouTube8M[1]."
+  },
+  {
+    "id": "2503.20258",
+    "title": "Mamba-3D as Masked Autoencoders for Accurate and Data-Efficient Analysis of Medical Ultrasound Videos",
+    "authors": [
+      "Jiaheng Zhou",
+      "Yanfeng Zhou",
+      "Wei Fang",
+      "Yuxing Tang",
+      "Le Lu",
+      "Ge Yang"
+    ],
+    "published": "2025-03-26T05:54:13+00:00",
+    "cited_by": "2405.15160",
+    "description": "For example, MAE[18]presents a scalable self-\nsupervised learning method to reconstruct masked image patches while\nVideoMAE[39]extends this approach to video data and reconstructs masked\nspacetime patches."
+  },
+  {
+    "id": "2403.06977",
+    "title": "VideoMamba: State Space Model for Efficient Video Understanding",
+    "authors": [
+      "Kunchang Li",
+      "Xinhao Li",
+      "Yi Wang",
+      "Yinan He",
+      "Yali Wang",
+      "Limin Wang",
+      "Yu Qiao"
+    ],
+    "published": "2024-03-11T17:59:34+00:00",
+    "cited_by": "2503.20258",
+    "description": "VideoMamba[31]simply replaced the vanilla ViT block[12]with the bi-directional\nMamba block[73], employing a spatial-first scanning mechanism to adapt Mamba for\n3D video data."
+  }
+]

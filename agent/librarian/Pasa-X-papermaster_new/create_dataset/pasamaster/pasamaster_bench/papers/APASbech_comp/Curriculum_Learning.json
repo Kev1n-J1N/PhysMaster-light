@@ -1,0 +1,25 @@
+[
+  {
+    "id": "2010.13166",
+    "title": "A Survey on Curriculum Learning",
+    "authors": [
+      "Xin Wang",
+      "Yudong Chen",
+      "Wenwu Zhu"
+    ],
+    "published": "2020-10-25T17:15:04+00:00",
+    "cited_by": "",
+    "description": "Curriculum learning (CL) is a training strategy that trains a machine learning model from easier data to harder data, which imitates the meaningful learning order in human curricula. As an easy-to-use plug-in, the CL strategy has demonstrated its power in improving the generalization capacity and convergence rate of various models in a wide range of scenarios such as computer vision and natural language processing etc. In this survey article, we comprehensively review CL from various aspects including motivations, definitions, theories, and applications. We discuss works on curriculum learning within a general CL framework, elaborating on how to design a manually predefined curriculum or an automatic curriculum. In particular, we summarize existing CL designs based on the general framework of Difficulty Measurer+Training Scheduler and further categorize the methodologies for automatic CL into four groups, i.e., Self-paced Learning, Transfer Teacher, RL Teacher, and Other Automatic CL. We also analyze principles to select different CL designs that may benefit practical applications. Finally, we present our insights on the relationships connecting CL and other machine learning concepts including transfer learning, meta-learning, continual learning and active learning, etc., then point out challenges in CL as well as potential future research directions deserving further investigations."
+  },
+  {
+    "id": "2403.14427",
+    "title": "Learning and communication pressures in neural networks: Lessons from emergent communication",
+    "authors": [
+      "Lukas Galke",
+      "Limor Raviv"
+    ],
+    "published": "2024-03-21T14:33:34+00:00",
+    "cited_by": "2010.13166",
+    "description": "More\nspecifically, the basic idea is to “start small”[15], train the machine learning\nmodel with easier data subsets (or easier subtasks), and then gradually increase\nthe difficulty level of data (or subtasks) until the whole training dataset (or\nthe target task(s))."
+  }
+]

@@ -2,6 +2,7 @@ import os
 import time
 import re
 import uuid
+from pathlib import Path
 
 class MarkdownWriter:
     def __init__(
@@ -17,14 +18,19 @@ class MarkdownWriter:
     ):
         self.problem = problem
         self.topic = topic
-        self.log_dir = log_dir
         self.depth = depth
         self.node_index = node_index
         self.file_prefix = file_prefix
 
+        # 为每个 node 构造单独的日志目录：<task_dir>/depth{depth}_node{node}
+        base_path = Path(log_dir)
+        if self.depth is not None and self.node_index is not None:
+            base_path = base_path / f"depth{self.depth}_node{self.node_index}"
+        self.log_dir = str(base_path)
+
         os.makedirs(self.log_dir, exist_ok=True)
 
-        # If a specific markdown file path was provided, use it directly.
+        # 如果指定了 markdown_file，就直接用该路径
         if markdown_file:
             self.markdown_file = str(markdown_file)
         else:
@@ -32,7 +38,7 @@ class MarkdownWriter:
 
         self.buffer = []
 
-        # Only write the header if the markdown file does not already exist or is empty.
+        # 只有在文件不存在或为空时写入头部
         try:
             file_exists = os.path.exists(self.markdown_file)
             file_nonempty = file_exists and os.path.getsize(self.markdown_file) > 0
@@ -119,3 +125,4 @@ class MarkdownWriter:
     def get_buffer(self) -> str:
         """返回内存中完整 Markdown 内容"""
         return "".join(self.buffer)
+

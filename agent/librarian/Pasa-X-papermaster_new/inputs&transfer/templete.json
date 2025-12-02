@@ -1,0 +1,64 @@
+{
+  "topic": "Free-fall time and impact velocity from a 5 m height",
+  "domain": "Classical Mechanics",
+  "subdomain": "Kinematics",
+  "related_knowledge": [
+    "Constant-acceleration kinematics equations",
+    "Gravitational acceleration near Earth's surface (g ≈ 9.81 m/s^2)",
+    "Energy conservation in a uniform gravitational field",
+    "One-dimensional motion with upward-positive convention"
+  ],
+  "task_type": "Analytical calculation",
+  "task_background": "A small ball is dropped from rest from a height h = 5 meters near Earth's surface. Air resistance is ignored, motion is along the vertical, and gravity is taken as constant.",
+  "task_description": "Compute the time to impact and the final velocity for a ball dropped from rest from height h = 5 m under uniform gravity, neglecting air resistance. Use kinematics: y(t) = y0 + v0 t + (1/2) a t^2 with a = -g, and v(t) = v0 + a t. Set y=0 at ground. Solve for t_hit: 0 = h - (1/2) g t^2 ⇒ t_hit = sqrt(2h/g). Final velocity is v_f = -g t_hit (upward positive) or equivalently v_f^2 = 2 g h.",
+  "expected_output": [
+    {
+      "format": "Text",
+      "path": "none",
+      "description": "Time to impact t_hit ≈ 1.01 s; final velocity v_f ≈ -9.90 m/s (downward). Formulas used: t_hit = sqrt(2h/g), v_f = -g t_hit, with g = 9.81 m/s^2 and h = 5 m."
+    }
+  ],
+  "constraints": {
+    "symmetry": [
+      "Galilean invariance",
+      "Spatial translation symmetry in horizontal directions",
+      "Rotational symmetry about the vertical axis"
+    ],
+    "conservation_law": [
+      "Mechanical energy conserved in gravitational potential (neglecting air resistance)"
+    ],
+    "dimension": "1",
+    "spatial_scale": "≈5 m",
+    "time_scale": "≈1 s",
+    "energy_scale": "Per unit mass: g h ≈ 49 J/kg",
+    "boundary_condition": "Ground at y = 0 (impact occurs when y(t) = 0)",
+    "initial_condition": "y(0) = 5 m, v(0) = 0 (upward positive), a = -g",
+    "geometry_constraints": [
+      "One-dimensional vertical motion",
+      "Uniform gravitational field",
+      "Negligible air resistance"
+    ],
+    "mathematical_constraints": [
+      "y(t) = y0 + v0 t + (1/2) a t^2 with a = -g",
+      "v(t) = v0 + a t",
+      "t_hit = sqrt(2 h / g)",
+      "v_f = -g t_hit",
+      "v_f^2 = 2 g h"
+    ]
+  },
+  "input_data": {
+    "format": "Text",
+    "path": "none",
+    "description": "Height h = 5 m, initial velocity v0 = 0, gravitational acceleration g = 9.81 m/s^2, ignore air resistance."
+  },
+  "sub_tasks": [
+    {
+      "id": 1,
+      "subtask_type": "reasoning",
+      "input": "h = 5 m; g = 9.81 m/s^2; v0 = 0; upward positive; neglect air resistance",
+      "expected_output": "t_hit and v_f with numerical values and sign convention",
+      "description": "Apply constant-acceleration kinematics to solve for time to impact t_hit = sqrt(2h/g) and final velocity v_f = -g t_hit. Provide numerical evaluation and direction."
+    }
+  ],
+  "instruction_filename": "test"
+}

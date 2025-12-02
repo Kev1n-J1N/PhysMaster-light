@@ -1,0 +1,64 @@
+[
+  {
+    "id": "2111.00435",
+    "title": "An Actor-Critic Method for Simulation-Based Optimization",
+    "authors": [
+      "Kuo Li",
+      "Qing-Shan Jia",
+      "Jiaqi Yan"
+    ],
+    "published": "2021-10-31T09:04:23+00:00",
+    "cited_by": "",
+    "description": "We focus on a simulation-based optimization problem of choosing the best design from the feasible space. Although the simulation model can be queried with finite samples, its internal processing rule cannot be utilized in the optimization process. We formulate the sampling process as a policy searching problem and give a solution from the perspective of Reinforcement Learning (RL). Concretely, Actor-Critic (AC) framework is applied, where the Actor serves as a surrogate model to predict the performance on unknown designs, whereas the actor encodes the sampling policy to be optimized. We design the updating rule and propose two algorithms for the cases where the feasible spaces are continuous and discrete respectively. Some experiments are designed to validate the effectiveness of proposed algorithms, including two toy examples, which intuitively explain the algorithms, and two more complex tasks, i.e., adversarial attack task and RL task, which validate the effectiveness in large-scale problems. The results show that the proposed algorithms can successfully deal with these problems. Especially note that in the RL task, our methods give a new perspective to robot control by treating the task as a simulation model and solving it by optimizing the policy generating process, while existing works commonly optimize the policy itself directly."
+  },
+  {
+    "id": "2507.21705",
+    "title": "Unrolling Dynamic Programming via Graph Filters",
+    "authors": [
+      "Sergio Rozada",
+      "Samuel Rey",
+      "Gonzalo Mateos",
+      "Antonio G. Marques"
+    ],
+    "published": "2025-07-29T11:34:20+00:00",
+    "cited_by": "2111.00435",
+    "description": ", Dynamic Programming (DP,[8]),\nQ-learning ([9]), DDPG, and SAC, which are motivated by optimizing the policy\nitself, the proposed algorithms offer a new perspective to robot control of\nreinforcing the policy through optimizing the policy generating process."
+  },
+  {
+    "id": "2508.17210",
+    "title": "Blind Deconvolution of Nonstationary Graph Signals over Shift-Invariant Channels",
+    "authors": [
+      "Ali Zare",
+      "Yao Shi",
+      "Qiyu Sun"
+    ],
+    "published": "2025-08-24T04:47:26+00:00",
+    "cited_by": "2507.21705",
+    "description": "By interpreting the transition matrix as the adjacency of a\nweighted digraph, we identify this matrix polynomial as a graph filter[10]."
+  },
+  {
+    "id": "2411.06314",
+    "title": "Shared-Endpoint Correlations and Hierarchy in Random Flows on Graphs",
+    "authors": [
+      "Joshua Richland",
+      "Alexander Strang"
+    ],
+    "published": "2024-11-09T23:57:53+00:00",
+    "cited_by": "2111.00435",
+    "description": "For example, in Bayesian Optimization (BO,[2]),\nthe Gaussian Process (GP,[3]) serves as the surrogate model, and the updating\nprocess alternates between proposing the best design with the acquisition\nfunction constructed with the surrogate model and updating the surrogate model\nwith the latest input-output pair."
+  },
+  {
+    "id": "2204.12218",
+    "title": "Combinatorial and Hodge Laplacians: Similarity and Difference",
+    "authors": [
+      "Emily Ribando-Gros",
+      "Rui Wang",
+      "Jiahui Chen",
+      "Yiying Tong",
+      "Guo-Wei Wei"
+    ],
+    "published": "2022-04-26T10:45:18+00:00",
+    "cited_by": "2411.06314",
+    "description": "An edge flow on an undirected\ngraph𝒢=(𝒱,ℰ)𝒢𝒱ℰ\\mathcal{G}=(\\mathcal{V},\\mathcal{E})is a real-valued\nfunctionf:𝒱×𝒱→ℝ:𝑓→𝒱𝒱ℝf:\\mathcal{V}\\times\\mathcal{V}\\rightarrow\\mathbb{R}on the\nedges of the graph, where, for each pair of connected\nvertices(i,j)𝑖𝑗(i,j),f​(i,j)=−f​(j,i)𝑓𝑖𝑗𝑓𝑗𝑖f(i,j)=-f(j,i)[35]."
+  }
+]

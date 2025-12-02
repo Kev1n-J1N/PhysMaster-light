@@ -1,0 +1,51 @@
+[
+  {
+    "id": "2302.00487",
+    "title": "A Comprehensive Survey of Continual Learning: Theory, Method and Application",
+    "authors": [
+      "Liyuan Wang",
+      "Xingxing Zhang",
+      "Hang Su",
+      "Jun Zhu"
+    ],
+    "published": "2023-01-31T11:34:56+00:00",
+    "cited_by": "",
+    "description": "To cope with real-world dynamics, an intelligent system needs to incrementally acquire, update, accumulate, and exploit knowledge throughout its lifetime. This ability, known as continual learning, provides a foundation for AI systems to develop themselves adaptively. In a general sense, continual learning is explicitly limited by catastrophic forgetting, where learning a new task usually results in a dramatic performance degradation of the old tasks. Beyond this, increasingly numerous advances have emerged in recent years that largely extend the understanding and application of continual learning. The growing and widespread interest in this direction demonstrates its realistic significance as well as complexity. In this work, we present a comprehensive survey of continual learning, seeking to bridge the basic settings, theoretical foundations, representative methods, and practical applications. Based on existing theoretical and empirical results, we summarize the general objectives of continual learning as ensuring a proper stability-plasticity trade-off and an adequate intra/inter-task generalizability in the context of resource efficiency. Then we provide a state-of-the-art and elaborated taxonomy, extensively analyzing how representative methods address continual learning, and how they are adapted to particular challenges in realistic applications. Through an in-depth discussion of promising directions, we believe that such a holistic perspective can greatly facilitate subsequent exploration in this field and beyond."
+  },
+  {
+    "id": "2505.18347",
+    "title": "The Cell Must Go On: Agar.io for Continual Reinforcement Learning",
+    "authors": [
+      "Mohamed A. Mohamed",
+      "Kateryna Nekhomiazh",
+      "Vedant Vyas",
+      "Marcos M. Jose",
+      "Andrew Patterson",
+      "Marlos C. Machado"
+    ],
+    "published": "2025-05-23T20:09:27+00:00",
+    "cited_by": "2302.00487",
+    "description": "In contrast, the latest surveys typically capture only a\npartial aspect of continual learning, with respect to its biological\nunderpinnings[150,157,229,187], specialized settings for visual\nclassification[294,86,354,288,215], as well as specific extensions for\nNLP[38,209]or RL[214]."
+  },
+  {
+    "id": "1912.08957",
+    "title": "Optimization for deep learning: theory and algorithms",
+    "authors": [
+      "Ruoyu Sun"
+    ],
+    "published": "2019-12-19T00:23:18+00:00",
+    "cited_by": "2505.18347",
+    "description": "All weights were\ninitialized using a LeCun Normal Initialization[21]."
+  },
+  {
+    "id": "2503.02129",
+    "title": "A Near Complete Nonasymptotic Generalization Theory For Multilayer Neural Networks: Beyond the Bias-Variance Tradeoff",
+    "authors": [
+      "Hao Yu",
+      "Xiangyang Ji"
+    ],
+    "published": "2025-03-03T23:34:12+00:00",
+    "cited_by": "1912.08957",
+    "description": "When studying the\ngeneralization error, we often assume that the global optima have been found\n(see[96]for a survey of generalization)."
+  }
+]

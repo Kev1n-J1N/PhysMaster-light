@@ -1,0 +1,56 @@
+[
+  {
+    "id": "2411.17461",
+    "title": "SoK: Decentralized AI (DeAI)",
+    "authors": [
+      "Zhipeng Wang",
+      "Rui Sun",
+      "Elizabeth Lui",
+      "Vatsal Shah",
+      "Xihan Xiong",
+      "Jiahao Sun",
+      "Davide Crapis",
+      "William Knottenbelt"
+    ],
+    "published": "2024-11-26T14:28:25+00:00",
+    "cited_by": "",
+    "description": "Centralization enhances the efficiency of Artificial Intelligence (AI), but it also brings critical challenges, such as single points of failure, inherent biases, data privacy concerns, and scalability issues, for AI systems. These problems are especially common in closed-source large language models (LLMs), where user data is collected and used with full transparency. To address these issues, blockchain-based decentralized AI (DeAI) has been introduced. DeAI leverages the strengths of blockchain technologies to enhance the transparency, security, decentralization, as well as trustworthiness of AI systems. Although DeAI has been widely developed in industry, a comprehensive understanding of state-of-the-art practical DeAI solutions is still lacking. In this work, we present a Systematization of Knowledge (SoK) for blockchain-based DeAI solutions. We propose a taxonomy to classify existing DeAI protocols based on the model lifecycle. Based on this taxonomy, we provide a structured way to clarify the landscape of DeAI protocols and identify their similarities and differences. Specifically, we analyze the functionalities of blockchain in DeAI, investigate how blockchain features contribute to enhancing the security, transparency, and trustworthiness of AI processes, and also ensure fair incentives for AI data and model contributors. In addition, we provide key insights and research gaps in developing DeAI protocols for future research."
+  },
+  {
+    "id": "2504.13387",
+    "title": "Bibliometric Analysis of Scientific Publications on Blockchain Research and Applications",
+    "authors": [
+      "Lingfeng Bao",
+      "Jiameng Yang",
+      "Xiaohu Yang",
+      "Chunming Rong"
+    ],
+    "published": "2025-04-18T00:29:13+00:00",
+    "cited_by": "2411.17461",
+    "description": "Blockchain technology offers transparency, security,\nand decentralization, which can significantly enhance the trustworthiness of AI\nsystems[13]."
+  },
+  {
+    "id": "2109.03184",
+    "title": "The Convergence of Blockchain, IoT and 6G: Potential, Opportunities, Challenges and Research Roadmap",
+    "authors": [
+      "Abu Jahid",
+      "Mohammed H. Alsharif",
+      "Trevor J. Hall"
+    ],
+    "published": "2021-09-07T16:28:21+00:00",
+    "cited_by": "2411.17461",
+    "description": "DeAI platforms can leverage distributed computing\nresources to reduce dependence on centralized servers and mitigate single points\nof failure[28]."
+  },
+  {
+    "id": "2103.04112",
+    "title": "Applying Machine Learning in Self-Adaptive Systems: A Systematic Literature Review",
+    "authors": [
+      "Omid Gheibi",
+      "Danny Weyns",
+      "Federico Quin"
+    ],
+    "published": "2021-03-06T13:45:59+00:00",
+    "cited_by": "2411.17461",
+    "description": "Modern\\acAI development is\nprimarily driven by\\acML, which enables computers to learn from data and make\ndecisions through the use of sophisticated algorithms[34]."
+  }
+]

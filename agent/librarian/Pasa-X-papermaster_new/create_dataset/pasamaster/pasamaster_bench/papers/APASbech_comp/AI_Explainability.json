@@ -1,0 +1,74 @@
+[
+  {
+    "id": "2412.00800",
+    "title": "A Comprehensive Guide to Explainable AI: From Classical Models to LLMs",
+    "authors": [
+      "Weiche Hsieh",
+      "Ziqian Bi",
+      "Chuanqi Jiang",
+      "Junyu Liu",
+      "Benji Peng",
+      "Sen Zhang",
+      "Xuanhe Pan",
+      "Jiawei Xu",
+      "Jinlang Wang",
+      "Keyu Chen",
+      "Pohsun Feng",
+      "Yizhu Wen",
+      "Xinyuan Song",
+      "Tianyang Wang",
+      "Ming Liu",
+      "Junjie Yang",
+      "Ming Li",
+      "Bowen Jing",
+      "Jintao Ren",
+      "Junhao Song",
+      "Hong-Ming Tseng",
+      "Yichao Zhang",
+      "Lawrence K. Q. Yan",
+      "Qian Niu",
+      "Silin Chen",
+      "Yunze Wang",
+      "Chia Xin Liang"
+    ],
+    "published": "2024-12-01T13:01:01+00:00",
+    "cited_by": "",
+    "description": "Explainable Artificial Intelligence (XAI) addresses the growing need for transparency and interpretability in AI systems, enabling trust and accountability in decision-making processes. This book offers a comprehensive guide to XAI, bridging foundational concepts with advanced methodologies. It explores interpretability in traditional models such as Decision Trees, Linear Regression, and Support Vector Machines, alongside the challenges of explaining deep learning architectures like CNNs, RNNs, and Large Language Models (LLMs), including BERT, GPT, and T5. The book presents practical techniques such as SHAP, LIME, Grad-CAM, counterfactual explanations, and causal inference, supported by Python code examples for real-world applications.   Case studies illustrate XAI's role in healthcare, finance, and policymaking, demonstrating its impact on fairness and decision support. The book also covers evaluation metrics for explanation quality, an overview of cutting-edge XAI tools and frameworks, and emerging research directions, such as interpretability in federated learning and ethical AI considerations. Designed for a broad audience, this resource equips readers with the theoretical insights and practical skills needed to master XAI. Hands-on examples and additional resources are available at the companion GitHub repository: https://github.com/Echoslayer/XAI_From_Classical_Models_to_LLMs."
+  },
+  {
+    "id": "2412.00653",
+    "title": "Predictive Inference With Fast Feature Conformal Prediction",
+    "authors": [
+      "Zihao Tang",
+      "Boyuan Wang",
+      "Chuan Wen",
+      "Jiaye Teng"
+    ],
+    "published": "2024-12-01T03:14:04+00:00",
+    "cited_by": "2412.00800",
+    "description": "Artificial Intelligence (AI) has permeated numerous aspects of our daily lives,\nfrom predictive text on our smartphones to complex decision-making systems in\nhealthcare and finance[1]."
+  },
+  {
+    "id": "2111.06420",
+    "title": "Explainable AI (XAI): A Systematic Meta-Survey of Current Challenges and Future Opportunities",
+    "authors": [
+      "Waddah Saeed",
+      "Christian Omlin"
+    ],
+    "published": "2021-11-11T19:06:13+00:00",
+    "cited_by": "2412.00800",
+    "description": "This is where Explainable AI (XAI) comes into play[3]."
+  },
+  {
+    "id": "2101.00352",
+    "title": "Characterizing Fairness Over the Set of Good Models Under Selective Labels",
+    "authors": [
+      "Amanda Coston",
+      "Ashesh Rambachan",
+      "Alexandra Chouldechova"
+    ],
+    "published": "2021-01-02T02:11:37+00:00",
+    "cited_by": "2412.00800",
+    "description": "Fairness:The assurance that AI systems do not produce biased results or\ndiscrimination based on sensitive attributes such as race, gender, or age[10]."
+  }
+]

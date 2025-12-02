@@ -1,0 +1,56 @@
+{
+  "title": "Gravitational acceleration near Earth's surface (g ≈ 9.81 m/s^2)",
+  "arxiv_id": "",
+  "depth": -1,
+  "child": {},
+  "abstract": "",
+  "sections": "",
+  "source": "Root",
+  "select_score": -1,
+  "extra": {
+    "touch_ids": [
+      "2204.03279",
+      "2402.18000",
+      "2303.06363",
+      "2307.00170",
+      "2306.04611",
+      "2401.14742",
+      "2110.10056",
+      "2112.11162",
+      "2306.08787"
+    ],
+    "recall_papers": [],
+    "recall_papers_abstract": [],
+    "arxiv_ids": [],
+    "score": [],
+    "sorted_papers": [],
+    "final_selected_papers_title": [],
+    "all_papers": [],
+    "all_papers_title": [],
+    "subqueries": {},
+    "false_sample": {
+      "prompt": [],
+      "answer": [],
+      "title": []
+    },
+    "core_knowledge_list": []
+  },
+  "relevant_section": {},
+  "relevant_section_ref": {},
+  "reason": "",
+  "journal": "",
+  "year": "",
+  "authors": [
+    ""
+  ],
+  "citations": -1,
+  "h5": "",
+  "IF": "",
+  "CCF": "",
+  "output": "没有找到符合要求的相关论文。",
+  "execution_time": {
+    "paper_agent_run_duration": 98.53429508209229,
+    "total_batch_time": 98.53450798988342,
+    "timestamp": "2025-12-02T00:40:50.472544"
+  }
+}

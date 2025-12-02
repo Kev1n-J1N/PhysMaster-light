@@ -1,0 +1,49 @@
+[
+  {
+    "id": "2304.07869",
+    "title": "Neural Machine Translation For Low Resource Languages",
+    "authors": [
+      "Vakul Goyle",
+      "Parvathy Krishnaswamy",
+      "Kannan Girija Ravikumar",
+      "Utsa Chattopadhyay",
+      "Kartikay Goyle"
+    ],
+    "published": "2023-04-16T19:27:48+00:00",
+    "cited_by": "2304.07869",
+    "description": "Additionally we used theOPUSdatasets[7]for\ngathering parallel datasets for use cases which did not have sufficient datasets\nin FLoRes."
+  },
+  {
+    "id": "2110.01811",
+    "title": "On the Complementarity between Pre-Training and Back-Translation for Neural Machine Translation",
+    "authors": [
+      "Xuebo Liu",
+      "Longyue Wang",
+      "Derek F. Wong",
+      "Liang Ding",
+      "Lidia S. Chao",
+      "Shuming Shi",
+      "Zhaopeng Tu"
+    ],
+    "published": "2021-10-05T04:01:36+00:00",
+    "cited_by": "2304.07869",
+    "description": "Extensive experiments on these approaches shows that our\nsimple approach works prodigiously well and further improvements from the back\ntranslation (BT)[4]and replacing cross entropy with focal loss[5]sets a new\nstate-of-the-art on bothSi-EnandNe-En, improving the results\nby0."
+  },
+  {
+    "id": "2001.08210",
+    "title": "Multilingual Denoising Pre-training for Neural Machine Translation",
+    "authors": [
+      "Yinhan Liu",
+      "Jiatao Gu",
+      "Naman Goyal",
+      "Xian Li",
+      "Sergey Edunov",
+      "Marjan Ghazvininejad",
+      "Mike Lewis",
+      "Luke Zettlemoyer"
+    ],
+    "published": "2020-01-22T18:59:17+00:00",
+    "cited_by": "2304.07869",
+    "description": "CC25pretrained\nlanguage model[1]and created a baseline model for four languages, namely\nSinhala⟶⟶\\longrightarrowEnglish, Nepali⟶⟶\\longrightarrowEnglish,\nKhmer⟶⟶\\longrightarrowEnglish and Pashto⟶⟶\\longrightarrowEnglish,\nfromFLoRes[2]datasets."
+  }
+]

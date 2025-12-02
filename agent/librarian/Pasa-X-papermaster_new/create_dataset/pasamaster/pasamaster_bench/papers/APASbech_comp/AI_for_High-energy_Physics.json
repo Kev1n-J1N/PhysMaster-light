@@ -1,0 +1,66 @@
+[
+  {
+    "id": "2212.05081",
+    "title": "FAIR AI Models in High Energy Physics",
+    "authors": [
+      "Javier Duarte",
+      "Haoyang Li",
+      "Avik Roy",
+      "Ruike Zhu",
+      "E. A. Huerta",
+      "Daniel Diaz",
+      "Philip Harris",
+      "Raghav Kansal",
+      "Daniel S. Katz",
+      "Ishaan H. Kavoori",
+      "Volodymyr V. Kindratenko",
+      "Farouk Mokhtar",
+      "Mark S. Neubauer",
+      "Sang Eon Park",
+      "Melissa Quinnan",
+      "Roger Rusack",
+      "Zhizhen Zhao"
+    ],
+    "published": "2022-12-09T19:00:18+00:00",
+    "cited_by": "2212.05081",
+    "description": "This FAIR dataset has been used for ML studies[18], college courses[19,20]and\ntutorials[21]."
+  },
+  {
+    "id": "2302.08260",
+    "title": "HE-MAN -- Homomorphically Encrypted MAchine learning with oNnx models",
+    "authors": [
+      "Martin Nocker",
+      "David Drexel",
+      "Michael Rader",
+      "Alessio Montuoro",
+      "Pascal Schöttle"
+    ],
+    "published": "2023-02-16T12:37:14+00:00",
+    "cited_by": "2212.05081",
+    "description": "Operationally, an AI model is usually instantiated in a software framework, such\nas Scikit-learn[23], TensorFlow[24], PyTorch[25], XGBoost[26], or ONNX[27], that\nmay be serialized in a file on disk."
+  },
+  {
+    "id": "2206.06159",
+    "title": "Moving towards FAIR practices in epidemiological research",
+    "authors": [
+      "Montserrat Garcia-Closas",
+      "Thomas U. Ahearn",
+      "Mia M. Gaudet",
+      "Amber N. Hurson",
+      "Jeya Balaji Balasubramanian",
+      "Parichoy Pal Choudhury",
+      "Nicole M. Gerlanc",
+      "Bhaumik Patel",
+      "Daniel Russ",
+      "Mustapha Abubakar",
+      "Neal D. Freedman",
+      "Wendy S. W. Wong",
+      "Stephen J. Chanock",
+      "Amy Berrington de Gonzalez",
+      "Jonas S Almeida"
+    ],
+    "published": "2022-06-13T13:44:53+00:00",
+    "cited_by": "2212.05081",
+    "description": "Specifically, the FAIR principles were originally introduced[7]as guidelines for\nthe management and stewardship of scientific datasets to optimize their reuse."
+  }
+]

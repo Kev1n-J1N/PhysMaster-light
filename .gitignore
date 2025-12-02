@@ -1,0 +1,7 @@
+# User-requested ignores
+utils/julia_env/
+agent/librarian/Pasa-X-papermaster_new/data/
+
+# Common Python ignores
+__pycache__/
+*.pyc

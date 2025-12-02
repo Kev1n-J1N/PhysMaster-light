@@ -1,0 +1,60 @@
+[
+  {
+    "id": "2308.14263",
+    "title": "Cross-Modal Retrieval: A Systematic Review of Methods and Future Directions",
+    "authors": [
+      "Tianshi Wang",
+      "Fengling Li",
+      "Lei Zhu",
+      "Jingjing Li",
+      "Zheng Zhang",
+      "Heng Tao Shen"
+    ],
+    "published": "2023-08-28T02:38:17+00:00",
+    "cited_by": "",
+    "description": "With the exponential surge in diverse multi-modal data, traditional uni-modal retrieval methods struggle to meet the needs of users seeking access to data across various modalities. To address this, cross-modal retrieval has emerged, enabling interaction across modalities, facilitating semantic matching, and leveraging complementarity and consistency between heterogeneous data. Although prior literature has reviewed the field of cross-modal retrieval, it suffers from numerous deficiencies in terms of timeliness, taxonomy, and comprehensiveness. This paper conducts a comprehensive review of cross-modal retrieval's evolution, spanning from shallow statistical analysis techniques to vision-language pre-training models. Commencing with a comprehensive taxonomy grounded in machine learning paradigms, mechanisms, and models, the paper delves deeply into the principles and architectures underpinning existing cross-modal retrieval methods. Furthermore, it offers an overview of widely-used benchmarks, metrics, and performances. Lastly, the paper probes the prospects and challenges that confront contemporary cross-modal retrieval, while engaging in a discourse on potential directions for further progress in the field. To facilitate the ongoing research on cross-modal retrieval, we develop a user-friendly toolbox and an open-source repository at https://cross-modal-retrieval.github.io."
+  },
+  {
+    "id": "2407.12346",
+    "title": "Object-Aware Query Perturbation for Cross-Modal Image-Text Retrieval",
+    "authors": [
+      "Naoya Sogi",
+      "Takashi Shibata",
+      "Makoto Terao"
+    ],
+    "published": "2024-07-17T06:42:14+00:00",
+    "cited_by": "2308.14263",
+    "description": "Combining CNN and RNN to extract multi-\nmodal features, Visual-Semantic Embeddings++ (VSE++)[25]integrates hard sample\nmining into the ranking loss and has been widely adopted in subsequent works."
+  },
+  {
+    "id": "2502.15809",
+    "title": "Black Sheep in the Herd: Playing with Spuriously Correlated Attributes for Vision-Language Recognition",
+    "authors": [
+      "Xinyu Tian",
+      "Shu Zou",
+      "Zhaoyuan Yang",
+      "Mengqi He",
+      "Jing Zhang"
+    ],
+    "published": "2025-02-19T12:05:33+00:00",
+    "cited_by": "2407.12346",
+    "description": "An\nexample of retrieval results obtained by a sophisticated V&L model, BLIP2[36],\non the Flickr 30K[44]dataset is shown in Fig."
+  },
+  {
+    "id": "2308.04616",
+    "title": "Machine Learning, Deep Learning and Data Preprocessing Techniques for Detection, Prediction, and Monitoring of Stress and Stress-related Mental Disorders: A Scoping Review",
+    "authors": [
+      "Moein Razavi",
+      "Samira Ziyadidegan",
+      "Reza Jahromi",
+      "Saber Kazeminasab",
+      "Vahid Janfaza",
+      "Ahmadreza Mahmoudzadeh",
+      "Elaheh Baharlouei",
+      "Farzan Sasangohar"
+    ],
+    "published": "2023-08-08T22:47:12+00:00",
+    "cited_by": "2308.14263",
+    "description": "The trajectory of cross-\nmodal retrieval research can be retraced to around 2010, when statistical\nanalysis techniques predominantly prevailed, extracting features from multi-\nmodal data and mapping them to a shared space for relevance assessment[4]."
+  }
+]

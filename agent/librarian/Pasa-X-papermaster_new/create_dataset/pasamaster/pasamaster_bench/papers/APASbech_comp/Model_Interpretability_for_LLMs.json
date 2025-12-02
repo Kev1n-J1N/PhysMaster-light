@@ -1,0 +1,55 @@
+[
+  {
+    "id": "2402.01761",
+    "title": "Rethinking Interpretability in the Era of Large Language Models",
+    "authors": [
+      "Chandan Singh",
+      "Jeevana Priya Inala",
+      "Michel Galley",
+      "Rich Caruana",
+      "Jianfeng Gao"
+    ],
+    "published": "2024-01-30T17:38:54+00:00",
+    "cited_by": "",
+    "description": "Interpretable machine learning has exploded as an area of interest over the last decade, sparked by the rise of increasingly large datasets and deep neural networks. Simultaneously, large language models (LLMs) have demonstrated remarkable capabilities across a wide array of tasks, offering a chance to rethink opportunities in interpretable machine learning. Notably, the capability to explain in natural language allows LLMs to expand the scale and complexity of patterns that can be given to a human. However, these new capabilities raise new challenges, such as hallucinated explanations and immense computational costs.   In this position paper, we start by reviewing existing methods to evaluate the emerging field of LLM interpretation (both interpreting LLMs and using LLMs for explanation). We contend that, despite their limitations, LLMs hold the opportunity to redefine interpretability with a more ambitious scope across many applications, including in auditing LLMs themselves. We highlight two emerging research priorities for LLM interpretation: using LLMs to directly analyze new datasets and to generate interactive explanations."
+  },
+  {
+    "id": "2505.13510",
+    "title": "On the definition and importance of interpretability in scientific machine learning",
+    "authors": [
+      "Conor Rowan",
+      "Alireza Doostan"
+    ],
+    "published": "2025-05-16T20:16:14+00:00",
+    "cited_by": "2402.01761",
+    "description": "Here,\nwe paraphrase the definition of interpretable ML from a prior work[2]to define\nLLM interpretation as theextraction of relevant knowledge from an LLM concerning\nrelationships either contained in data or learned by the model."
+  },
+  {
+    "id": "2403.06015",
+    "title": "Grafting: Making Random Forests Consistent",
+    "authors": [
+      "Nicholas Waltz"
+    ],
+    "published": "2024-03-09T21:29:25+00:00",
+    "cited_by": "2505.13510",
+    "description": "Modern ML began with\nalgorithms such as the support vector machine[68]and decision trees[7]."
+  },
+  {
+    "id": "2309.01029",
+    "title": "Explainability for Large Language Models: A Survey",
+    "authors": [
+      "Haiyan Zhao",
+      "Hanjie Chen",
+      "Fan Yang",
+      "Ninghao Liu",
+      "Huiqi Deng",
+      "Hengyi Cai",
+      "Shuaiqiang Wang",
+      "Dawei Yin",
+      "Mengnan Du"
+    ],
+    "published": "2023-09-02T22:14:26+00:00",
+    "cited_by": "2402.01761",
+    "description": ", those focused on explaining LLM\npredictions[20], mechanistic interpretability[21], social science[19], or\nscience more generally[17,22,23]."
+  }
+]

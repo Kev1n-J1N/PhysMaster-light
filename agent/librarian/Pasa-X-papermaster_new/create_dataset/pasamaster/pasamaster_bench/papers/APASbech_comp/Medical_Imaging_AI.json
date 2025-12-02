@@ -1,0 +1,86 @@
+[
+  {
+    "id": "2409.17763",
+    "title": "Confidence intervals uncovered: Are we ready for real-world medical imaging AI?",
+    "authors": [
+      "Evangelia Christodoulou",
+      "Annika Reinke",
+      "Rola Houhou",
+      "Piotr Kalinowski",
+      "Selen Erkan",
+      "Carole H. Sudre",
+      "Ninon Burgos",
+      "Sofiène Boutaj",
+      "Sophie Loizillon",
+      "Maëlys Solal",
+      "Nicola Rieke",
+      "Veronika Cheplygina",
+      "Michela Antonelli",
+      "Leon D. Mayer",
+      "Minu D. Tizabi",
+      "M. Jorge Cardoso",
+      "Amber Simpson",
+      "Paul F. Jäger",
+      "Annette Kopp-Schneider",
+      "Gaël Varoquaux",
+      "Olivier Colliot",
+      "Lena Maier-Hein"
+    ],
+    "published": "2024-09-26T11:58:41+00:00",
+    "cited_by": "",
+    "description": "Medical imaging is spearheading the AI transformation of healthcare. Performance reporting is key to determine which methods should be translated into clinical practice. Frequently, broad conclusions are simply derived from mean performance values. In this paper, we argue that this common practice is often a misleading simplification as it ignores performance variability. Our contribution is threefold. (1) Analyzing all MICCAI segmentation papers (n = 221) published in 2023, we first observe that more than 50% of papers do not assess performance variability at all. Moreover, only one (0.5%) paper reported confidence intervals (CIs) for model performance. (2) To address the reporting bottleneck, we show that the unreported standard deviation (SD) in segmentation papers can be approximated by a second-order polynomial function of the mean Dice similarity coefficient (DSC). Based on external validation data from 56 previous MICCAI challenges, we demonstrate that this approximation can accurately reconstruct the CI of a method using information provided in publications. (3) Finally, we reconstructed 95% CIs around the mean DSC of MICCAI 2023 segmentation papers. The median CI width was 0.03 which is three times larger than the median performance gap between the first and second ranked method. For more than 60% of papers, the mean performance of the second-ranked method was within the CI of the first-ranked method. We conclude that current publications typically do not provide sufficient evidence to support which models could potentially be translated into clinical practice."
+  },
+  {
+    "id": "2501.09436",
+    "title": "Scaling up self-supervised learning for improved surgical foundation models",
+    "authors": [
+      "Tim J. M. Jaspers",
+      "Ronald L. P. D. de Jong",
+      "Yiping Li",
+      "Carolus H. J. Kusters",
+      "Franciscus H. A. Bakker",
+      "Romy C. van Jaarsveld",
+      "Gino M. Kuiper",
+      "Richard van Hillegersberg",
+      "Jelle P. Ruurda",
+      "Willem M. Brinkman",
+      "Josien P. W. Pluim",
+      "Peter H. N. de With",
+      "Marcel Breeuwer",
+      "Yasmina Al Khalil",
+      "Fons van der Sommen"
+    ],
+    "published": "2025-01-16T10:07:44+00:00",
+    "cited_by": "2409.17763",
+    "description": "In an analysis of\nbiomedical image analysis challenge reporting,[18]showed that claims are often\nsolely drawn from aggregated results in tables, which supports our\nhypothesis."
+  },
+  {
+    "id": "2401.10891",
+    "title": "Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data",
+    "authors": [
+      "Lihe Yang",
+      "Bingyi Kang",
+      "Zilong Huang",
+      "Xiaogang Xu",
+      "Jiashi Feng",
+      "Hengshuang Zhao"
+    ],
+    "published": "2024-01-19T18:59:52+00:00",
+    "cited_by": "2501.09436",
+    "description": "These models\nhave demonstrated remarkable capabilities across diverse tasks, including object\nsegmentation[32,79], depth estimation[69], and multi-object tracking[61]."
+  },
+  {
+    "id": "2407.16900",
+    "title": "Regulating AI Adaptation: An Analysis of AI Medical Device Updates",
+    "authors": [
+      "Kevin Wu",
+      "Eric Wu",
+      "Kit Rodolfa",
+      "Daniel E. Ho",
+      "James Zou"
+    ],
+    "published": "2024-06-22T19:44:47+00:00",
+    "cited_by": "2409.17763",
+    "description": "Food and Drug Administration (FDA) fall within the\napplication domain of medical imaging[16], medical imaging is spearheading the\nAI-powered transformation of healthcare."
+  }
+]

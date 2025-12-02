@@ -1,0 +1,30 @@
+[
+  {
+    "id": "2004.05439",
+    "title": "Meta-Learning in Neural Networks: A Survey",
+    "authors": [
+      "Timothy Hospedales",
+      "Antreas Antoniou",
+      "Paul Micaelli",
+      "Amos Storkey"
+    ],
+    "published": "2020-04-11T16:34:24+00:00",
+    "cited_by": "2302.02515",
+    "description": "Successful applications have been demonstrated in\nareas spanning few-shot image recognition[16,20], unsupervised learning[21],\ndata efficient[22,23]and self-directed[24]reinforcement learning (RL),\nhyperparameter optimization[17], and neural architecture search (NAS)[18,25,26]."
+  },
+  {
+    "id": "2302.02515",
+    "title": "Deep Learning for Time Series Classification and Extrinsic Regression: A Current Survey",
+    "authors": [
+      "Navid Mohammadi Foumani",
+      "Lynn Miller",
+      "Chang Wei Tan",
+      "Geoffrey I. Webb",
+      "Germain Forestier",
+      "Mahsa Salehi"
+    ],
+    "published": "2023-02-06T01:01:00+00:00",
+    "cited_by": "2004.05439",
+    "description": "Deep learning realised the promise of joint feature\nand model learning[13], providing a huge improvement in performance for many\ntasks[1,3]."
+  }
+]

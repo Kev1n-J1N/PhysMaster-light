@@ -1,0 +1,57 @@
+[
+  {
+    "id": "2506.21329",
+    "title": "Active Inference AI Systems for Scientific Discovery",
+    "authors": [
+      "Karthik Duraisamy"
+    ],
+    "published": "2025-06-26T14:43:04+00:00",
+    "cited_by": "",
+    "description": "The rapid evolution of artificial intelligence has led to expectations of transformative impact on science, yet current systems remain fundamentally limited in enabling genuine scientific discovery. This perspective contends that progress turns on closing three mutually reinforcing gaps in abstraction, reasoning and empirical grounding. Central to addressing these gaps is recognizing complementary cognitive modes: thinking as slow, iterative hypothesis generation -- exploring counterfactual spaces where physical laws can be temporarily violated to discover new patterns -- and reasoning as fast, deterministic validation, traversing established knowledge graphs to test consistency with known principles. Abstractions in this loop should be manipulable models that enable counterfactual prediction, causal attribution, and refinement. Design principles -- rather than a monolithic recipe -- are proposed for systems that reason in imaginary spaces and learn from the world: causal, multimodal models for internal simulation; persistent, uncertainty-aware scientific memory that distinguishes hypotheses from established claims; formal verification pathways coupled to computations and experiments. It is also argued that the inherent ambiguity in feedback from simulations and experiments, and underlying uncertainties make human judgment indispensable, not as a temporary scaffold but as a permanent architectural component. Evaluations must assess the system's ability to identify novel phenomena, propose falsifiable hypotheses, and efficiently guide experimental programs toward genuine discoveries."
+  },
+  {
+    "id": "2502.01459",
+    "title": "Learning to Partially Defer for Sequences",
+    "authors": [
+      "Sahana Rayan",
+      "Ambuj Tewari"
+    ],
+    "published": "2025-02-03T15:50:11+00:00",
+    "cited_by": "2506.21329",
+    "description": "As examples, SchNet translated\narchitectural advances to quantum chemistry[58]; AlphaFold leveraged domain\nknowledge infused scaling to solve protein-fold prediction[28]; ChemBERTa[14]and\nFourCastNet[47]adapted language and vision innovations to molecular and climate\ndomains; and AlphaGeometry applied reasoning-centric objectives to symbolic\nmathematics[61]."
+  },
+  {
+    "id": "2504.00255",
+    "title": "SciReplicate-Bench: Benchmarking LLMs in Agent-driven Algorithmic Reproduction from Research Papers",
+    "authors": [
+      "Yanzheng Xiang",
+      "Hanqi Yan",
+      "Shuyin Ouyang",
+      "Lin Gui",
+      "Yulan He"
+    ],
+    "published": "2025-03-31T22:02:24+00:00",
+    "cited_by": "2506.21329",
+    "description": "At this juncture, it has to be emphasized that generating novel hypotheses might\nbe the easy part[24]: the challenge is in rapidly assessing the impact of a\nhypothesis or action in an imaginary space."
+  },
+  {
+    "id": "2407.21009",
+    "title": "AI-Assisted Generation of Difficult Math Questions",
+    "authors": [
+      "Vedant Shah",
+      "Dingli Yu",
+      "Kaifeng Lyu",
+      "Simon Park",
+      "Jiatong Yu",
+      "Yinghui He",
+      "Nan Rosemary Ke",
+      "Michael Mozer",
+      "Yoshua Bengio",
+      "Sanjeev Arora",
+      "Anirudh Goyal"
+    ],
+    "published": "2024-07-30T17:55:36+00:00",
+    "cited_by": "2506.21329",
+    "description": "As examples, SchNet translated\narchitectural advances to quantum chemistry[58]; AlphaFold leveraged domain\nknowledge infused scaling to solve protein-fold prediction[28]; ChemBERTa[14]and\nFourCastNet[47]adapted language and vision innovations to molecular and climate\ndomains; and AlphaGeometry applied reasoning-centric objectives to symbolic\nmathematics[61]."
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "2003.08934",
+    "title": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+    "authors": [
+      "Ben Mildenhall",
+      "Pratul P. Srinivasan",
+      "Matthew Tancik",
+      "Jonathan T. Barron",
+      "Ravi Ramamoorthi",
+      "Ren Ng"
+    ],
+    "published": "2020-03-19T17:57:23+00:00",
+    "cited_by": "",
+    "description": "We present a method that achieves state-of-the-art results for synthesizing novel views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input views. Our algorithm represents a scene using a fully-connected (non-convolutional) deep network, whose input is a single continuous 5D coordinate (spatial location $(x,y,z)$ and viewing direction $(\\theta, \\phi)$) and whose output is the volume density and view-dependent emitted radiance at that spatial location. We synthesize views by querying 5D coordinates along camera rays and use classic volume rendering techniques to project the output colors and densities into an image. Because volume rendering is naturally differentiable, the only input required to optimize our representation is a set of images with known camera poses. We describe how to effectively optimize neural radiance fields to render photorealistic novel views of scenes with complicated geometry and appearance, and demonstrate results that outperform prior work on neural rendering and view synthesis. View synthesis results are best viewed as videos, so we urge readers to view our supplementary video for convincing comparisons."
+  },
+  {
+    "id": "2209.05434",
+    "title": "3DFaceShop: Explicitly Controllable 3D-Aware Portrait Generation",
+    "authors": [
+      "Junshu Tang",
+      "Bo Zhang",
+      "Binxin Yang",
+      "Ting Zhang",
+      "Dong Chen",
+      "Lizhuang Ma",
+      "Fang Wen"
+    ],
+    "published": "2022-09-12T17:40:08+00:00",
+    "cited_by": "2003.08934",
+    "description": "[42]use a less direct neural 3D representation that simply\noutputs a feature vector and RGB color at each continuous 3D coordinate, and\npropose a differentiable rendering function consisting of a recurrent neural\nnetwork that marches along each ray to decide where the surface is located."
+  },
+  {
+    "id": "2506.18787",
+    "title": "3D Arena: An Open Platform for Generative 3D Evaluation",
+    "authors": [
+      "Dylan Ebert"
+    ],
+    "published": "2025-06-23T15:57:10+00:00",
+    "cited_by": "2209.05434",
+    "description": "To solve this, there are a\nfew attempts[12,14]that leverage parametric 3D face models[24,25]to guide the\ngenerative process, thus faces can be explicitly controlled according to a set\nof semantic parameters relating to head pose, face shape, expression as well as\nillumination in the way like the computer animation workflow[26]."
+  },
+  {
+    "id": "2203.09362",
+    "title": "Fine Detailed Texture Learning for 3D Meshes with Generative Models",
+    "authors": [
+      "Aysegul Dundar",
+      "Jun Gao",
+      "Andrew Tao",
+      "Bryan Catanzaro"
+    ],
+    "published": "2022-03-17T14:50:52+00:00",
+    "cited_by": "2003.08934",
+    "description": "One popular class of\napproaches uses mesh-based representations of scenes with either diffuse[48]or\nview-dependent[2,8,49]appearance."
+  },
+  {
+    "id": "2207.10257",
+    "title": "Injecting 3D Perception of Controllable NeRF-GAN into StyleGAN for Editable Portrait Image Synthesis",
+    "authors": [
+      "Jeong-gi Kwak",
+      "Yuanming Li",
+      "Dongsik Yoon",
+      "Donghyeon Kim",
+      "David Han",
+      "Hanseok Ko"
+    ],
+    "published": "2022-07-21T01:41:54+00:00",
+    "cited_by": "2203.09362",
+    "description": "[53]uses a\ngenerative adversarial network, StyleGAN[19], to generate realistic multi-view\ndatasets."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1911.02685",
+    "title": "A Comprehensive Survey on Transfer Learning",
+    "authors": [
+      "Fuzhen Zhuang",
+      "Zhiyuan Qi",
+      "Keyu Duan",
+      "Dongbo Xi",
+      "Yongchun Zhu",
+      "Hengshu Zhu",
+      "Hui Xiong",
+      "Qing He"
+    ],
+    "published": "2019-11-07T00:15:02+00:00",
+    "cited_by": "",
+    "description": "Transfer learning aims at improving the performance of target learners on target domains by transferring the knowledge contained in different but related source domains. In this way, the dependence on a large number of target domain data can be reduced for constructing target learners. Due to the wide application prospects, transfer learning has become a popular and promising area in machine learning. Although there are already some valuable and impressive surveys on transfer learning, these surveys introduce approaches in a relatively isolated way and lack the recent advances in transfer learning. Due to the rapid expansion of the transfer learning area, it is both necessary and challenging to comprehensively review the relevant studies. This survey attempts to connect and systematize the existing transfer learning researches, as well as to summarize and interpret the mechanisms and the strategies of transfer learning in a comprehensive way, which may help readers have a better understanding of the current research status and ideas. Unlike previous surveys, this survey paper reviews more than forty representative transfer learning approaches, especially homogeneous transfer learning approaches, from the perspectives of data and model. The applications of transfer learning are also briefly introduced. In order to show the performance of different transfer learning models, over twenty representative transfer learning models are used for experiments. The models are performed on three different datasets, i.e., Amazon Reviews, Reuters-21578, and Office-31. And the experimental results demonstrate the importance of selecting appropriate transfer learning models for different applications in practice."
+  },
+  {
+    "id": "2505.24529",
+    "title": "Density Ratio Permutation Tests with connections to distributional shifts and conditional two-sample testing",
+    "authors": [
+      "Alberto Bordino",
+      "Thomas B. Berrett"
+    ],
+    "published": "2025-05-30T12:38:32+00:00",
+    "cited_by": "1911.02685",
+    "description": "Therefore, they adapt the domains\nby correcting the sample selection bias[5]or covariate shift[6]."
+  },
+  {
+    "id": "2412.18081",
+    "title": "Heterogeneous transfer learning for high dimensional regression with feature mismatch",
+    "authors": [
+      "Jae Ho Chang",
+      "Massimiliano Russo",
+      "Subhadeep Paul"
+    ],
+    "published": "2024-12-24T01:29:31+00:00",
+    "cited_by": "1911.02685",
+    "description": "This\nphenomenon is also called context feature bias[7]."
+  }
+]
