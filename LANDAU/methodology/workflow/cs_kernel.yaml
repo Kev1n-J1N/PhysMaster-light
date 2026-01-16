@@ -1,0 +1,43 @@
+Workflow:
+  Goal: Extract the Collins–Soper kernel K(b_perp, mu) from lattice quasi-TMD matrix elements
+
+  Stages:
+    - id: S1
+      task: Extract bare quasi-TMD matrix elements
+      method: 
+        - Construct ratios of nonlocal to local two-point correlators
+        - Perform single- or two-state fits with automated plateau selection
+      output:
+        - BareQuasiTMD(z, b_perp, Pz)
+
+    - id: S2
+      task: Renormalize quasi-TMD matrix elements
+      method:
+        - Apply Wilson-loop based nonperturbative renormalization
+        - Remove linear divergence pointwise in z
+      output:
+        - RenormalizedQuasiTMD(z, b_perp, Pz)
+
+    - id: S3
+      task: Stabilize large-lambda behavior
+      method:
+        - Fit renormalized matrix elements to LaMET-motivated asymptotic form
+        - Replace noisy large-lambda region with fitted continuation
+      output:
+        - ContinuedQuasiTMD(lambda, b_perp, Pz)
+
+    - id: S4
+      task: Fourier Transform to Momentum Space
+      method:
+        - Perform discrete Fourier transform in lambda
+        - Propagate statistical and systematic uncertainties
+      output:
+        - MomentumSpaceQuasiTMD(x, b_perp, Pz)
+
+    - id: S5
+      task: Extract Collins–Soper kernel
+      method:
+        - Form LaMET ratio at two large momenta
+        - Remove residual x-dependence via plateau fit or correlated average
+      output:
+        - CollinsSoperKernel(b_perp, mu)

@@ -3,8 +3,9 @@ from pathlib import Path
 from typing import Dict, Any, List
 
 from utils.gpt5_utils import call_model
-from utils.python_utils import execute_python_code
+from utils.python_utils import run_python_code
 from utils.julia_env.execute import run_julia_code
+from utils.skill_loader import load_skill_specs
 from utils.save_utils import MarkdownWriter
 
 
@@ -48,14 +49,48 @@ JULIA_TOOL = [
     }
 ]
 
+SKILL_TOOL = [
+    {
+        "type": "function",
+        "function": {
+            "name": "load_skill_specs",
+            "description": (
+                "Load full specs for multiple skills by skill_ids. "
+                "The returned text provides authoritative procedural guidance and should be treated as the primary source of truth when executing the corresponding skill(s). "
+                "Returns plain text that contains a [SKILL SPECS] header and one or more <SKILL_SPEC> blocks."
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "skill_ids": {
+                        "type": "array",
+                        "items": {"type": "string"},
+                        "description": "Non-empty list of skill_ids (strings), e.g. ['lamet_asymptotic_expansion', 'lamet_matching']."
+                    }
+                },
+                "required": ["skill_ids"],
+                "additionalProperties": False
+            }
+        }
+    }
+]
+
 class Theoretician:
     def __init__(self, prompts_path: str = "prompts/",):
+        self.prompts_path = Path(prompts_path)
         prompt_files = {
             "theoretician_prompt": "theoretician_prompt.txt",
             "theoretician_system_prompt": "theoretician_system_prompt.txt",
+            "skills_manifest_prompt": "skills_manifest_prompt.txt"
         }
         for attr, filename in prompt_files.items():
             setattr(self, attr, self._load_prompt(filename))
+        self.prompt_template = self.theoretician_prompt
+
+    def _load_prompt(self, filename: str) -> str:
+        path = self.prompts_path / filename
+        with open(path, "r", encoding="utf-8") as f:
+            return f.read()
 
 
     def solve(
@@ -75,20 +110,20 @@ class Theoretician:
             path=output_dir,
         )
 
-        markdown_writer.write_to_markdown(
-            prompt + "\n",
-            mode="critic",
-        )
+        if markdown_writer:
+            markdown_writer.write_to_markdown(prompt + "\n", mode="scheduler")
         print("========== Supervisor-Scheduler ========== \n" + prompt + "\n")
 
-        tools = PYTHON_TOOL + JULIA_TOOL
+        tools = PYTHON_TOOL + JULIA_TOOL + SKILL_TOOL
         tool_functions = {
-            "Python_code_interpreter": execute_python_code,
+            "Python_code_interpreter": run_python_code,
             "Julia_code_interpreter": run_julia_code,
+            "load_skill_specs": load_skill_specs,
         }
 
         system_prompt = self.theoretician_system_prompt
 
+        prompt = self.skills_manifest_prompt + "\n\n" + prompt
 
         response = call_model(
             system_prompt=system_prompt,

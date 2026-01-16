@@ -1,6 +1,5 @@
 import json
 import yaml
-import sys
 import os
 
 from pathlib import Path
@@ -9,28 +8,6 @@ from typing import Any, Dict, Tuple
 from agent.MCTS.supervisor import SupervisorOrchestrator
 from agent.clarifier.clarifier import Clarifier
 from visualization.generate_html import generate_vis
-
-
-class EmptyLocalKB:
-    def to_brief(self, n: int = 3):
-        return []
-
-    def search(self, query: str, top_k: int = 5):
-        """
-        占位 KB 搜索函数。
-        真实 KB 实现后会替换这个逻辑。
-        现在为了不让程序报错，统一返回空列表。
-        """
-        return []
-
-
-class EmptyGlobalKB:
-    def to_brief(self, n: int = 3):
-        return []
-
-    def search(self, query: str, top_k: int = 5):
-        return []
-
 
 
 def load_config(path: str = "config.yaml") -> Dict[str, Any]:
@@ -49,7 +26,7 @@ def get_task_name(structured_problem) -> str:
     return task_name
 
 
-def clarify_query(query_path: str, clr_cfg) -> Dict[str, Any]:
+def clarify_query(query_path: str, clr_cfg, workflow_enabled: bool = True) -> Dict[str, Any]:
     """
     兼容 main() 里的调用：
         structured_problem, task_dir = clarify_query(query_path, clarifier_cfg)
@@ -57,9 +34,14 @@ def clarify_query(query_path: str, clr_cfg) -> Dict[str, Any]:
     path = query_path
     with open(path, 'r', encoding='utf-8') as file:
         content = file.read()
-    print(f"[CLR] Clarifying query from: {path}")
+    print(f"[Clarifier] Clarifying query from: {path}")
 
-    clr = Clarifier(clr_cfg)
+    if workflow_enabled:
+        print(f"[LANDAU] Methodology-Workflow: enabled")
+    else:
+        print("[LANDAU] Methodology-Workflow: disabled")
+
+    clr = Clarifier(clr_cfg, workflow_enabled=workflow_enabled)
     structured_problem = clr.run(content)
 
     instruction_filename = Path(path).stem
@@ -81,46 +63,45 @@ def main(config_path: str = "config.yaml"):
     cfg = load_config(config_path)
 
     clarifier_cfg = cfg.get("clarifier", {})
+    query_path = clarifier_cfg.get("query_file", "instructions/test.txt")
+
+    landau_cfg = cfg.get("landau", {})
+    library_enabled = bool(landau_cfg.get("library_enabled", True))
+    workflow_enabled = bool(landau_cfg.get("workflow_enabled", True))
+    skills_enabled = bool(landau_cfg.get("skills_enabled", True))
+    prior_enabled = bool(landau_cfg.get("prior_enabled", True))
+
     pipeline_cfg = cfg.get("pipeline", {})
     mcts_cfg = cfg.get("mcts", {})
     vis_cfg = cfg.get("visualization",{})
 
-    query_path = clarifier_cfg.get("query_file", "instructions/test.txt")
+    structured_problem, task_dir, task_name = clarify_query(
+        query_path, clarifier_cfg, workflow_enabled=workflow_enabled
+    )
 
-    structured_problem, task_dir, task_name = clarify_query(query_path, clarifier_cfg)
-    task_name = get_task_name(structured_problem)
+    project_root = Path(__file__).resolve().parent
+    library_root = (project_root / landau_cfg.get("library", "LANDAU/library")).resolve()
+    methodology_root = (project_root / landau_cfg.get("methodology", "LANDAU/global_methodology")).resolve()
+    prior_root = (project_root / landau_cfg.get("prior", "LANDAU/global_prior")).resolve()
 
-    landau_cfg = cfg.get("landau", {}) or {}
-
-    if not landau_cfg.get("enabled", False):
-        print("[LANDAU] landau.enabled = False，跳过 KB 加载")
-        local_kb = EmptyLocalKB()
-        global_kb = EmptyGlobalKB()
+    if library_enabled:
+        print(f"[LANDAU] Library: {library_root}")
     else:
-        from LANDAU.local_library.local_store import LocalKnowledgeBase
-        from LANDAU.global_library.global_store import GlobalKnowledgeBase
-
-        project_root = Path(__file__).resolve().parent
-        local_root_dir = (project_root / landau_cfg.get("library_local", "LANDAU/local_library")).resolve()
-        global_root_dir = (project_root / landau_cfg.get("library_global", "LANDAU/global_library")).resolve()
-        methodology_root = (project_root / landau_cfg.get("methodology", "LANDAU/global_methodology")).resolve()
-        prior_root = (project_root / landau_cfg.get("prior", "LANDAU/global_prior")).resolve()
-
-        print(f"[LANDAU] Library (local): {local_root_dir}")
-        print(f"[LANDAU] Library (global): {global_root_dir}")
-        print(f"[LANDAU] Methodology: {methodology_root}")
+        print("[LANDAU] Library: disabled")
+    if skills_enabled:
+        print(f"[LANDAU] Methodology-Skills: {methodology_root}/skills")
+    else:
+        print("[LANDAU] Methodology-Skills: disabled")
+    if prior_enabled:
         print(f"[LANDAU] Prior: {prior_root}")
-
-        local_kb = LocalKnowledgeBase(str(local_root_dir))
-        global_kb = GlobalKnowledgeBase({"root": str(global_root_dir)})
+    else:
+        print("[LANDAU] Prior: disabled")
 
     processes = pipeline_cfg.get("parallel_processes", 2)
     max_nodes = pipeline_cfg.get("max_nodes", 4)
 
     supervisor = SupervisorOrchestrator(
         structured_problem=structured_problem,
-        local_kb=local_kb,
-        global_kb=global_kb,
         task_dir=task_dir,
         processes=processes,
         max_nodes=max_nodes,
@@ -128,7 +109,8 @@ def main(config_path: str = "config.yaml"):
         revise_expansion=mcts_cfg.get("revise_expansion", 2),
         improve_expansion=mcts_cfg.get("improve_expansion", 1),
         exploration_constant=mcts_cfg.get("exploration_constant", 1.414),
-        complete_score_threshold=mcts_cfg.get("complete_score_threshold", 0.9),
+        beam_width=mcts_cfg.get("beam_width"),
+        landau_prior_enabled=prior_enabled,
     )
 
     summary = supervisor.run()
@@ -142,7 +124,6 @@ def main(config_path: str = "config.yaml"):
     with open(summary_file, "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
     print("Supervisor finished. Summary saved to:", summary_file)
-
 
 
 if __name__ == "__main__":

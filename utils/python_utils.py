@@ -2,7 +2,7 @@ import os
 import subprocess
 import tempfile
 
-def execute_python_code(code: str) -> str:
+def run_python_code(code: str) -> str:
     """
     在本地 Python 解释器中执行 code，返回 stdout+stderr。
     """

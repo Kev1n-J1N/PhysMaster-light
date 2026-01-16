@@ -7,114 +7,43 @@ from typing import Any, Dict, List, Optional, Tuple
 from .mcts_tree import MCTSTree
 from .mcts_node import MCTSNode
 from .theoretician import run_theo_node
-from .LANDAU import library_search, methodology_search, prior_search
 
 from utils.gpt5_utils import call_model
 from utils.save_utils import MarkdownWriter
-
-from LANDAU.global_library.global_store import GlobalKnowledgeBase
-from LANDAU.local_library.local_store import LocalKnowledgeBase
-
+from LANDAU.prior.prior_retrive import PriorRetriever
 
 _GLOBAL_POOL: ProcessPoolExecutor | None = None
 
-KB_LIBRARY_TOOL = {
-    "type": "function",
-    "function": {
-        "name": "library_search",
-        "description": (
-            "Search the library knowledge base (local + global JSONs, recall/top papers aware). "
-            "Use for theory/background references."
-        ),
-        "parameters": {
-            "type": "object",
-            "properties": {
-                "query": {
-                    "type": "string",
-                    "description": "Keywords or question to search in library notes."
-                },
-                "top_k": {
-                    "type": "integer",
-                    "description": "Maximum number of results to return.",
-                    "default": 5
-                },
-                "sources": {
-                    "type": "array",
-                    "items": {"type": "string"},
-                    "description": "Optional subset: local, global."
-                },
-                "refresh": {
-                    "type": "boolean",
-                    "description": "Force rebuild the library index before searching.",
-                    "default": False
-                },
-            },
-            "required": ["query"],
-            "additionalProperties": False,
-        },
-    },
-}
-
-KB_METHODOLOGY_TOOL = {
-    "type": "function",
-    "function": {
-        "name": "methodology_search",
-        "description": "Search methodology notes/playbooks (.md/.txt/.json).",
-        "parameters": {
-            "type": "object",
-            "properties": {
-                "query": {
-                    "type": "string",
-                    "description": "Keywords or question to search in methodology notes."
-                },
-                "top_k": {
-                    "type": "integer",
-                    "description": "Maximum number of results to return.",
-                    "default": 5
-                },
-                "refresh": {
-                    "type": "boolean",
-                    "description": "Force rebuild the methodology index before searching.",
-                    "default": False
-                },
-            },
-            "required": ["query"],
-            "additionalProperties": False,
-        },
-    },
-}
-
-KB_PRIOR_TOOL = {
+PRIOR_SEARCH_TOOL = {
     "type": "function",
     "function": {
         "name": "prior_search",
-        "description": "Search prior outputs/results.",
+        "description": "Search LANDAU prior knowledge base for relevant chunks.",
         "parameters": {
             "type": "object",
             "properties": {
-                "query": {
-                    "type": "string",
-                    "description": "Keywords or question to search in prior results."
-                },
+                "query": {"type": "string", "description": "Search query."},
                 "top_k": {
                     "type": "integer",
-                    "description": "Maximum number of results to return.",
-                    "default": 5
+                    "description": "Number of chunks to return.",
+                    "default": 3,
                 },
-                "refresh": {
+                "expand_context": {
                     "type": "boolean",
-                    "description": "Force rebuild the prior index before searching.",
-                    "default": False
+                    "description": "Include prev/next chunks for context.",
+                    "default": False,
+                },
+                "return_format": {
+                    "type": "string",
+                    "description": "Return text for prompt or raw JSON.",
+                    "enum": ["text", "json"],
+                    "default": "text",
                 },
             },
             "required": ["query"],
-            "additionalProperties": False,
         },
     },
 }
-
-KB_SEARCH_TOOLS = [KB_LIBRARY_TOOL, KB_METHODOLOGY_TOOL, KB_PRIOR_TOOL]
-
 
 def _init_worker():
     """Worker initializer: 每个子进程只初始化一次"""
@@ -123,29 +52,24 @@ def _init_worker():
         return
     _WORKER_INIT = True
 
-
 class SupervisorOrchestrator:
     """MCTS Supervisor，负责完整的树搜索流程"""
 
     def __init__(
         self,
         structured_problem,
-        local_kb: LocalKnowledgeBase,
-        global_kb: GlobalKnowledgeBase,
         task_dir: str,
         processes: int = 2,
         max_nodes: int = 4,
         prompts_path: str = "prompts/",
-
         draft_expansion: int = 2,
         revise_expansion: int = 2,
         improve_expansion: int = 1,
         exploration_constant: float = 1.414,
-        complete_score_threshold: float = 0.8,
+        beam_width: int = 3,
+        landau_prior_enabled: bool = True
     ):
         self.structured_problem = structured_problem
-        self.local_kb = local_kb
-        self.global_kb = global_kb
         self.task_dir = task_dir
         self.processes = max(1, processes)
         self.max_nodes = max_nodes
@@ -154,7 +78,12 @@ class SupervisorOrchestrator:
         self.revise_expansion = revise_expansion
         self.improve_expansion = improve_expansion
         self.exploration_constant = exploration_constant
-        self.complete_score_threshold = float(complete_score_threshold)
+        self.beam_width = max_nodes if beam_width is None else max(1, int(beam_width))
+        self.landau_prior_enabled = bool(landau_prior_enabled)
+        self._prior_retriever: Optional[PriorRetriever] = None
+        self.kb_search_tools: List[Dict[str, Any]] = []
+        if self.landau_prior_enabled:
+            self.kb_search_tools.append(PRIOR_SEARCH_TOOL)
 
         prompt_files = {
             "critic_prompt": "critic_prompt.txt",
@@ -198,19 +127,6 @@ class SupervisorOrchestrator:
         path = self.prompts_path / filename
         with open(path, "r", encoding="utf-8") as f:
             return f.read()
-
-    def _kb_tool_functions(self) -> Dict[str, Any]:
-        return {
-            "library_search": lambda query, top_k=5, sources=None, refresh=False: library_search(
-                query=query, top_k=top_k, sources=sources, refresh=refresh
-            ),
-            "methodology_search": lambda query, top_k=5, refresh=False: methodology_search(
-                query=query, top_k=top_k, refresh=refresh
-            ),
-            "prior_search": lambda query, top_k=5, refresh=False: prior_search(
-                query=query, top_k=top_k, refresh=refresh
-            ),
-        }
 
 
     def run(self) -> Dict[str, Any]:
@@ -261,6 +177,8 @@ class SupervisorOrchestrator:
                     child_node_type = "draft"
                     expansion_count = self.draft_expansion
                 else:
+                    break
+                if len({s["subtask_id"] for s in completed_subtasks}) >= len(self.subtasks):
                     break
 
             elif decision == "to_redraft":
@@ -322,7 +240,7 @@ class SupervisorOrchestrator:
             node=json.dumps(node_info, ensure_ascii=False, indent=2),
         )
 
-        tools = KB_SEARCH_TOOLS
+        tools = self.kb_search_tools
         tool_functions = self._kb_tool_functions()
 
         response = call_model(
@@ -394,7 +312,7 @@ class SupervisorOrchestrator:
             file_prefix=self._get_safe_name(),
         )
 
-        tools = KB_SEARCH_TOOLS
+        tools = self.kb_search_tools
         tool_functions = self._kb_tool_functions()
 
         response = call_model(
@@ -452,6 +370,9 @@ class SupervisorOrchestrator:
         - 使用Scheduler 由structured_problem生成自然语言任务subtask_description
         - 批量调用 Critic 进行评分，并进行Backpropagation
         """
+        if parent and parent.status == "pruned":
+            return []
+
         new_nodes: List[MCTSNode] = []
 
         subtask_info = next(subtusk for subtusk in self.subtasks if subtusk["id"] == subtask_id)
@@ -555,9 +476,41 @@ class SupervisorOrchestrator:
             except Exception:
                 child_node.update_stats(reward)
 
+        if new_nodes:
+            parent_depth = parent.get_depth() if parent else 0
+            self._apply_beam_pruning(parent_depth + 1)
+
         return new_nodes
 
     # Tools
+    def _get_prior_retriever(self) -> PriorRetriever:
+        if self._prior_retriever is None:
+            self._prior_retriever = PriorRetriever()
+        return self._prior_retriever
+
+    def _prior_search(
+        self,
+        query: str,
+        top_k: int = 3,
+        expand_context: bool = False,
+        return_format: str = "text",
+    ):
+        try:
+            retriever = self._get_prior_retriever()
+            results = retriever.retrieve(
+                query=query,
+                top_k=int(top_k) if top_k is not None else 3,
+                expand_context=bool(expand_context),
+            )
+            if return_format == "json":
+                return results
+            return retriever.format_for_llm(results)
+        except Exception as e:
+            return f"[prior_search] failed: {e}"
+
+    def _kb_tool_functions(self) -> Dict[str, Any]:
+        return {"prior_search": self._prior_search} if self.landau_prior_enabled else {}
+
     def _get_safe_name(self) -> str:
         instr_name = (
             self.structured_problem.get("instruction_filename")
@@ -598,6 +551,9 @@ class SupervisorOrchestrator:
         
         selected = self.tree.selection(self.exploration_constant)
 
+        if selected is None or selected.status == "pruned":
+            return None
+
         while selected.status == "completed" and selected.children:
             best_child = selected.select_best_child(self.exploration_constant)
             if best_child is None:
@@ -605,6 +561,35 @@ class SupervisorOrchestrator:
             selected = best_child
 
         return selected
+
+    def _apply_beam_pruning(self, depth: int):
+        if self.beam_width is None or self.beam_width <= 0:
+            return
+
+        candidates = [
+            n for n in self.tree.get_all_nodes()
+            if n.status != "pruned" and n.get_depth() == depth
+        ]
+        if len(candidates) <= self.beam_width:
+            return
+
+        def node_reward(node: MCTSNode) -> float:
+            if node.evaluation and node.evaluation.get("score") is not None:
+                try:
+                    return float(node.evaluation.get("score"))
+                except Exception:
+                    return 0.0
+            return float(node.average_reward or 0.0)
+
+        ranked = sorted(
+            candidates,
+            key=lambda n: (node_reward(n), -n.node_index),
+            reverse=True,
+        )
+        keep = {n.node_index for n in ranked[: self.beam_width]}
+        for node in candidates:
+            if node.node_index not in keep:
+                node.status = "pruned"
 
     def _build_subtasks(self) -> List[Dict[str, Any]]:
         """ 直接读取 structured_problem 中已有的 sub-tasks """
@@ -641,19 +626,32 @@ class SupervisorOrchestrator:
         """
         best_path: List[MCTSNode] = []
         best_avg_reward = -float("inf")
+        best_partial_path: List[MCTSNode] = []
+        best_partial_score = -float("inf")
 
         def dfs(node: MCTSNode, current_path: List[MCTSNode], current_subtask_id: int):
-            nonlocal best_path, best_avg_reward
+            nonlocal best_path, best_avg_reward, best_partial_path, best_partial_score
 
             if node.node_type != "virtual":
                 current_path.append(node)
 
+            rewards = [n.average_reward for n in current_path if n.visits > 0]
+            avg_reward = sum(rewards) / len(rewards) if rewards else 0.0
+            node_score = avg_reward
+            if node.evaluation and node.evaluation.get("score") is not None:
+                try:
+                    node_score = float(node.evaluation.get("score"))
+                except Exception:
+                    node_score = avg_reward
+
             if node.evaluation and node.evaluation.get("decision") == "complete":
-                rewards = [n.average_reward for n in current_path if n.visits > 0]
-                avg_reward = sum(rewards) / len(rewards) if rewards else 0.0
                 if avg_reward > best_avg_reward:
                     best_avg_reward = avg_reward
                     best_path = list(current_path)
+
+            if node_score > best_partial_score:
+                best_partial_score = node_score
+                best_partial_path = list(current_path)
 
             for child in node.children:
                 if child.subtask_id >= current_subtask_id:
@@ -664,6 +662,7 @@ class SupervisorOrchestrator:
 
         dfs(self.tree.root, [], self.tree.root.subtask_id)
 
+        trajectory = best_path if best_path else best_partial_path
         return [
             {
                 "node_index": n.node_index,
@@ -674,5 +673,5 @@ class SupervisorOrchestrator:
                 "score": n.evaluation.get("score") if n.evaluation else None,
                 "log_path": getattr(n, "log_path", None),
             }
-            for n in best_path
+            for n in trajectory
         ]

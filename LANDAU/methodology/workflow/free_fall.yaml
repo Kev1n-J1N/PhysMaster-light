@@ -1,0 +1,22 @@
+Workflow:
+  Goal: Free-fall of small ball
+
+  Stages:
+    - id: S1
+      task: Compute the fall time
+      method:
+        - Use the constant-acceleration displacement relation:
+          - h = (1/2) * g * t^2  (given v0 = 0)
+        - Solve for t:
+          - t = sqrt(2h / g)
+      output:
+        - t_fall
+
+    - id: S2
+      task: Compute the final velocity at impact
+      method:
+        - Use v = v0 + g * t with v0 = 0
+        - Compute:
+          - v_final = g * t_fall
+      output:
+        - v_final

@@ -15,7 +15,7 @@ class MCTSNode:
     
     # 节点状态
     subtask_description: str
-    status: str = "pending"  # "pending", "completed", "failed"
+    status: str = "pending"  # "pending", "completed", "failed", "pruned"
     
     # MCTS统计信息
     visits: int = 0  # 访问次数
@@ -55,12 +55,16 @@ class MCTSNode:
         return exploitation + exploration
     
     def select_best_child(self, exploration_constant: float = 1.414) -> Optional['MCTSNode']:
-        """使用UCB1选择最佳子节点"""
+        """使用UCB1选择最佳子节点，忽略被剪枝的节点"""
         if not self.children:
             return None
-        
+
+        candidates = [c for c in self.children if c.status != "pruned"]
+        if not candidates:
+            return None
+
         best_child = max(
-            self.children,
+            candidates,
             key=lambda c: c.get_ucb1_value(exploration_constant)
         )
         return best_child
@@ -108,4 +112,3 @@ class MCTSNode:
             depth += 1
             current = current.parent
         return depth
-

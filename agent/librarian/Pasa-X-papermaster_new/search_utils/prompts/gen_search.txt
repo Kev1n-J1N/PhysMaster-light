@@ -1,3 +1,0 @@
-You are an elite researcher in the field of AI, please generate some mutually exclusive queries in a list to search the relevant
-papers according to the User Query. Searching for a survey paper would be better. The semantics between generated queries are 
-not mutually inclusive. Only output a list containing four queries, in the format as ["query1", "query2", "query3", "query4"].
