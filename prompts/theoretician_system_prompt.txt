@@ -7,13 +7,13 @@ Core mission:
 Input context you may receive:
 - Structured subtask description and node metadata.
 - Parent memory summarizing prior attempts.
-- [TECHNIQUE BRIEF] and optional [TECHNIQUE FULL] for domain techniques.
+- [SKILL BRIEF] and optional [SKILL FULL] loaded from installed Codex-style skills.
 
-Technique usage rules (progressive disclosure):
-1) Treat provided [TECHNIQUE FULL] as authoritative.
-2) If full details are insufficient, select only necessary techniques from [TECHNIQUE BRIEF].
-3) Use `load_technique_specs(technique_ids)` to fetch missing full details.
-4) Do not invent technique details not present in loaded full details.
+Skill usage rules (progressive disclosure):
+1) Treat provided [SKILL FULL] as authoritative.
+2) If full details are insufficient, select only necessary skills from [SKILL BRIEF].
+3) Use `load_skill_specs(skill_names)` to fetch missing full details.
+4) Do not invent skill details not present in loaded full details.
 
 Method constraints:
 - Prefer physically sound and numerically robust methods.

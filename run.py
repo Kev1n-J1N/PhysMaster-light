@@ -5,10 +5,11 @@ import os
 from pathlib import Path
 from typing import Any, Dict, Tuple
 
-from core.MCTS.supervisor import SupervisorOrchestrator
-from core.MCTS.summarizer import TrajectorySummarizer
-from core.clarifier.clarifier import Clarifier
-from core.visualization.generate_html import generate_vis
+from core.supervisor import SupervisorOrchestrator
+from core.summarizer import TrajectorySummarizer
+from core.clarifier import Clarifier
+from core.visualization import generate_vis
+from utils.skill_loader import resolve_skill_roots
 
 
 def load_config(path: str = "config.yaml") -> Dict[str, Any]:
@@ -72,8 +73,9 @@ def main(config_path: str = "config.yaml"):
     landau_cfg = cfg.get("landau", {})
     library_enabled = bool(landau_cfg.get("library_enabled", True))
     workflow_enabled = bool(landau_cfg.get("workflow_enabled", True))
-    techniques_enabled = bool(landau_cfg.get("techniques_enabled", True))
     prior_enabled = bool(landau_cfg.get("prior_enabled", True))
+    skills_cfg = cfg.get("skills", {})
+    skills_enabled = bool(skills_cfg.get("enabled", True))
 
     mcts_cfg = cfg.get("mcts", {})
     vis_cfg = cfg.get("visualization",{})
@@ -83,10 +85,6 @@ def main(config_path: str = "config.yaml"):
     workflow_root = (
         project_root
         / landau_cfg.get("workflow", landau_cfg.get("methodology", "LANDAU/workflow"))
-    ).resolve()
-    techniques_root = (
-        project_root
-        / landau_cfg.get("techniques", "LANDAU/techniques")
     ).resolve()
     prior_root = (project_root / landau_cfg.get("prior", "LANDAU/prior")).resolve()
 
@@ -104,10 +102,12 @@ def main(config_path: str = "config.yaml"):
         print(f"[LANDAU] Workflow Dir: {workflow_root}")
     else:
         print("[LANDAU] Workflow Dir: disabled")
-    if techniques_enabled:
-        print(f"[LANDAU] Techniques Dir: {techniques_root}")
+    if skills_enabled:
+        print("[Skills] Roots:")
+        for root in resolve_skill_roots(config_path):
+            print(f"  - {root}")
     else:
-        print("[LANDAU] Techniques Dir: disabled")
+        print("[Skills] disabled")
     if prior_enabled:
         print(f"[LANDAU] Prior: {prior_root}")
     else:
@@ -125,6 +125,7 @@ def main(config_path: str = "config.yaml"):
         revise_expansion=mcts_cfg.get("revise_expansion", 2),
         exploration_constant=mcts_cfg.get("exploration_constant", 1.414),
         active_beam_width=mcts_cfg.get("active_beam_width", 0),
+        landau_library_enabled=library_enabled,
         landau_prior_enabled=prior_enabled,
     )
 

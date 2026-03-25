@@ -28,7 +28,6 @@ def discover_skill_manifests(skills_root: Path) -> List[Dict[str, Any]]:
 
         # Normalize fields
         skill_id = data.get("skill_id") or data.get("id")
-        category = data.get("category") or "unknown"
         domain = data.get("domain") or ""
         goal = data.get("goal") or ""
         scope = data.get("scope") or []
@@ -40,7 +39,6 @@ def discover_skill_manifests(skills_root: Path) -> List[Dict[str, Any]]:
 
         skills.append({
             "skill_id": skill_id,
-            "category": category,
             "domain": domain,
             "goal": goal,
             "scope": scope,
@@ -76,19 +74,6 @@ def discover_skill_manifests(skills_root: Path) -> List[Dict[str, Any]]:
 
     return skills
 
-
-def group_by_category(skills: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:
-    grouped: Dict[str, List[Dict[str, Any]]] = {}
-    for m in skills:
-        cat = (m.get("category") or "unknown").strip().lower()
-        grouped.setdefault(cat, []).append(m)
-
-    # Sort each group by domain then skill_id
-    for cat in grouped:
-        grouped[cat].sort(key=lambda x: (x.get("domain") or "", x["skill_id"]))
-    return grouped
-
-
 def _format_scope(scope: Any, max_items: int = 6) -> str:
     if not scope:
         return ""
@@ -103,38 +88,28 @@ def _format_scope(scope: Any, max_items: int = 6) -> str:
     return "\n".join([f"    - {s}" for s in scope_items])
 
 
-def build_progressive_disclosure_prompt(grouped: Dict[str, List[Dict[str, Any]]]) -> str:
+def build_progressive_disclosure_prompt(skills: List[Dict[str, Any]]) -> str:
     lines: List[str] = []
     lines.append("[SKILL MANIFESTS]")
     lines.append("Below are available Skill manifests (summaries). Use them to decide which skills to load via load_skill_spec if needed.")
     lines.append("")
 
-    ordered_cats = []
-    for c in ["general", "mathematics"]:
-        if c in grouped:
-            ordered_cats.append(c)
-    for c in sorted(grouped.keys()):
-        if c not in ordered_cats:
-            ordered_cats.append(c)
+    for m in sorted(skills, key=lambda x: ((x.get("domain") or "").lower(), x["skill_id"].lower())):
+        goal = (m.get("goal") or "").strip()
+        domain = (m.get("domain") or "").strip()
+        scope_txt = _format_scope(m.get("scope"))
 
-    for cat in ordered_cats:
-        lines.append(f"## category: {cat}")
-        for m in grouped[cat]:
-            goal = (m.get("goal") or "").strip()
-            domain = (m.get("domain") or "").strip()
-            scope_txt = _format_scope(m.get("scope"))
-
-            lines.append(f"- skill_id: {m['skill_id']}")
-            if domain:
-                lines.append(f"  domain: {domain}")
-            if goal:
-                goal_one = " ".join(goal.split())
-                if len(goal_one) > 240:
-                    goal_one = goal_one[:237] + "..."
-                lines.append(f"  goal: {goal_one}")
-            if scope_txt:
-                lines.append("  scope:")
-                lines.append(scope_txt)
+        lines.append(f"- skill_id: {m['skill_id']}")
+        if domain:
+            lines.append(f"  domain: {domain}")
+        if goal:
+            goal_one = " ".join(goal.split())
+            if len(goal_one) > 240:
+                goal_one = goal_one[:237] + "..."
+            lines.append(f"  goal: {goal_one}")
+        if scope_txt:
+            lines.append("  scope:")
+            lines.append(scope_txt)
         lines.append("")
 
     return "\n".join(lines)
@@ -142,19 +117,12 @@ def build_progressive_disclosure_prompt(grouped: Dict[str, List[Dict[str, Any]]]
 
 
 def main():
-    # Change this if your repo root differs
-    skills_root = Path(r"./techniques").resolve()
-    if not skills_root.exists():
-        legacy = Path(r"./methodology/skills").resolve()
-        if legacy.exists():
-            skills_root = legacy
+    skills_root = Path(r"./LANDAU/skills").resolve()
     if not skills_root.exists():
         raise SystemExit(f"skills_root not found: {skills_root}")
 
     skills = discover_skill_manifests(skills_root)
-    grouped = group_by_category(skills)
-
-    prompt = build_progressive_disclosure_prompt(grouped)
+    prompt = build_progressive_disclosure_prompt(skills)
 
     current_dir = Path(__file__).resolve().parent
     out_dir = current_dir.parent / "prompts"

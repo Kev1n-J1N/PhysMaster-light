@@ -1,5 +1,10 @@
 # PhysMaster Configs
 
+llm:
+  base_url: "http://123.129.219.111:3000/v1"
+  api_key: "sk-hnHVnUfqxBsPjGmC7EYAu5TWp9m31YqUJlPga0zulaqWRPTA"
+  model: "gpt-5"
+
 # Basics
 pipeline:
   query_file: "instructions/CS_kernel_all_b_v23.txt"
@@ -17,6 +22,11 @@ mcts:
 clarifier:
   max_key_concpets: 5
 
+skills:
+  enabled: true
+  roots:
+    - "LANDAU/skills"
+
 # LANDAU settings
 landau:
   library_enabled: true
@@ -24,9 +34,6 @@ landau:
   
   workflow_enabled: true
   workflow: "LANDAU/workflow"
-  
-  techniques_enabled: true
-  techniques: "LANDAU/techniques"
 
   prior_enabled: false
   prior: "LANDAU/prior"
