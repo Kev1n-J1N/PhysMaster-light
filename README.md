@@ -20,7 +20,7 @@ A lightweight AI agent pipeline for solving physics problems. PhysMaster decompo
 ### 1. Clone & Setup Environment
 
 ```bash
-git clone https://github.com/your-org/PHY_Master.git
+git clone https://github.com/Kev1n-J1N/PhysMaster-light.git
 cd PHY_Master
 
 # Create conda environment
@@ -233,28 +233,6 @@ Skills are automatically discovered and loaded when relevant problems are detect
 The library module provides web search and content parsing via an MCP (Model Context Protocol) server. When enabled, the supervisor and critic can search the web for reference materials and parse web pages for relevant information.
 
 > For detailed MCP server deployment and configuration, see **[mcp_sandbox/README.md](mcp_sandbox/README.md)**.
-
-#### Quick Start
-
-```bash
-# 1. Install MCP server dependencies
-cd mcp_sandbox
-pip install -r requirements.txt
-
-# 2. Configure JSON files under configs/ (API keys, etc.)
-#    - llm_call.json: LLM model API configuration
-#    - web_agent.json: Serper search engine API key
-#    - paper_agent.json: Paper parsing model configuration
-#    - mcp_config.json: MCP port configuration
-
-# 3. Start the services
-./start_all.sh
-
-# 4. Stop the services
-./start_all.sh stop
-```
-
-Note: The search function uses the Serper search engine. You need to register at [serper.dev](https://serper.dev) to obtain an API key.
 
 #### Enable Library
 

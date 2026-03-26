@@ -1,15 +1,15 @@
 # PhysMaster Configs
 
 llm:
-  base_url: "http://123.129.219.111:3000/v1"
-  api_key: "sk-hnHVnUfqxBsPjGmC7EYAu5TWp9m31YqUJlPga0zulaqWRPTA"
+  base_url: "Your Base URL"
+  api_key: "Your Api Key"
   model: "gpt-5"
 
 # Basics
 pipeline:
   query_file: "instructions/test.txt"
   output_path: "outputs"
-  max_rounds: 10
+  max_rounds: 24
 
 # Clarifier settings
 clarifier:
@@ -22,7 +22,7 @@ skills:
 
 # LANDAU settings
 landau:
-  library_enabled: true
+  library_enabled: false
   library: "LANDAU/library"
 
   # Library MCP configuration

@@ -20,7 +20,7 @@
 ### 1. 克隆与环境配置
 
 ```bash
-git clone https://github.com/your-org/PHY_Master.git
+git clone https://github.com/Kev1n-J1N/PhysMaster-light.git
 cd PHY_Master
 
 # 创建 conda 环境
@@ -240,28 +240,6 @@ What this skill aims to achieve.
 文献检索模块通过 MCP（Model Context Protocol）服务器提供网页搜索和内容解析功能。启用后，Supervisor 和 Critic 可以搜索网络参考资料并解析网页获取相关信息。
 
 > MCP 服务器的详细部署与配置说明请参阅 **[mcp_sandbox/README.md](mcp_sandbox/README.md)**。
-
-#### 快速启动
-
-```bash
-# 1. 安装 MCP 服务器依赖
-cd mcp_sandbox
-pip install -r requirements.txt
-
-# 2. 配置 configs/ 下的 JSON 文件（API 密钥等）
-#    - llm_call.json：LLM 模型 API 配置
-#    - web_agent.json：Serper 搜索引擎 API 密钥
-#    - paper_agent.json：论文解析模型配置
-#    - mcp_config.json：MCP 端口配置
-
-# 3. 启动服务
-./start_all.sh
-
-# 4. 停止服务
-./start_all.sh stop
-```
-
-注：搜索功能使用 Serper 搜索引擎，需要在 [serper.dev](https://serper.dev) 注册账户并获取 API 密钥。
 
 #### 启用文献检索
 
