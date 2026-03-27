@@ -1,5 +1,4 @@
 # PhysMaster Configs
-
 llm:
   base_url: "Your Base URL"
   api_key: "Your Api Key"
@@ -9,13 +8,13 @@ llm:
 pipeline:
   query_file: "instructions/test.txt"
   output_path: "outputs"
-  parallel_processes: 3
   max_rounds: 10
 
 # Clarifier settings
 clarifier:
   max_key_concpets: 5
 
+# skills settings
 skills:
   enabled: true
   roots:
@@ -36,5 +35,6 @@ landau:
   workflow_enabled: false
   workflow: "LANDAU/workflow"
 
+# visualization settings
 visualization:
   enabled: true

@@ -112,7 +112,7 @@ def main(config_path: str = "config.yaml"):
     else:
         print("[LANDAU] Prior: disabled")
 
-    processes = pipeline_cfg.get("parallel_processes", 2)
+    processes = pipeline_cfg.get("parallel_processes", 1)
     max_rounds = pipeline_cfg.get("max_rounds", 8)
 
     supervisor = SupervisorOrchestrator(

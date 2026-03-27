@@ -230,12 +230,6 @@ class SupervisorOrchestrator:
 
         result = node_output.get("result", "")
 
-        print(
-            f"[Theoretician] "
-            f"(node_id={node_id} subtask_id={subtask_id} node_type={node_type}) "
-            f"task completed ✅"
-        )
-
         node_record = {
             "node_id": node_id,
             "depth": node_output.get("depth", len(self.trajectory) + 1),
