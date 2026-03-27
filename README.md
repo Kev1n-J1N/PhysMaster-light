@@ -118,22 +118,29 @@ pipeline:
 ### Pipeline Flow
 
 ```
-Query File                          Output
-    │                                 │
-    ▼                                 ▼
-┌──────────┐    ┌───────────┐    ┌──────────────┐    ┌────────────┐
-│ Clarifier │───▶│  Solver   │───▶│   Critic     │───▶│ Summarizer │
-└──────────┘    └───────────┘    └──────────────┘    └────────────┘
-                     │                  │
-                     └──── loop ────────┘
-                   (revise / redraft)
+Query File                                                Output
+    │                                                       │
+    ▼                                                       ▼
+┌──────────┐    ┌────────────┐    ┌──────────────┐    ┌──────────────┐    ┌────────────┐
+│ Clarifier │───▶│ Supervisor │───▶│ Theoretician │───▶│   Critic     │───▶│ Summarizer │
+└──────────┘    └────────────┘    └──────────────┘    └──────────────┘    └────────────┘
+                                          │                    │
+                                          └──── loop ──────────┘
+                                        (revise / redraft until complete or max_rounds)
 ```
 
-1. **Clarifier** parses the problem, extracts key concepts, and decomposes it into subtasks.
-2. **Solver** (Theoretician) generates a detailed solution for each subtask.
-3. **Critic** evaluates the solution and decides: `complete` | `to_revise` | `to_redraft`.
-4. If not complete, the solver revises or redrafts the solution based on critic feedback.
-5. **Summarizer** produces a final markdown summary of all completed subtasks.
+1. **Clarifier** — Parses the problem, extracts key concepts, and decomposes it into a subtask list.
+2. **Supervisor** — Generates detailed execution instructions for the current subtask and passes them to the Theoretician.
+3. **Theoretician** — Executes the solve, producing a detailed solution (can invoke Python, skills, library search, etc.).
+4. **Critic** — Evaluates solution quality and makes a decision:
+   - `complete` — Current subtask is done; move to the next subtask.
+   - `to_revise` — Approach is correct but needs improvement; Theoretician revises the current solution.
+   - `to_redraft` — Approach is flawed; Theoretician re-solves from scratch.
+5. **Loop** — Supervisor → Theoretician → Critic iterates until all subtasks are complete or the `max_rounds` limit is reached.
+6. **Summarizer** — Aggregates all completed subtasks into a final Markdown report.
+
+**Key parameter:**
+- `max_rounds`: Maximum iteration rounds across all subtasks (default 10). Each Theoretician solve counts as 1 round, preventing infinite loops.
 
 ### Output Structure
 
