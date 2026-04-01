@@ -32,8 +32,8 @@ landau:
     search_lang: "en"
     parse_model: "DeepSeek/DeepSeek-V3-0324"
 
-  workflow_enabled: false
-  workflow: "LANDAU/workflow"
+  workflow_enabled: true
+  workflow: "LANDAU/workflow/cs_kernel.yaml"
 
 # visualization settings
 visualization:

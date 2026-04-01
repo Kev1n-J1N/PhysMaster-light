@@ -24,7 +24,7 @@ class Clarifier:
             "problem", "task", "workflow", "methodology", "method",
         }
 
-    def _resolve_workflow_dir(self, config) -> Path:
+    def _resolve_workflow_dir(self,config):
         project_root = Path(__file__).resolve().parents[2]
         configured = (
             config.get("workflow_dir")
@@ -34,6 +34,9 @@ class Clarifier:
             p = Path(str(configured))
             return p if p.is_absolute() else (project_root / p).resolve()
 
+
+    def _resolve_default_workflow_dir(self) -> Path:
+        project_root = Path(__file__).resolve().parents[1]
         candidates = [
             project_root / "LANDAU" / "workflow",
             project_root / "LANDAU" / "methodology" / "workflow",
@@ -61,10 +64,36 @@ class Clarifier:
         goal = wf.get("Goal") or wf.get("goal") or ""
         return str(goal).strip()
 
+    def _parse_workflow_file(self):
+        if self.workflow_dir.exists() and self.workflow_dir.is_file():
+            try:
+                raw = self.workflow_dir.read_text(encoding="utf-8")
+                data = yaml.safe_load(raw)
+                goal = self._extract_workflow_goal(data)
+                return {"path": str(self.workflow_dir), "goal": goal, "raw": raw}
+            except Exception:
+                print(f"[Clarifier] Workflow loading failed, loading path: {self.workflow_dir}")
+        else:
+            print(f"[Clarifier] Workflow loading failed, loading path: {self.workflow_dir}")
+            return None
+
+
     def _select_workflow_by_goal(self, user_query: str) -> dict | None:
         print("[Clarifier] Start searching workflows")
-        if not self.workflow_dir.exists():
-            print(f"[Clarifier] Workflow search skipped (dir not found): {self.workflow_dir}")
+
+        tokens = self._remove_stopwords(self._tokenize_query(user_query))
+        if not tokens:
+            print("[Clarifier] Workflow search finished (no tokens)")
+            return None
+
+        workflow_file = self._parse_workflow_file()
+        if workflow_file is not None:
+            print(f"[Clarifier] Selected workflow reference {workflow_file['path']}")
+            return workflow_file
+        
+        default_dir = self._resolve_default_workflow_dir()
+        if not default_dir.exists():
+            print(f"[Clarifier] Workflow search skipped (dir not found): {default_dir}")
             return None
         tokens = self._remove_stopwords(self._tokenize_query(user_query))
         if not tokens:
@@ -73,7 +102,7 @@ class Clarifier:
         best = None
         best_score = 0
 
-        for path in sorted(self.workflow_dir.glob("*.y*ml")):
+        for path in sorted(default_dir.glob("*.y*ml")):
             try:
                 raw = path.read_text(encoding="utf-8")
                 data = yaml.safe_load(raw)
